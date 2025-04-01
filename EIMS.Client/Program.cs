@@ -3,44 +3,42 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using EIMS.Client;
 using EIMS.Client.Services;
 using EIMS.Shared.Services;
+using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Net.Http;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
-// Add configuration from appsettings.json
-try
-{
-    var client = new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) };
-    var response = await client.GetAsync("appsettings.json");
-    if (response.IsSuccessStatusCode)
-    {
-        using var stream = await response.Content.ReadAsStreamAsync();
-        builder.Configuration.AddJsonStream(stream);
-        
-        // Log full credentials for debugging
-        var clientId = builder.Configuration["Octopart:ClientId"];
-        var clientSecret = builder.Configuration["Octopart:ClientSecret"];
-        
-        if (!string.IsNullOrEmpty(clientId) && !string.IsNullOrEmpty(clientSecret))
-        {
-            Console.WriteLine($"Successfully loaded Octopart credentials:");
-            Console.WriteLine($"ClientId: '{clientId}'");
-            Console.WriteLine($"ClientSecret: '{clientSecret}'");
-        }
-        else
-        {
-            Console.Error.WriteLine("Missing Octopart credentials in configuration");
-        }
-    }
-}
-catch (Exception ex)
-{
-    Console.Error.WriteLine($"Error loading configuration: {ex.Message}");
-}
+// Configure service mode - prefer real API but fall back to local mode if needed
+bool useLocalMode = false; // Try to use the real API through our proxy
+ServiceConfig.UseLocalMode = useLocalMode;
 
-// Load services
-builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
-builder.Services.AddScoped<IOctopartService, OctopartService>();
+// Configure server URL for API calls - using the proxy to avoid CSP issues
+string serverBaseAddress = "http://localhost:5063";
+string proxyEndpoint = $"{serverBaseAddress}/client-api";
+Console.WriteLine($"API proxy URL: {proxyEndpoint}");
+
+// Log the local mode status
+Console.WriteLine($"Operating in local mode: {ServiceConfig.UseLocalMode}");
+
+// Register HttpClient with base address for easier API calls
+builder.Services.AddScoped(sp => 
+{
+    var client = new HttpClient { BaseAddress = new Uri(proxyEndpoint) };
+    Console.WriteLine($"Created HttpClient with base address: {client.BaseAddress}");
+    return client;
+});
+
+// Register services
+builder.Services.AddScoped<IPartService, PartService>();
+
+// Create a separate HttpClient instance for Octopart that won't be used for other services
+builder.Services.AddScoped<IOctopartService>(sp => {
+    var config = sp.GetRequiredService<IConfiguration>();
+    var httpClient = new HttpClient(); // This client will be configured by OctopartService
+    return new OctopartService(httpClient, config);
+});
 
 await builder.Build().RunAsync();

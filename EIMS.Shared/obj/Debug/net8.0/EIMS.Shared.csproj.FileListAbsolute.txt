@@ -1,0 +1,12 @@
+R:\eims\EIMS.Shared\bin\Debug\net8.0\EIMS.Shared.deps.json
+R:\eims\EIMS.Shared\bin\Debug\net8.0\EIMS.Shared.dll
+R:\eims\EIMS.Shared\bin\Debug\net8.0\EIMS.Shared.pdb
+R:\eims\EIMS.Shared\obj\Debug\net8.0\EIMS.Shared.GeneratedMSBuildEditorConfig.editorconfig
+R:\eims\EIMS.Shared\obj\Debug\net8.0\EIMS.Shared.AssemblyInfoInputs.cache
+R:\eims\EIMS.Shared\obj\Debug\net8.0\EIMS.Shared.AssemblyInfo.cs
+R:\eims\EIMS.Shared\obj\Debug\net8.0\EIMS.Shared.csproj.CoreCompileInputs.cache
+R:\eims\EIMS.Shared\obj\Debug\net8.0\EIMS.Shared.sourcelink.json
+R:\eims\EIMS.Shared\obj\Debug\net8.0\EIMS.Shared.dll
+R:\eims\EIMS.Shared\obj\Debug\net8.0\refint\EIMS.Shared.dll
+R:\eims\EIMS.Shared\obj\Debug\net8.0\EIMS.Shared.pdb
+R:\eims\EIMS.Shared\obj\Debug\net8.0\ref\EIMS.Shared.dll

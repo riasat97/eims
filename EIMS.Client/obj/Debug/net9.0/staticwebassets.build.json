@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VR+fnyyJi4oeZm+16wanooUCBNE2R4q93GCYP3rIw1c=",
+  "Hash": "mSZmxQleoMD7MAFwwisbY8KIAB51wRQghi8xQQzTdgc=",
   "Source": "EIMS.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "7bhfgjtvao",
-      "Integrity": "nS5ou4MpcxmR31kPR3MrJE9JpCtigVj/4PblrD9446E=",
+      "Fingerprint": "yoxyrjy6gj",
+      "Integrity": "EqbIvenmkaNzmpxK4JO16z+KsEpjQytM5LUXjmcdc6I=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\blazor.boot.json"
@@ -199,8 +199,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "87kvs313cs",
-      "Integrity": "/C8GkzM68wuWFzM9aVFfeBkl2IoLMli8uOhkCJXlNwE=",
+      "Fingerprint": "y22o16m3kd",
+      "Integrity": "irkopO3gek1lDwQ36LsWDg+6Eeh8JXiAFrTf18i8/0k=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\EIMS.Client.pdb"
@@ -220,8 +220,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "997y8udkp6",
-      "Integrity": "PWlGs1wr+Z9TijKWyEUvhwXNgiwExAF9qVpN5GgJGFg=",
+      "Fingerprint": "lfx97igmz2",
+      "Integrity": "gYBvxnp7CC5KLem3Rhubaj6AB/X4FLYlOiXAjUo04IY=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\webcil\\EIMS.Client.wasm"
@@ -241,11 +241,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "1qyirr3jg2",
-      "Integrity": "t0jLJana5Grs5+njGrBL7uLvBQ0PJF/mJCRrND+fjQA=",
+      "Fingerprint": "2hd3imxvwv",
+      "Integrity": "9qDQydYbEfEm6P5fVo3BkisJohBY7xU4Mj91FBJpbzk=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "R:\\eims\\EIMS.Shared\\bin\\Debug\\net9.0\\EIMS.Shared.pdb"
+      "OriginalItemSpec": "R:\\eims\\EIMS.Shared\\bin\\Debug\\net8.0\\EIMS.Shared.pdb"
     },
     {
       "Identity": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Shared.wasm",
@@ -262,8 +262,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "ni304hq8g8",
-      "Integrity": "zxm1rpCFT7QW5eACZTM0KyJ2t1nx/G+ERrbzyHwgJXM=",
+      "Fingerprint": "3uhwkspvdg",
+      "Integrity": "S/ZwoczoAv8/oUCzM2qReW40TcFMt6K2Rcp5ZbL3q0c=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\webcil\\EIMS.Shared.wasm"
@@ -5498,12 +5498,12 @@
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Resources.Reader.wasm"
     },
     {
-      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\661czh662j-1qyirr3jg2.gz",
+      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\661czh662j-2hd3imxvwv.gz",
       "SourceId": "EIMS.Client",
       "SourceType": "Computed",
       "ContentRoot": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/EIMS.Shared#[.{fingerprint=1qyirr3jg2}]!.pdb.gz",
+      "RelativePath": "_framework/EIMS.Shared#[.{fingerprint=2hd3imxvwv}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5512,8 +5512,8 @@
       "RelatedAsset": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Shared.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "0h0z51aege",
-      "Integrity": "3CmWqyxa07f67dbcaLYhy6TkUs81lPEvqkKh8aSkdoc=",
+      "Fingerprint": "z9eaa9ayr4",
+      "Integrity": "x5T94M3vbil6MJOsPp7ukIsQ2+/uPN8Vh3BeEovTKu0=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Shared.pdb"
@@ -5729,12 +5729,12 @@
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Diagnostics.Contracts.wasm"
     },
     {
-      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\7m8e22702s-87kvs313cs.gz",
+      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\7m8e22702s-y22o16m3kd.gz",
       "SourceId": "EIMS.Client",
       "SourceType": "Computed",
       "ContentRoot": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/EIMS.Client#[.{fingerprint=87kvs313cs}]!.pdb.gz",
+      "RelativePath": "_framework/EIMS.Client#[.{fingerprint=y22o16m3kd}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5743,8 +5743,8 @@
       "RelatedAsset": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Client.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "b8h5iq1vah",
-      "Integrity": "hU+jbwPiy3iM0ZUtfxOc1TERFPI1zqzvFBSBTMpBr5k=",
+      "Fingerprint": "gonfws0zxv",
+      "Integrity": "YApHjxldzCjpexsBsQvfq5l3Wntp6NbJuHGUsYWggKs=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Client.pdb"
@@ -5958,6 +5958,27 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Diagnostics.StackTrace.wasm"
+    },
+    {
+      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\97gce4p1ya-f92cpkhns8.gz",
+      "SourceId": "EIMS.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "js/csp-disabler#[.{fingerprint=f92cpkhns8}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "R:\\eims\\EIMS.Client\\wwwroot\\js\\csp-disabler.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "ebqt48nr43",
+      "Integrity": "hgFkYK6IlP+Mho1N3I7fpZAnPo6MGMttg1IJFn/9a10=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "R:\\eims\\EIMS.Client\\wwwroot\\js\\csp-disabler.js"
     },
     {
       "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\9cy51lev7f-vqn7wix727.gz",
@@ -6296,12 +6317,12 @@
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Xml.XPath.wasm"
     },
     {
-      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\bsbz2n03ta-vm35ionf7e.gz",
+      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\bsbz2n03ta-lel892jbok.gz",
       "SourceId": "EIMS.Client",
       "SourceType": "Discovered",
       "ContentRoot": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "index#[.{fingerprint=vm35ionf7e}]?.html.gz",
+      "RelativePath": "index#[.{fingerprint=lel892jbok}]?.html.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -6310,8 +6331,8 @@
       "RelatedAsset": "R:\\eims\\EIMS.Client\\wwwroot\\index.html",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "azyo93t8qn",
-      "Integrity": "6tPaooMWZ/3frcszMoXpw21o1Utk0rIrzeFvB4SbjKc=",
+      "Fingerprint": "wdd69b07pp",
+      "Integrity": "RP5gj3/IeKEGHB4nsSezNS88Rz1JpheoIarw/LOmq2I=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\wwwroot\\index.html"
@@ -6905,12 +6926,12 @@
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Private.Uri.wasm"
     },
     {
-      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\g73dg0ij4v-997y8udkp6.gz",
+      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\g73dg0ij4v-lfx97igmz2.gz",
       "SourceId": "EIMS.Client",
       "SourceType": "Computed",
       "ContentRoot": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/EIMS.Client#[.{fingerprint=997y8udkp6}]!.wasm.gz",
+      "RelativePath": "_framework/EIMS.Client#[.{fingerprint=lfx97igmz2}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -6919,8 +6940,8 @@
       "RelatedAsset": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Client.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "w4txzvrwnv",
-      "Integrity": "wKD0GREfnkgeH83YhlQASK5VG10LR5j7MYojSWO6zds=",
+      "Fingerprint": "cdn46tc09n",
+      "Integrity": "sJYkMXtAa+edO2DyLsZ65uTxqkXnHa+zOCUMMP8uScs=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Client.wasm"
@@ -7388,7 +7409,7 @@
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.IO.Compression.Brotli.wasm"
     },
     {
-      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\impx7v5ola-7bhfgjtvao.gz",
+      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\impx7v5ola-yoxyrjy6gj.gz",
       "SourceId": "EIMS.Client",
       "SourceType": "Computed",
       "ContentRoot": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\",
@@ -7402,8 +7423,8 @@
       "RelatedAsset": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "qgtio4umr7",
-      "Integrity": "VpLMMP3U8d2OQ/QP9lchBm/svxKM0QWzrfIv9XeTgzQ=",
+      "Fingerprint": "bjok9dw7ci",
+      "Integrity": "N3Y5u8rjvFonI6T+jDH1Fy2hxQxOXBZU4kXyj7mdtHw=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -7661,12 +7682,12 @@
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Private.CoreLib.wasm"
     },
     {
-      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\l4co6lvy9s-ni304hq8g8.gz",
+      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\l4co6lvy9s-3uhwkspvdg.gz",
       "SourceId": "EIMS.Client",
       "SourceType": "Computed",
       "ContentRoot": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/EIMS.Shared#[.{fingerprint=ni304hq8g8}]!.wasm.gz",
+      "RelativePath": "_framework/EIMS.Shared#[.{fingerprint=3uhwkspvdg}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -7675,8 +7696,8 @@
       "RelatedAsset": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Shared.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "t8gncx2uvv",
-      "Integrity": "A/5XALV7zAaAg/orzyA0U1ocBtoNVvFuXwaOKuFPKpY=",
+      "Fingerprint": "f0tuvvt9fh",
+      "Integrity": "oabNOykJvxb+bcuaKfrdHl7ubKPf4o0NUq6uUrguFu8=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Shared.wasm"
@@ -8646,6 +8667,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\rvmunk9mm8-2smjoxpfyf.gz",
+      "SourceId": "EIMS.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "js/metaTags#[.{fingerprint=2smjoxpfyf}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "R:\\eims\\EIMS.Client\\wwwroot\\js\\metaTags.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "icvmxzr6g6",
+      "Integrity": "zlpJ8f+zpvDzMArmGwnBILp1dBkgPrcqS71QSKVNwes=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "R:\\eims\\EIMS.Client\\wwwroot\\js\\metaTags.js"
     },
     {
       "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\rw5dmarhgc-b282acjng3.gz",
@@ -10027,11 +10069,53 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vm35ionf7e",
-      "Integrity": "p4Pvxq5jP+0oq2rmzRU3BFkvSZNSPNK9FhSiq1X1KFk=",
+      "Fingerprint": "lel892jbok",
+      "Integrity": "Xf9kZIrZXYx5rrfIgg/KRsBW/dlaEXLdNjYAo+gJA7o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "R:\\eims\\EIMS.Client\\wwwroot\\js\\csp-disabler.js",
+      "SourceId": "EIMS.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "R:\\eims\\EIMS.Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "js/csp-disabler#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "f92cpkhns8",
+      "Integrity": "c++ByHXbB41Uci8j77ToOd+WPibGNfTx2sTNaCdVrhQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\csp-disabler.js"
+    },
+    {
+      "Identity": "R:\\eims\\EIMS.Client\\wwwroot\\js\\metaTags.js",
+      "SourceId": "EIMS.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "R:\\eims\\EIMS.Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "js/metaTags#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2smjoxpfyf",
+      "Integrity": "EoaANATMmNAdQUzLcJxrcClOoPRcGNSRBbFti0LoN2o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\metaTags.js"
     },
     {
       "Identity": "R:\\eims\\EIMS.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
@@ -10999,11 +11083,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"nS5ou4MpcxmR31kPR3MrJE9JpCtigVj/4PblrD9446E=\""
+          "Value": "\"EqbIvenmkaNzmpxK4JO16z+KsEpjQytM5LUXjmcdc6I=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 06:25:34 GMT"
+          "Value": "Tue, 01 Apr 2025 11:49:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11013,18 +11097,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-nS5ou4MpcxmR31kPR3MrJE9JpCtigVj/4PblrD9446E="
+          "Value": "sha256-EqbIvenmkaNzmpxK4JO16z+KsEpjQytM5LUXjmcdc6I="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\impx7v5ola-7bhfgjtvao.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\impx7v5ola-yoxyrjy6gj.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000078970228"
+          "Quality": "0.000078982703"
         }
       ],
       "ResponseHeaders": [
@@ -11034,15 +11118,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12662"
+          "Value": "12660"
         },
         {
           "Name": "ETag",
-          "Value": "\"VpLMMP3U8d2OQ/QP9lchBm/svxKM0QWzrfIv9XeTgzQ=\""
+          "Value": "\"N3Y5u8rjvFonI6T+jDH1Fy2hxQxOXBZU4kXyj7mdtHw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 06:25:08 GMT"
+          "Value": "Tue, 01 Apr 2025 11:46:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11062,19 +11146,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"nS5ou4MpcxmR31kPR3MrJE9JpCtigVj/4PblrD9446E=\""
+          "Value": "W/\"EqbIvenmkaNzmpxK4JO16z+KsEpjQytM5LUXjmcdc6I=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-nS5ou4MpcxmR31kPR3MrJE9JpCtigVj/4PblrD9446E="
+          "Value": "sha256-EqbIvenmkaNzmpxK4JO16z+KsEpjQytM5LUXjmcdc6I="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\impx7v5ola-7bhfgjtvao.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\impx7v5ola-yoxyrjy6gj.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11083,7 +11167,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12662"
+          "Value": "12660"
         },
         {
           "Name": "Content-Type",
@@ -11091,11 +11175,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"VpLMMP3U8d2OQ/QP9lchBm/svxKM0QWzrfIv9XeTgzQ=\""
+          "Value": "\"N3Y5u8rjvFonI6T+jDH1Fy2hxQxOXBZU4kXyj7mdtHw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 06:25:08 GMT"
+          "Value": "Tue, 01 Apr 2025 11:46:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11113,7 +11197,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-VpLMMP3U8d2OQ/QP9lchBm/svxKM0QWzrfIv9XeTgzQ="
+          "Value": "sha256-N3Y5u8rjvFonI6T+jDH1Fy2hxQxOXBZU4kXyj7mdtHw="
         }
       ]
     },
@@ -13043,168 +13127,7 @@
       ]
     },
     {
-      "Route": "_framework/EIMS.Client.87kvs313cs.pdb",
-      "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Client.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "60672"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"/C8GkzM68wuWFzM9aVFfeBkl2IoLMli8uOhkCJXlNwE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 06:25:06 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "87kvs313cs"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/EIMS.Client.pdb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-/C8GkzM68wuWFzM9aVFfeBkl2IoLMli8uOhkCJXlNwE="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/EIMS.Client.87kvs313cs.pdb",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\7m8e22702s-87kvs313cs.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000021761838"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "45951"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"hU+jbwPiy3iM0ZUtfxOc1TERFPI1zqzvFBSBTMpBr5k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 06:25:08 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"/C8GkzM68wuWFzM9aVFfeBkl2IoLMli8uOhkCJXlNwE=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "87kvs313cs"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/EIMS.Client.pdb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-/C8GkzM68wuWFzM9aVFfeBkl2IoLMli8uOhkCJXlNwE="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/EIMS.Client.87kvs313cs.pdb.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\7m8e22702s-87kvs313cs.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "45951"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"hU+jbwPiy3iM0ZUtfxOc1TERFPI1zqzvFBSBTMpBr5k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 06:25:08 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "87kvs313cs"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/EIMS.Client.pdb.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-hU+jbwPiy3iM0ZUtfxOc1TERFPI1zqzvFBSBTMpBr5k="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/EIMS.Client.997y8udkp6.wasm",
+      "Route": "_framework/EIMS.Client.lfx97igmz2.wasm",
       "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Client.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -13214,7 +13137,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "120085"
+          "Value": "164629"
         },
         {
           "Name": "Content-Type",
@@ -13222,11 +13145,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"PWlGs1wr+Z9TijKWyEUvhwXNgiwExAF9qVpN5GgJGFg=\""
+          "Value": "\"gYBvxnp7CC5KLem3Rhubaj6AB/X4FLYlOiXAjUo04IY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 12:00:00 GMT"
+          "Value": "Tue, 01 Apr 2025 11:46:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13236,7 +13159,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "997y8udkp6"
+          "Value": "lfx97igmz2"
         },
         {
           "Name": "label",
@@ -13244,18 +13167,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-PWlGs1wr+Z9TijKWyEUvhwXNgiwExAF9qVpN5GgJGFg="
+          "Value": "sha256-gYBvxnp7CC5KLem3Rhubaj6AB/X4FLYlOiXAjUo04IY="
         }
       ]
     },
     {
-      "Route": "_framework/EIMS.Client.997y8udkp6.wasm",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\g73dg0ij4v-997y8udkp6.gz",
+      "Route": "_framework/EIMS.Client.lfx97igmz2.wasm",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\g73dg0ij4v-lfx97igmz2.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000026485155"
+          "Quality": "0.000018675531"
         }
       ],
       "ResponseHeaders": [
@@ -13265,15 +13188,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "37756"
+          "Value": "53545"
         },
         {
           "Name": "ETag",
-          "Value": "\"wKD0GREfnkgeH83YhlQASK5VG10LR5j7MYojSWO6zds=\""
+          "Value": "\"sJYkMXtAa+edO2DyLsZ65uTxqkXnHa+zOCUMMP8uScs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 12:00:01 GMT"
+          "Value": "Tue, 01 Apr 2025 11:46:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13293,13 +13216,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"PWlGs1wr+Z9TijKWyEUvhwXNgiwExAF9qVpN5GgJGFg=\""
+          "Value": "W/\"gYBvxnp7CC5KLem3Rhubaj6AB/X4FLYlOiXAjUo04IY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "997y8udkp6"
+          "Value": "lfx97igmz2"
         },
         {
           "Name": "label",
@@ -13307,13 +13230,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-PWlGs1wr+Z9TijKWyEUvhwXNgiwExAF9qVpN5GgJGFg="
+          "Value": "sha256-gYBvxnp7CC5KLem3Rhubaj6AB/X4FLYlOiXAjUo04IY="
         }
       ]
     },
     {
-      "Route": "_framework/EIMS.Client.997y8udkp6.wasm.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\g73dg0ij4v-997y8udkp6.gz",
+      "Route": "_framework/EIMS.Client.lfx97igmz2.wasm.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\g73dg0ij4v-lfx97igmz2.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13322,7 +13245,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "37756"
+          "Value": "53545"
         },
         {
           "Name": "Content-Type",
@@ -13330,11 +13253,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wKD0GREfnkgeH83YhlQASK5VG10LR5j7MYojSWO6zds=\""
+          "Value": "\"sJYkMXtAa+edO2DyLsZ65uTxqkXnHa+zOCUMMP8uScs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 12:00:01 GMT"
+          "Value": "Tue, 01 Apr 2025 11:46:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13352,7 +13275,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "997y8udkp6"
+          "Value": "lfx97igmz2"
         },
         {
           "Name": "label",
@@ -13360,7 +13283,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-wKD0GREfnkgeH83YhlQASK5VG10LR5j7MYojSWO6zds="
+          "Value": "sha256-sJYkMXtAa+edO2DyLsZ65uTxqkXnHa+zOCUMMP8uScs="
         }
       ]
     },
@@ -13375,7 +13298,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "60672"
+          "Value": "78092"
         },
         {
           "Name": "Content-Type",
@@ -13383,11 +13306,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/C8GkzM68wuWFzM9aVFfeBkl2IoLMli8uOhkCJXlNwE=\""
+          "Value": "\"irkopO3gek1lDwQ36LsWDg+6Eeh8JXiAFrTf18i8/0k=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 06:25:06 GMT"
+          "Value": "Tue, 01 Apr 2025 11:46:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13397,18 +13320,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-/C8GkzM68wuWFzM9aVFfeBkl2IoLMli8uOhkCJXlNwE="
+          "Value": "sha256-irkopO3gek1lDwQ36LsWDg+6Eeh8JXiAFrTf18i8/0k="
         }
       ]
     },
     {
       "Route": "_framework/EIMS.Client.pdb",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\7m8e22702s-87kvs313cs.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\7m8e22702s-y22o16m3kd.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000021761838"
+          "Quality": "0.000017319016"
         }
       ],
       "ResponseHeaders": [
@@ -13418,15 +13341,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "45951"
+          "Value": "57739"
         },
         {
           "Name": "ETag",
-          "Value": "\"hU+jbwPiy3iM0ZUtfxOc1TERFPI1zqzvFBSBTMpBr5k=\""
+          "Value": "\"YApHjxldzCjpexsBsQvfq5l3Wntp6NbJuHGUsYWggKs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 06:25:08 GMT"
+          "Value": "Tue, 01 Apr 2025 11:46:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13446,19 +13369,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"/C8GkzM68wuWFzM9aVFfeBkl2IoLMli8uOhkCJXlNwE=\""
+          "Value": "W/\"irkopO3gek1lDwQ36LsWDg+6Eeh8JXiAFrTf18i8/0k=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-/C8GkzM68wuWFzM9aVFfeBkl2IoLMli8uOhkCJXlNwE="
+          "Value": "sha256-irkopO3gek1lDwQ36LsWDg+6Eeh8JXiAFrTf18i8/0k="
         }
       ]
     },
     {
       "Route": "_framework/EIMS.Client.pdb.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\7m8e22702s-87kvs313cs.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\7m8e22702s-y22o16m3kd.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13467,7 +13390,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "45951"
+          "Value": "57739"
         },
         {
           "Name": "Content-Type",
@@ -13475,11 +13398,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hU+jbwPiy3iM0ZUtfxOc1TERFPI1zqzvFBSBTMpBr5k=\""
+          "Value": "\"YApHjxldzCjpexsBsQvfq5l3Wntp6NbJuHGUsYWggKs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 06:25:08 GMT"
+          "Value": "Tue, 01 Apr 2025 11:46:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13497,7 +13420,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hU+jbwPiy3iM0ZUtfxOc1TERFPI1zqzvFBSBTMpBr5k="
+          "Value": "sha256-YApHjxldzCjpexsBsQvfq5l3Wntp6NbJuHGUsYWggKs="
         }
       ]
     },
@@ -13512,7 +13435,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "120085"
+          "Value": "164629"
         },
         {
           "Name": "Content-Type",
@@ -13520,11 +13443,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"PWlGs1wr+Z9TijKWyEUvhwXNgiwExAF9qVpN5GgJGFg=\""
+          "Value": "\"gYBvxnp7CC5KLem3Rhubaj6AB/X4FLYlOiXAjUo04IY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 12:00:00 GMT"
+          "Value": "Tue, 01 Apr 2025 11:46:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13534,18 +13457,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-PWlGs1wr+Z9TijKWyEUvhwXNgiwExAF9qVpN5GgJGFg="
+          "Value": "sha256-gYBvxnp7CC5KLem3Rhubaj6AB/X4FLYlOiXAjUo04IY="
         }
       ]
     },
     {
       "Route": "_framework/EIMS.Client.wasm",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\g73dg0ij4v-997y8udkp6.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\g73dg0ij4v-lfx97igmz2.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000026485155"
+          "Quality": "0.000018675531"
         }
       ],
       "ResponseHeaders": [
@@ -13555,15 +13478,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "37756"
+          "Value": "53545"
         },
         {
           "Name": "ETag",
-          "Value": "\"wKD0GREfnkgeH83YhlQASK5VG10LR5j7MYojSWO6zds=\""
+          "Value": "\"sJYkMXtAa+edO2DyLsZ65uTxqkXnHa+zOCUMMP8uScs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 12:00:01 GMT"
+          "Value": "Tue, 01 Apr 2025 11:46:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13583,19 +13506,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"PWlGs1wr+Z9TijKWyEUvhwXNgiwExAF9qVpN5GgJGFg=\""
+          "Value": "W/\"gYBvxnp7CC5KLem3Rhubaj6AB/X4FLYlOiXAjUo04IY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-PWlGs1wr+Z9TijKWyEUvhwXNgiwExAF9qVpN5GgJGFg="
+          "Value": "sha256-gYBvxnp7CC5KLem3Rhubaj6AB/X4FLYlOiXAjUo04IY="
         }
       ]
     },
     {
       "Route": "_framework/EIMS.Client.wasm.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\g73dg0ij4v-997y8udkp6.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\g73dg0ij4v-lfx97igmz2.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13604,7 +13527,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "37756"
+          "Value": "53545"
         },
         {
           "Name": "Content-Type",
@@ -13612,11 +13535,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wKD0GREfnkgeH83YhlQASK5VG10LR5j7MYojSWO6zds=\""
+          "Value": "\"sJYkMXtAa+edO2DyLsZ65uTxqkXnHa+zOCUMMP8uScs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 12:00:01 GMT"
+          "Value": "Tue, 01 Apr 2025 11:46:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13634,12 +13557,173 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-wKD0GREfnkgeH83YhlQASK5VG10LR5j7MYojSWO6zds="
+          "Value": "sha256-sJYkMXtAa+edO2DyLsZ65uTxqkXnHa+zOCUMMP8uScs="
         }
       ]
     },
     {
-      "Route": "_framework/EIMS.Shared.1qyirr3jg2.pdb",
+      "Route": "_framework/EIMS.Client.y22o16m3kd.pdb",
+      "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Client.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "78092"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"irkopO3gek1lDwQ36LsWDg+6Eeh8JXiAFrTf18i8/0k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 11:46:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y22o16m3kd"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/EIMS.Client.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-irkopO3gek1lDwQ36LsWDg+6Eeh8JXiAFrTf18i8/0k="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/EIMS.Client.y22o16m3kd.pdb",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\7m8e22702s-y22o16m3kd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000017319016"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57739"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YApHjxldzCjpexsBsQvfq5l3Wntp6NbJuHGUsYWggKs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 11:46:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"irkopO3gek1lDwQ36LsWDg+6Eeh8JXiAFrTf18i8/0k=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y22o16m3kd"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/EIMS.Client.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-irkopO3gek1lDwQ36LsWDg+6Eeh8JXiAFrTf18i8/0k="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/EIMS.Client.y22o16m3kd.pdb.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\7m8e22702s-y22o16m3kd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57739"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YApHjxldzCjpexsBsQvfq5l3Wntp6NbJuHGUsYWggKs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 11:46:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y22o16m3kd"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/EIMS.Client.pdb.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YApHjxldzCjpexsBsQvfq5l3Wntp6NbJuHGUsYWggKs="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/EIMS.Shared.2hd3imxvwv.pdb",
       "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Shared.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -13649,7 +13733,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "16440"
+          "Value": "16516"
         },
         {
           "Name": "Content-Type",
@@ -13657,11 +13741,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"t0jLJana5Grs5+njGrBL7uLvBQ0PJF/mJCRrND+fjQA=\""
+          "Value": "\"9qDQydYbEfEm6P5fVo3BkisJohBY7xU4Mj91FBJpbzk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 10:50:45 GMT"
+          "Value": "Tue, 01 Apr 2025 08:42:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13671,7 +13755,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1qyirr3jg2"
+          "Value": "2hd3imxvwv"
         },
         {
           "Name": "label",
@@ -13679,18 +13763,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-t0jLJana5Grs5+njGrBL7uLvBQ0PJF/mJCRrND+fjQA="
+          "Value": "sha256-9qDQydYbEfEm6P5fVo3BkisJohBY7xU4Mj91FBJpbzk="
         }
       ]
     },
     {
-      "Route": "_framework/EIMS.Shared.1qyirr3jg2.pdb",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\661czh662j-1qyirr3jg2.gz",
+      "Route": "_framework/EIMS.Shared.2hd3imxvwv.pdb",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\661czh662j-2hd3imxvwv.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000117164616"
+          "Quality": "0.000115901715"
         }
       ],
       "ResponseHeaders": [
@@ -13700,15 +13784,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8534"
+          "Value": "8627"
         },
         {
           "Name": "ETag",
-          "Value": "\"3CmWqyxa07f67dbcaLYhy6TkUs81lPEvqkKh8aSkdoc=\""
+          "Value": "\"x5T94M3vbil6MJOsPp7ukIsQ2+/uPN8Vh3BeEovTKu0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 10:50:47 GMT"
+          "Value": "Tue, 01 Apr 2025 10:44:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13728,13 +13812,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"t0jLJana5Grs5+njGrBL7uLvBQ0PJF/mJCRrND+fjQA=\""
+          "Value": "W/\"9qDQydYbEfEm6P5fVo3BkisJohBY7xU4Mj91FBJpbzk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1qyirr3jg2"
+          "Value": "2hd3imxvwv"
         },
         {
           "Name": "label",
@@ -13742,13 +13826,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-t0jLJana5Grs5+njGrBL7uLvBQ0PJF/mJCRrND+fjQA="
+          "Value": "sha256-9qDQydYbEfEm6P5fVo3BkisJohBY7xU4Mj91FBJpbzk="
         }
       ]
     },
     {
-      "Route": "_framework/EIMS.Shared.1qyirr3jg2.pdb.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\661czh662j-1qyirr3jg2.gz",
+      "Route": "_framework/EIMS.Shared.2hd3imxvwv.pdb.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\661czh662j-2hd3imxvwv.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13757,7 +13841,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8534"
+          "Value": "8627"
         },
         {
           "Name": "Content-Type",
@@ -13765,11 +13849,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3CmWqyxa07f67dbcaLYhy6TkUs81lPEvqkKh8aSkdoc=\""
+          "Value": "\"x5T94M3vbil6MJOsPp7ukIsQ2+/uPN8Vh3BeEovTKu0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 10:50:47 GMT"
+          "Value": "Tue, 01 Apr 2025 10:44:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13787,7 +13871,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1qyirr3jg2"
+          "Value": "2hd3imxvwv"
         },
         {
           "Name": "label",
@@ -13795,12 +13879,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-3CmWqyxa07f67dbcaLYhy6TkUs81lPEvqkKh8aSkdoc="
+          "Value": "sha256-x5T94M3vbil6MJOsPp7ukIsQ2+/uPN8Vh3BeEovTKu0="
         }
       ]
     },
     {
-      "Route": "_framework/EIMS.Shared.ni304hq8g8.wasm",
+      "Route": "_framework/EIMS.Shared.3uhwkspvdg.wasm",
       "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Shared.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -13818,11 +13902,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zxm1rpCFT7QW5eACZTM0KyJ2t1nx/G+ERrbzyHwgJXM=\""
+          "Value": "\"S/ZwoczoAv8/oUCzM2qReW40TcFMt6K2Rcp5ZbL3q0c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 10:50:46 GMT"
+          "Value": "Tue, 01 Apr 2025 10:44:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13832,7 +13916,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ni304hq8g8"
+          "Value": "3uhwkspvdg"
         },
         {
           "Name": "label",
@@ -13840,18 +13924,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-zxm1rpCFT7QW5eACZTM0KyJ2t1nx/G+ERrbzyHwgJXM="
+          "Value": "sha256-S/ZwoczoAv8/oUCzM2qReW40TcFMt6K2Rcp5ZbL3q0c="
         }
       ]
     },
     {
-      "Route": "_framework/EIMS.Shared.ni304hq8g8.wasm",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\l4co6lvy9s-ni304hq8g8.gz",
+      "Route": "_framework/EIMS.Shared.3uhwkspvdg.wasm",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\l4co6lvy9s-3uhwkspvdg.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000127567292"
+          "Quality": "0.000125928724"
         }
       ],
       "ResponseHeaders": [
@@ -13861,15 +13945,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7838"
+          "Value": "7940"
         },
         {
           "Name": "ETag",
-          "Value": "\"A/5XALV7zAaAg/orzyA0U1ocBtoNVvFuXwaOKuFPKpY=\""
+          "Value": "\"oabNOykJvxb+bcuaKfrdHl7ubKPf4o0NUq6uUrguFu8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 10:50:47 GMT"
+          "Value": "Tue, 01 Apr 2025 10:44:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13889,13 +13973,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"zxm1rpCFT7QW5eACZTM0KyJ2t1nx/G+ERrbzyHwgJXM=\""
+          "Value": "W/\"S/ZwoczoAv8/oUCzM2qReW40TcFMt6K2Rcp5ZbL3q0c=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ni304hq8g8"
+          "Value": "3uhwkspvdg"
         },
         {
           "Name": "label",
@@ -13903,13 +13987,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-zxm1rpCFT7QW5eACZTM0KyJ2t1nx/G+ERrbzyHwgJXM="
+          "Value": "sha256-S/ZwoczoAv8/oUCzM2qReW40TcFMt6K2Rcp5ZbL3q0c="
         }
       ]
     },
     {
-      "Route": "_framework/EIMS.Shared.ni304hq8g8.wasm.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\l4co6lvy9s-ni304hq8g8.gz",
+      "Route": "_framework/EIMS.Shared.3uhwkspvdg.wasm.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\l4co6lvy9s-3uhwkspvdg.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13918,7 +14002,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7838"
+          "Value": "7940"
         },
         {
           "Name": "Content-Type",
@@ -13926,11 +14010,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"A/5XALV7zAaAg/orzyA0U1ocBtoNVvFuXwaOKuFPKpY=\""
+          "Value": "\"oabNOykJvxb+bcuaKfrdHl7ubKPf4o0NUq6uUrguFu8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 10:50:47 GMT"
+          "Value": "Tue, 01 Apr 2025 10:44:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13948,7 +14032,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ni304hq8g8"
+          "Value": "3uhwkspvdg"
         },
         {
           "Name": "label",
@@ -13956,7 +14040,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-A/5XALV7zAaAg/orzyA0U1ocBtoNVvFuXwaOKuFPKpY="
+          "Value": "sha256-oabNOykJvxb+bcuaKfrdHl7ubKPf4o0NUq6uUrguFu8="
         }
       ]
     },
@@ -13971,7 +14055,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "16440"
+          "Value": "16516"
         },
         {
           "Name": "Content-Type",
@@ -13979,11 +14063,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"t0jLJana5Grs5+njGrBL7uLvBQ0PJF/mJCRrND+fjQA=\""
+          "Value": "\"9qDQydYbEfEm6P5fVo3BkisJohBY7xU4Mj91FBJpbzk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 10:50:45 GMT"
+          "Value": "Tue, 01 Apr 2025 08:42:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13993,18 +14077,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-t0jLJana5Grs5+njGrBL7uLvBQ0PJF/mJCRrND+fjQA="
+          "Value": "sha256-9qDQydYbEfEm6P5fVo3BkisJohBY7xU4Mj91FBJpbzk="
         }
       ]
     },
     {
       "Route": "_framework/EIMS.Shared.pdb",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\661czh662j-1qyirr3jg2.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\661czh662j-2hd3imxvwv.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000117164616"
+          "Quality": "0.000115901715"
         }
       ],
       "ResponseHeaders": [
@@ -14014,15 +14098,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8534"
+          "Value": "8627"
         },
         {
           "Name": "ETag",
-          "Value": "\"3CmWqyxa07f67dbcaLYhy6TkUs81lPEvqkKh8aSkdoc=\""
+          "Value": "\"x5T94M3vbil6MJOsPp7ukIsQ2+/uPN8Vh3BeEovTKu0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 10:50:47 GMT"
+          "Value": "Tue, 01 Apr 2025 10:44:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14042,19 +14126,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"t0jLJana5Grs5+njGrBL7uLvBQ0PJF/mJCRrND+fjQA=\""
+          "Value": "W/\"9qDQydYbEfEm6P5fVo3BkisJohBY7xU4Mj91FBJpbzk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-t0jLJana5Grs5+njGrBL7uLvBQ0PJF/mJCRrND+fjQA="
+          "Value": "sha256-9qDQydYbEfEm6P5fVo3BkisJohBY7xU4Mj91FBJpbzk="
         }
       ]
     },
     {
       "Route": "_framework/EIMS.Shared.pdb.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\661czh662j-1qyirr3jg2.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\661czh662j-2hd3imxvwv.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14063,7 +14147,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8534"
+          "Value": "8627"
         },
         {
           "Name": "Content-Type",
@@ -14071,11 +14155,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3CmWqyxa07f67dbcaLYhy6TkUs81lPEvqkKh8aSkdoc=\""
+          "Value": "\"x5T94M3vbil6MJOsPp7ukIsQ2+/uPN8Vh3BeEovTKu0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 10:50:47 GMT"
+          "Value": "Tue, 01 Apr 2025 10:44:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14093,7 +14177,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-3CmWqyxa07f67dbcaLYhy6TkUs81lPEvqkKh8aSkdoc="
+          "Value": "sha256-x5T94M3vbil6MJOsPp7ukIsQ2+/uPN8Vh3BeEovTKu0="
         }
       ]
     },
@@ -14116,11 +14200,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zxm1rpCFT7QW5eACZTM0KyJ2t1nx/G+ERrbzyHwgJXM=\""
+          "Value": "\"S/ZwoczoAv8/oUCzM2qReW40TcFMt6K2Rcp5ZbL3q0c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 10:50:46 GMT"
+          "Value": "Tue, 01 Apr 2025 10:44:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14130,18 +14214,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-zxm1rpCFT7QW5eACZTM0KyJ2t1nx/G+ERrbzyHwgJXM="
+          "Value": "sha256-S/ZwoczoAv8/oUCzM2qReW40TcFMt6K2Rcp5ZbL3q0c="
         }
       ]
     },
     {
       "Route": "_framework/EIMS.Shared.wasm",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\l4co6lvy9s-ni304hq8g8.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\l4co6lvy9s-3uhwkspvdg.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000127567292"
+          "Quality": "0.000125928724"
         }
       ],
       "ResponseHeaders": [
@@ -14151,15 +14235,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7838"
+          "Value": "7940"
         },
         {
           "Name": "ETag",
-          "Value": "\"A/5XALV7zAaAg/orzyA0U1ocBtoNVvFuXwaOKuFPKpY=\""
+          "Value": "\"oabNOykJvxb+bcuaKfrdHl7ubKPf4o0NUq6uUrguFu8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 10:50:47 GMT"
+          "Value": "Tue, 01 Apr 2025 10:44:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14179,19 +14263,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"zxm1rpCFT7QW5eACZTM0KyJ2t1nx/G+ERrbzyHwgJXM=\""
+          "Value": "W/\"S/ZwoczoAv8/oUCzM2qReW40TcFMt6K2Rcp5ZbL3q0c=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-zxm1rpCFT7QW5eACZTM0KyJ2t1nx/G+ERrbzyHwgJXM="
+          "Value": "sha256-S/ZwoczoAv8/oUCzM2qReW40TcFMt6K2Rcp5ZbL3q0c="
         }
       ]
     },
     {
       "Route": "_framework/EIMS.Shared.wasm.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\l4co6lvy9s-ni304hq8g8.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\l4co6lvy9s-3uhwkspvdg.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14200,7 +14284,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7838"
+          "Value": "7940"
         },
         {
           "Name": "Content-Type",
@@ -14208,11 +14292,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"A/5XALV7zAaAg/orzyA0U1ocBtoNVvFuXwaOKuFPKpY=\""
+          "Value": "\"oabNOykJvxb+bcuaKfrdHl7ubKPf4o0NUq6uUrguFu8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 10:50:47 GMT"
+          "Value": "Tue, 01 Apr 2025 10:44:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14230,7 +14314,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-A/5XALV7zAaAg/orzyA0U1ocBtoNVvFuXwaOKuFPKpY="
+          "Value": "sha256-oabNOykJvxb+bcuaKfrdHl7ubKPf4o0NUq6uUrguFu8="
         }
       ]
     },
@@ -74596,12 +74680,12 @@
     },
     {
       "Route": "index.html",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\bsbz2n03ta-vm35ionf7e.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\bsbz2n03ta-lel892jbok.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000297000297"
+          "Quality": "0.000301659125"
         }
       ],
       "ResponseHeaders": [
@@ -74611,15 +74695,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3366"
+          "Value": "3314"
         },
         {
           "Name": "ETag",
-          "Value": "\"6tPaooMWZ/3frcszMoXpw21o1Utk0rIrzeFvB4SbjKc=\""
+          "Value": "\"RP5gj3/IeKEGHB4nsSezNS88Rz1JpheoIarw/LOmq2I=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 11:26:58 GMT"
+          "Value": "Tue, 01 Apr 2025 11:30:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -74639,13 +74723,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"p4Pvxq5jP+0oq2rmzRU3BFkvSZNSPNK9FhSiq1X1KFk=\""
+          "Value": "W/\"Xf9kZIrZXYx5rrfIgg/KRsBW/dlaEXLdNjYAo+gJA7o=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-p4Pvxq5jP+0oq2rmzRU3BFkvSZNSPNK9FhSiq1X1KFk="
+          "Value": "sha256-Xf9kZIrZXYx5rrfIgg/KRsBW/dlaEXLdNjYAo+gJA7o="
         }
       ]
     },
@@ -74660,7 +74744,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6053"
+          "Value": "5817"
         },
         {
           "Name": "Content-Type",
@@ -74668,11 +74752,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"p4Pvxq5jP+0oq2rmzRU3BFkvSZNSPNK9FhSiq1X1KFk=\""
+          "Value": "\"Xf9kZIrZXYx5rrfIgg/KRsBW/dlaEXLdNjYAo+gJA7o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 11:26:58 GMT"
+          "Value": "Tue, 01 Apr 2025 11:30:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -74682,13 +74766,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-p4Pvxq5jP+0oq2rmzRU3BFkvSZNSPNK9FhSiq1X1KFk="
+          "Value": "sha256-Xf9kZIrZXYx5rrfIgg/KRsBW/dlaEXLdNjYAo+gJA7o="
         }
       ]
     },
     {
       "Route": "index.html.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\bsbz2n03ta-vm35ionf7e.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\bsbz2n03ta-lel892jbok.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -74697,7 +74781,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3366"
+          "Value": "3314"
         },
         {
           "Name": "Content-Type",
@@ -74705,11 +74789,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6tPaooMWZ/3frcszMoXpw21o1Utk0rIrzeFvB4SbjKc=\""
+          "Value": "\"RP5gj3/IeKEGHB4nsSezNS88Rz1JpheoIarw/LOmq2I=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 11:26:58 GMT"
+          "Value": "Tue, 01 Apr 2025 11:30:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -74727,18 +74811,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-6tPaooMWZ/3frcszMoXpw21o1Utk0rIrzeFvB4SbjKc="
+          "Value": "sha256-RP5gj3/IeKEGHB4nsSezNS88Rz1JpheoIarw/LOmq2I="
         }
       ]
     },
     {
-      "Route": "index.vm35ionf7e.html",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\bsbz2n03ta-vm35ionf7e.gz",
+      "Route": "index.lel892jbok.html",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\bsbz2n03ta-lel892jbok.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000297000297"
+          "Quality": "0.000301659125"
         }
       ],
       "ResponseHeaders": [
@@ -74748,15 +74832,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3366"
+          "Value": "3314"
         },
         {
           "Name": "ETag",
-          "Value": "\"6tPaooMWZ/3frcszMoXpw21o1Utk0rIrzeFvB4SbjKc=\""
+          "Value": "\"RP5gj3/IeKEGHB4nsSezNS88Rz1JpheoIarw/LOmq2I=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 11:26:58 GMT"
+          "Value": "Tue, 01 Apr 2025 11:30:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -74776,13 +74860,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"p4Pvxq5jP+0oq2rmzRU3BFkvSZNSPNK9FhSiq1X1KFk=\""
+          "Value": "W/\"Xf9kZIrZXYx5rrfIgg/KRsBW/dlaEXLdNjYAo+gJA7o=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vm35ionf7e"
+          "Value": "lel892jbok"
         },
         {
           "Name": "label",
@@ -74790,12 +74874,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-p4Pvxq5jP+0oq2rmzRU3BFkvSZNSPNK9FhSiq1X1KFk="
+          "Value": "sha256-Xf9kZIrZXYx5rrfIgg/KRsBW/dlaEXLdNjYAo+gJA7o="
         }
       ]
     },
     {
-      "Route": "index.vm35ionf7e.html",
+      "Route": "index.lel892jbok.html",
       "AssetFile": "R:\\eims\\EIMS.Client\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -74805,7 +74889,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6053"
+          "Value": "5817"
         },
         {
           "Name": "Content-Type",
@@ -74813,11 +74897,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"p4Pvxq5jP+0oq2rmzRU3BFkvSZNSPNK9FhSiq1X1KFk=\""
+          "Value": "\"Xf9kZIrZXYx5rrfIgg/KRsBW/dlaEXLdNjYAo+gJA7o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 11:26:58 GMT"
+          "Value": "Tue, 01 Apr 2025 11:30:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -74827,7 +74911,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vm35ionf7e"
+          "Value": "lel892jbok"
         },
         {
           "Name": "label",
@@ -74835,13 +74919,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-p4Pvxq5jP+0oq2rmzRU3BFkvSZNSPNK9FhSiq1X1KFk="
+          "Value": "sha256-Xf9kZIrZXYx5rrfIgg/KRsBW/dlaEXLdNjYAo+gJA7o="
         }
       ]
     },
     {
-      "Route": "index.vm35ionf7e.html.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\bsbz2n03ta-vm35ionf7e.gz",
+      "Route": "index.lel892jbok.html.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\bsbz2n03ta-lel892jbok.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -74850,7 +74934,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3366"
+          "Value": "3314"
         },
         {
           "Name": "Content-Type",
@@ -74858,11 +74942,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6tPaooMWZ/3frcszMoXpw21o1Utk0rIrzeFvB4SbjKc=\""
+          "Value": "\"RP5gj3/IeKEGHB4nsSezNS88Rz1JpheoIarw/LOmq2I=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 11:26:58 GMT"
+          "Value": "Tue, 01 Apr 2025 11:30:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -74880,7 +74964,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vm35ionf7e"
+          "Value": "lel892jbok"
         },
         {
           "Name": "label",
@@ -74888,7 +74972,603 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-6tPaooMWZ/3frcszMoXpw21o1Utk0rIrzeFvB4SbjKc="
+          "Value": "sha256-RP5gj3/IeKEGHB4nsSezNS88Rz1JpheoIarw/LOmq2I="
+        }
+      ]
+    },
+    {
+      "Route": "js/csp-disabler.f92cpkhns8.js",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\97gce4p1ya-f92cpkhns8.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000966183575"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1034"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hgFkYK6IlP+Mho1N3I7fpZAnPo6MGMttg1IJFn/9a10=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 11:48:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"c++ByHXbB41Uci8j77ToOd+WPibGNfTx2sTNaCdVrhQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f92cpkhns8"
+        },
+        {
+          "Name": "label",
+          "Value": "js/csp-disabler.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-c++ByHXbB41Uci8j77ToOd+WPibGNfTx2sTNaCdVrhQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/csp-disabler.f92cpkhns8.js",
+      "AssetFile": "R:\\eims\\EIMS.Client\\wwwroot\\js\\csp-disabler.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2567"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c++ByHXbB41Uci8j77ToOd+WPibGNfTx2sTNaCdVrhQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 11:48:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f92cpkhns8"
+        },
+        {
+          "Name": "label",
+          "Value": "js/csp-disabler.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-c++ByHXbB41Uci8j77ToOd+WPibGNfTx2sTNaCdVrhQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/csp-disabler.f92cpkhns8.js.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\97gce4p1ya-f92cpkhns8.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1034"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hgFkYK6IlP+Mho1N3I7fpZAnPo6MGMttg1IJFn/9a10=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 11:48:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f92cpkhns8"
+        },
+        {
+          "Name": "label",
+          "Value": "js/csp-disabler.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hgFkYK6IlP+Mho1N3I7fpZAnPo6MGMttg1IJFn/9a10="
+        }
+      ]
+    },
+    {
+      "Route": "js/csp-disabler.js",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\97gce4p1ya-f92cpkhns8.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000966183575"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1034"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hgFkYK6IlP+Mho1N3I7fpZAnPo6MGMttg1IJFn/9a10=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 11:48:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"c++ByHXbB41Uci8j77ToOd+WPibGNfTx2sTNaCdVrhQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-c++ByHXbB41Uci8j77ToOd+WPibGNfTx2sTNaCdVrhQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/csp-disabler.js",
+      "AssetFile": "R:\\eims\\EIMS.Client\\wwwroot\\js\\csp-disabler.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2567"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c++ByHXbB41Uci8j77ToOd+WPibGNfTx2sTNaCdVrhQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 11:48:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-c++ByHXbB41Uci8j77ToOd+WPibGNfTx2sTNaCdVrhQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/csp-disabler.js.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\97gce4p1ya-f92cpkhns8.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1034"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hgFkYK6IlP+Mho1N3I7fpZAnPo6MGMttg1IJFn/9a10=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 11:48:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hgFkYK6IlP+Mho1N3I7fpZAnPo6MGMttg1IJFn/9a10="
+        }
+      ]
+    },
+    {
+      "Route": "js/metaTags.2smjoxpfyf.js",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\rvmunk9mm8-2smjoxpfyf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001240694789"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "805"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zlpJ8f+zpvDzMArmGwnBILp1dBkgPrcqS71QSKVNwes=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 11:17:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"EoaANATMmNAdQUzLcJxrcClOoPRcGNSRBbFti0LoN2o=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2smjoxpfyf"
+        },
+        {
+          "Name": "label",
+          "Value": "js/metaTags.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EoaANATMmNAdQUzLcJxrcClOoPRcGNSRBbFti0LoN2o="
+        }
+      ]
+    },
+    {
+      "Route": "js/metaTags.2smjoxpfyf.js",
+      "AssetFile": "R:\\eims\\EIMS.Client\\wwwroot\\js\\metaTags.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2061"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EoaANATMmNAdQUzLcJxrcClOoPRcGNSRBbFti0LoN2o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 11:17:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2smjoxpfyf"
+        },
+        {
+          "Name": "label",
+          "Value": "js/metaTags.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EoaANATMmNAdQUzLcJxrcClOoPRcGNSRBbFti0LoN2o="
+        }
+      ]
+    },
+    {
+      "Route": "js/metaTags.2smjoxpfyf.js.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\rvmunk9mm8-2smjoxpfyf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "805"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zlpJ8f+zpvDzMArmGwnBILp1dBkgPrcqS71QSKVNwes=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 11:17:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2smjoxpfyf"
+        },
+        {
+          "Name": "label",
+          "Value": "js/metaTags.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zlpJ8f+zpvDzMArmGwnBILp1dBkgPrcqS71QSKVNwes="
+        }
+      ]
+    },
+    {
+      "Route": "js/metaTags.js",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\rvmunk9mm8-2smjoxpfyf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001240694789"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "805"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zlpJ8f+zpvDzMArmGwnBILp1dBkgPrcqS71QSKVNwes=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 11:17:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"EoaANATMmNAdQUzLcJxrcClOoPRcGNSRBbFti0LoN2o=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EoaANATMmNAdQUzLcJxrcClOoPRcGNSRBbFti0LoN2o="
+        }
+      ]
+    },
+    {
+      "Route": "js/metaTags.js",
+      "AssetFile": "R:\\eims\\EIMS.Client\\wwwroot\\js\\metaTags.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2061"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EoaANATMmNAdQUzLcJxrcClOoPRcGNSRBbFti0LoN2o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 11:17:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EoaANATMmNAdQUzLcJxrcClOoPRcGNSRBbFti0LoN2o="
+        }
+      ]
+    },
+    {
+      "Route": "js/metaTags.js.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\rvmunk9mm8-2smjoxpfyf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "805"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zlpJ8f+zpvDzMArmGwnBILp1dBkgPrcqS71QSKVNwes=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 11:17:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zlpJ8f+zpvDzMArmGwnBILp1dBkgPrcqS71QSKVNwes="
         }
       ]
     },

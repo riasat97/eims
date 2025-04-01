@@ -1,0 +1,307 @@
+@page "/parts/{Id:int}"
+@using EIMS.Shared.Models
+@using EIMS.Client.Services
+@inject IPartService PartService
+@inject NavigationManager NavigationManager
+
+<div class="flex flex-col gap-4">
+    @if (_loading)
+    {
+        <div class="flex justify-center py-12">
+            <span class="loading loading-spinner loading-lg"></span>
+        </div>
+    }
+    else if (_part == null)
+    {
+        <div class="flex flex-col items-center justify-center py-16 bg-base-200 rounded-lg">
+            <span class="material-icons text-5xl mb-4 opacity-40">error_outline</span>
+            <p class="text-xl mb-2">Part not found</p>
+            <p class="opacity-60 mb-6">The part you're looking for doesn't exist or was deleted</p>
+            <button class="btn btn-primary" @onclick="GoBack">
+                Return to Parts List
+            </button>
+        </div>
+    }
+    else
+    {
+        <div class="flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <button class="btn btn-circle btn-ghost" @onclick="GoBack">
+                    <span class="material-icons">arrow_back</span>
+                </button>
+                <h1 class="text-2xl font-bold">
+                    @(!string.IsNullOrEmpty(_part.ManufacturerPartNumber) ? _part.ManufacturerPartNumber : _part.Name)
+                </h1>
+                <div class="badge badge-primary ml-2">@_part.Type</div>
+            </div>
+            <div class="flex gap-2">
+                <button class="btn btn-outline">
+                    <span class="material-icons">delete</span>
+                    Delete
+                </button>
+                <button class="btn btn-primary">
+                    <span class="material-icons">edit</span>
+                    Edit
+                </button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div class="col-span-2">
+                <div class="card bg-base-100 shadow">
+                    <div class="card-body">
+                        <h2 class="card-title">Details</h2>
+                        
+                        <div class="divider"></div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <h3 class="font-semibold mb-2">Basic Information</h3>
+                                <table class="table">
+                                    <tbody>
+                                        @if (!string.IsNullOrEmpty(_part.Name))
+                                        {
+                                            <tr>
+                                                <td class="font-medium">Name</td>
+                                                <td>@_part.Name</td>
+                                            </tr>
+                                        }
+                                        @if (!string.IsNullOrEmpty(_part.LocalPartNumber))
+                                        {
+                                            <tr>
+                                                <td class="font-medium">Internal Part #</td>
+                                                <td>@_part.LocalPartNumber</td>
+                                            </tr>
+                                        }
+                                        @if (!string.IsNullOrEmpty(_part.Manufacturer))
+                                        {
+                                            <tr>
+                                                <td class="font-medium">Manufacturer</td>
+                                                <td>@_part.Manufacturer</td>
+                                            </tr>
+                                        }
+                                        @if (!string.IsNullOrEmpty(_part.ManufacturerPartNumber))
+                                        {
+                                            <tr>
+                                                <td class="font-medium">MPN</td>
+                                                <td>@_part.ManufacturerPartNumber</td>
+                                            </tr>
+                                        }
+                                        @if (!string.IsNullOrEmpty(_part.Description))
+                                        {
+                                            <tr>
+                                                <td class="font-medium">Description</td>
+                                                <td>@_part.Description</td>
+                                            </tr>
+                                        }
+                                        @if (!string.IsNullOrEmpty(_part.Footprint))
+                                        {
+                                            <tr>
+                                                <td class="font-medium">Footprint</td>
+                                                <td>@_part.Footprint</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <div>
+                                <h3 class="font-semibold mb-2">Stock Information</h3>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="font-medium">Total Stock</td>
+                                            <td>@_part.TotalStock</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="font-medium">Ordered Stock</td>
+                                            <td>@_part.OrderedStock</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="font-medium">Last Used</td>
+                                            <td>@(_part.LastUsed?.ToString("d") ?? "—")</td>
+                                        </tr>
+                                        @if (_part.PurchaseValue.HasValue)
+                                        {
+                                            <tr>
+                                                <td class="font-medium">Purchase Value</td>
+                                                <td>$@_part.PurchaseValue.Value.ToString("0.00")</td>
+                                            </tr>
+                                        }
+                                        @if (_part.EstimatedTotalValue.HasValue)
+                                        {
+                                            <tr>
+                                                <td class="font-medium">Estimated Total Value</td>
+                                                <td>$@_part.EstimatedTotalValue.Value.ToString("0.00")</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <div class="divider"></div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            @if (_part.Dimensions.Any())
+                            {
+                                <div>
+                                    <h3 class="font-semibold mb-2">Dimensions</h3>
+                                    <table class="table table-sm">
+                                        <tbody>
+                                            @foreach (var (key, value) in _part.Dimensions)
+                                            {
+                                                <tr>
+                                                    <td class="font-medium">@key</td>
+                                                    <td>@value</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            }
+                            
+                            @if (_part.TechnicalSpecs.Any())
+                            {
+                                <div>
+                                    <h3 class="font-semibold mb-2">Technical Specs</h3>
+                                    <table class="table table-sm">
+                                        <tbody>
+                                            @foreach (var (key, value) in _part.TechnicalSpecs)
+                                            {
+                                                <tr>
+                                                    <td class="font-medium">@key</td>
+                                                    <td>@value</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            }
+                            
+                            @if (_part.PhysicalSpecs.Any())
+                            {
+                                <div>
+                                    <h3 class="font-semibold mb-2">Physical Specs</h3>
+                                    <table class="table table-sm">
+                                        <tbody>
+                                            @foreach (var (key, value) in _part.PhysicalSpecs)
+                                            {
+                                                <tr>
+                                                    <td class="font-medium">@key</td>
+                                                    <td>@value</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="card bg-base-100 shadow mb-6">
+                    <div class="card-body">
+                        <h2 class="card-title">Stock Management</h2>
+                        <div class="divider"></div>
+                        <div class="flex justify-center gap-4">
+                            <button class="btn btn-outline flex-1">
+                                <span class="material-icons">remove</span>
+                                Use
+                            </button>
+                            <button class="btn btn-primary flex-1">
+                                <span class="material-icons">add</span>
+                                Add Stock
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                @if (_part.Tags.Any())
+                {
+                    <div class="card bg-base-100 shadow mb-6">
+                        <div class="card-body">
+                            <h2 class="card-title">Tags</h2>
+                            <div class="divider"></div>
+                            <div class="flex flex-wrap gap-2">
+                                @foreach (var tag in _part.Tags)
+                                {
+                                    <div class="badge badge-outline">@tag</div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+                
+                @if (_part.Documents.Any())
+                {
+                    <div class="card bg-base-100 shadow mb-6">
+                        <div class="card-body">
+                            <h2 class="card-title">Documents</h2>
+                            <div class="divider"></div>
+                            <ul class="menu bg-base-200 rounded-box">
+                                @foreach (var document in _part.Documents)
+                                {
+                                    <li>
+                                        <a href="@document.Url" target="_blank">
+                                            <span class="material-icons">description</span>
+                                            @document.Name
+                                        </a>
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                }
+                
+                @if (_part.UsedInProjects.Any())
+                {
+                    <div class="card bg-base-100 shadow mb-6">
+                        <div class="card-body">
+                            <h2 class="card-title">Used In Projects</h2>
+                            <div class="divider"></div>
+                            <ul class="menu bg-base-200 rounded-box">
+                                @foreach (var project in _part.UsedInProjects)
+                                {
+                                    <li><a>@project</a></li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+    
+    private Part? _part;
+    private bool _loading = true;
+    
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadPart();
+    }
+    
+    protected override async Task OnParametersSetAsync()
+    {
+        await LoadPart();
+    }
+    
+    private async Task LoadPart()
+    {
+        _loading = true;
+        _part = await PartService.GetPartAsync(Id);
+        _loading = false;
+    }
+    
+    private void GoBack()
+    {
+        NavigationManager.NavigateTo("/parts");
+    }
+} 

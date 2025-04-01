@@ -1,0 +1,89 @@
+@hostname = http://localhost:5063
+
+### Get all parts
+GET {{hostname}}/api/parts
+Accept: application/json
+
+### Get a specific part
+GET {{hostname}}/api/parts/1
+Accept: application/json
+
+### Create a new part
+POST {{hostname}}/api/parts
+Content-Type: application/json
+
+{
+    "name": "Test Part",
+    "description": "A test part for testing the API",
+    "footprint": "SOT-23",
+    "type": 0,
+    "localPartNumber": "TP-001",
+    "manufacturer": "Test Manufacturer",
+    "manufacturerPartNumber": "TM-001",
+    "totalStock": 100,
+    "orderedStock": 0,
+    "dimensions": {
+        "length": "10mm",
+        "width": "5mm",
+        "height": "2mm"
+    },
+    "technicalSpecs": {
+        "voltage": "5V",
+        "current": "100mA"
+    },
+    "physicalSpecs": {
+        "weight": "1g",
+        "material": "plastic"
+    },
+    "purchaseValue": 1.99,
+    "averagePurchasePrice": 1.99,
+    "estimatedTotalValue": 199.00,
+    "usedInProjects": ["Project A", "Project B"],
+    "usedInMetaParts": ["Meta Part 1"],
+    "cadKeys": ["CAD001"],
+    "tags": ["electronic", "component"],
+    "location": "Shelf A1",
+    "notes": "Test notes"
+}
+
+### Update a part
+PUT {{hostname}}/api/parts/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Updated Test Part",
+    "description": "An updated test part",
+    "footprint": "SOT-23",
+    "type": 0,
+    "localPartNumber": "TP-001",
+    "manufacturer": "Test Manufacturer",
+    "manufacturerPartNumber": "TM-001",
+    "totalStock": 150,
+    "orderedStock": 0,
+    "dimensions": {
+        "length": "10mm",
+        "width": "5mm",
+        "height": "2mm"
+    },
+    "technicalSpecs": {
+        "voltage": "5V",
+        "current": "100mA"
+    },
+    "physicalSpecs": {
+        "weight": "1g",
+        "material": "plastic"
+    },
+    "purchaseValue": 1.99,
+    "averagePurchasePrice": 1.99,
+    "estimatedTotalValue": 298.50,
+    "usedInProjects": ["Project A", "Project B"],
+    "usedInMetaParts": ["Meta Part 1"],
+    "cadKeys": ["CAD001"],
+    "tags": ["electronic", "component", "updated"],
+    "location": "Shelf A1",
+    "notes": "Updated test notes"
+}
+
+### Delete a part
+DELETE {{hostname}}/api/parts/1 

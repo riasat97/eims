@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "EIMS.Client",
   "resources": {
-    "hash": "sha256-a8atpCNxAhIp+nMsWEHAje60mxmT1ZSyKYLlGwT6OzU=",
+    "hash": "sha256-XjgtE2a1omJvr8L5RKypenYzjvN0Lldkso3Dw5TAkic=",
     "fingerprinting": {
       "IdentityModel.n2jrj9owpy.wasm": "IdentityModel.wasm",
       "Microsoft.AspNetCore.Authorization.qe23mgxr71.wasm": "Microsoft.AspNetCore.Authorization.wasm",
@@ -204,10 +204,10 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "EIMS.Shared.ni304hq8g8.wasm": "EIMS.Shared.wasm",
-      "EIMS.Shared.1qyirr3jg2.pdb": "EIMS.Shared.pdb",
-      "EIMS.Client.997y8udkp6.wasm": "EIMS.Client.wasm",
-      "EIMS.Client.87kvs313cs.pdb": "EIMS.Client.pdb"
+      "EIMS.Shared.3uhwkspvdg.wasm": "EIMS.Shared.wasm",
+      "EIMS.Shared.2hd3imxvwv.pdb": "EIMS.Shared.pdb",
+      "EIMS.Client.lfx97igmz2.wasm": "EIMS.Client.wasm",
+      "EIMS.Client.y22o16m3kd.pdb": "EIMS.Client.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.hmanx9razn.js": "sha256-d7UNSArplVrX3arY2Kmhxp1wN79ng8hLqIBrkiQ9Gbo="
@@ -420,12 +420,12 @@
       "WindowsBase.377bly7twj.wasm": "sha256-0VmBdMjdc0nZGHDSfaGirT6y3mJTM0qx8eqCUC/rpiE=",
       "mscorlib.o0184ey5ia.wasm": "sha256-2GxNKZQJVJvYMUxSTuXa5V2qxawSMMHZtwG33SKVCZU=",
       "netstandard.hb3h2rr8mk.wasm": "sha256-DWn9+RH/ElZQ6imlYqVwZvir1KTzNwY18AzGmnyiymU=",
-      "EIMS.Shared.ni304hq8g8.wasm": "sha256-zxm1rpCFT7QW5eACZTM0KyJ2t1nx/G+ERrbzyHwgJXM=",
-      "EIMS.Client.997y8udkp6.wasm": "sha256-PWlGs1wr+Z9TijKWyEUvhwXNgiwExAF9qVpN5GgJGFg="
+      "EIMS.Shared.3uhwkspvdg.wasm": "sha256-S/ZwoczoAv8/oUCzM2qReW40TcFMt6K2Rcp5ZbL3q0c=",
+      "EIMS.Client.lfx97igmz2.wasm": "sha256-gYBvxnp7CC5KLem3Rhubaj6AB/X4FLYlOiXAjUo04IY="
     },
     "pdb": {
-      "EIMS.Shared.1qyirr3jg2.pdb": "sha256-t0jLJana5Grs5+njGrBL7uLvBQ0PJF/mJCRrND+fjQA=",
-      "EIMS.Client.87kvs313cs.pdb": "sha256-/C8GkzM68wuWFzM9aVFfeBkl2IoLMli8uOhkCJXlNwE="
+      "EIMS.Shared.2hd3imxvwv.pdb": "sha256-9qDQydYbEfEm6P5fVo3BkisJohBY7xU4Mj91FBJpbzk=",
+      "EIMS.Client.y22o16m3kd.pdb": "sha256-irkopO3gek1lDwQ36LsWDg+6Eeh8JXiAFrTf18i8/0k="
     }
   },
   "cacheBootResources": true,

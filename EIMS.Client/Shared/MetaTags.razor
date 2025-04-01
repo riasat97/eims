@@ -1,0 +1,48 @@
+@using Microsoft.JSInterop
+@inject IJSRuntime JSRuntime
+@implements IAsyncDisposable
+
+@code {
+    private IJSObjectReference? _module;
+    
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            try
+            {
+                _module = await JSRuntime.InvokeAsync<IJSObjectReference>("import", "./js/metaTags.js");
+                
+                // Define CSP with all required domains
+                // Using a more permissive CSP for development to avoid browser caching issues
+                string csp = @"default-src 'self'; 
+                    connect-src 'self' http: https:; 
+                    img-src 'self' data: http: https:; 
+                    script-src 'self' 'unsafe-eval' 'unsafe-inline' 'unsafe-hashes'; 
+                    style-src 'self' 'unsafe-inline' https: http:; 
+                    font-src 'self' https: http:;";
+                
+                // Dynamically set CSP
+                await _module.InvokeVoidAsync("setContentSecurityPolicy", csp);
+                
+                // Debug: log to console what was set
+                await _module.InvokeVoidAsync("logMetaTags");
+                
+                // Check if our specific API URL is allowed
+                await _module.InvokeVoidAsync("checkCspAllowsUrl", "http://localhost:5063/client-api/parts");
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine($"Error loading JS module: {ex.Message}");
+            }
+        }
+    }
+    
+    public async ValueTask DisposeAsync()
+    {
+        if (_module != null)
+        {
+            await _module.DisposeAsync();
+        }
+    }
+} 

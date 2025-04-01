@@ -33,6 +33,14 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
+      "Id": "R:\\eims\\EIMS.Client\\wwwroot\\js\\csp-disabler.js",
+      "PackagePath": "staticwebassets\\js\\csp-disabler.js"
+    },
+    {
+      "Id": "R:\\eims\\EIMS.Client\\wwwroot\\js\\metaTags.js",
+      "PackagePath": "staticwebassets\\js\\metaTags.js"
+    },
+    {
       "Id": "R:\\eims\\EIMS.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },

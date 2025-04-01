@@ -1,0 +1,42 @@
+@baseUrl = https://localhost:7001
+
+### Create a Local Part
+POST {{baseUrl}}/api/parts
+Content-Type: application/json
+
+{
+  "name": "Test Local Part",
+  "description": "A test local part",
+  "footprint": "0805",
+  "type": 1,
+  "manufacturer": "Generic",
+  "manufacturerPartNumber": "TEST-001"
+}
+
+### Create a Meta Part
+POST {{baseUrl}}/api/parts
+Content-Type: application/json
+
+{
+  "name": "Test Meta Part",
+  "description": "A test meta part",
+  "footprint": "0805",
+  "type": 2
+}
+
+### Create a Linked Part
+POST {{baseUrl}}/api/parts
+Content-Type: application/json
+
+{
+  "name": "LM358",
+  "description": "Dual Op-Amp",
+  "footprint": "SOIC-8",
+  "type": 0,
+  "manufacturer": "Texas Instruments",
+  "manufacturerPartNumber": "LM358DR",
+  "localPartNumber": "OP-001"
+}
+
+### Get Part by ID
+GET {{baseUrl}}/api/parts/1 

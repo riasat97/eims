@@ -2,6 +2,7 @@
 @using EIMS.Client.Services
 @using EIMS.Shared.Services
 @inject IOctopartService OctopartService
+@inject IPartService PartService
 
 <div class="modal modal-open">
     <div class="modal-box" style="max-width: 95vw; width: 95vw; height: 95vh; overflow-y: auto; padding: 2rem;">
@@ -23,7 +24,7 @@
                     <label class="flex items-start gap-4 cursor-pointer p-3 hover:bg-base-300 rounded-lg transition-colors duration-150">
                         <input type="radio" name="partType" class="radio mt-1" 
                                checked="@(_selectedType == type)"
-                               @onchange="@(() => _selectedType = type)" />
+                               @onchange="@(() => OnPartTypeChanged(type))" />
                         <div class="flex flex-col">
                             <span class="font-semibold text-lg">@type</span>
                             <span class="text-sm opacity-80">
@@ -136,8 +137,16 @@
                                                 }
                                                 <button class="btn btn-sm btn-primary" 
                                                         @onclick="async () => await UseOctopartResult(result)"
-                                                        @onclick:stopPropagation="true">
-                                                    Use
+                                                        @onclick:stopPropagation="true"
+                                                        disabled="@_isSaving">
+                                                    @if (_isSaving)
+                                                    {
+                                                        <span class="loading loading-spinner loading-xs"></span>
+                                                    }
+                                                    else
+                                                    {
+                                                        <span>Use</span>
+                                                    }
                                                 </button>
                                             </div>
                                         </td>
@@ -215,8 +224,16 @@
                                                         </div>
                                                         
                                                         <div class="flex justify-end mt-4">
-                                                            <button class="btn btn-primary" @onclick="async () => await UseOctopartResult(result)">
-                                                                Use This Part
+                                                            <button class="btn btn-primary" @onclick="async () => await UseOctopartResult(result)" disabled="@_isSaving">
+                                                                @if (_isSaving)
+                                                                {
+                                                                    <span class="loading loading-spinner"></span>
+                                                                    <span>Creating...</span>
+                                                                }
+                                                                else
+                                                                {
+                                                                    <span>Use This Part</span>
+                                                                }
                                                             </button>
                                                         </div>
                                                     }
@@ -252,7 +269,7 @@
                 }
             </div>
         }
-        else
+        else if (_selectedType == PartType.Local)
         {
             <div class="form-control w-full mt-6">
                 <label class="label">
@@ -276,6 +293,65 @@
                 <input type="text" placeholder="Footprint" 
                        class="input input-bordered w-full" 
                        @bind="_part.Footprint" />
+                       
+                <label class="label mt-4">
+                    <span class="label-text text-lg font-medium">Manufacturer</span>
+                </label>
+                <input type="text" placeholder="Manufacturer" 
+                       class="input input-bordered w-full" 
+                       @bind="_part.Manufacturer" />
+                       
+                <label class="label mt-4">
+                    <span class="label-text text-lg font-medium">MPN</span>
+                    <span class="label-text-alt">
+                        <div class="tooltip" data-tip="Manufacturer Part Number">
+                            <span class="material-icons text-base">help</span>
+                        </div>
+                    </span>
+                </label>
+                <input type="text" placeholder="Manufacturer Part Number" 
+                       class="input input-bordered w-full" 
+                       @bind="_part.ManufacturerPartNumber" />
+                
+                <div class="mt-4 p-4 bg-base-100 rounded-lg">
+                    <div class="flex items-center">
+                        <span class="material-icons mr-2 text-info">info</span>
+                        <span>Datasheets, images, CAD models, and other information can be attached after the part has been created.</span>
+                    </div>
+                </div>
+            </div>
+        }
+        else if (_selectedType == PartType.Meta)
+        {
+            <div class="form-control w-full mt-6">
+                <label class="label">
+                    <span class="label-text text-lg font-medium">Name</span>
+                    <span class="label-text-alt text-error">*</span>
+                </label>
+                <input type="text" placeholder="Your part name/number" 
+                       class="input input-bordered w-full" 
+                       @bind="_part.Name" />
+
+                <label class="label mt-4">
+                    <span class="label-text text-lg font-medium">Description</span>
+                </label>
+                <textarea class="textarea textarea-bordered h-24" 
+                          placeholder="One-line part description"
+                          @bind="_part.Description"></textarea>
+
+                <label class="label mt-4">
+                    <span class="label-text text-lg font-medium">Footprint</span>
+                </label>
+                <input type="text" placeholder="Footprint" 
+                       class="input input-bordered w-full" 
+                       @bind="_part.Footprint" />
+                
+                <div class="mt-4 p-4 bg-base-100 rounded-lg">
+                    <div class="flex items-center">
+                        <span class="material-icons mr-2 text-info">info</span>
+                        <span>Member parts (substitutes) can be added after the meta-part has been created, either by using the 'Add part' button on the meta-part info screen or by selecting multiple parts in the main parts table.</span>
+                    </div>
+                </div>
             </div>
         }
 
@@ -290,12 +366,15 @@
                            @onchange="@(() => _afterCreate = AfterCreateAction.GoToCreated)" />
                     <span>Go to created part</span>
                 </label>
-                <label class="flex items-center gap-2 cursor-pointer">
-                    <input type="radio" name="afterCreate" class="radio" 
-                           checked="@(_afterCreate == AfterCreateAction.AddStock)"
-                           @onchange="@(() => _afterCreate = AfterCreateAction.AddStock)" />
-                    <span>Add stock for created part</span>
-                </label>
+                @if (_selectedType != PartType.Meta)
+                {
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input type="radio" name="afterCreate" class="radio" 
+                               checked="@(_afterCreate == AfterCreateAction.AddStock)"
+                               @onchange="@(() => _afterCreate = AfterCreateAction.AddStock)" />
+                        <span>Add stock for created part</span>
+                    </label>
+                }
                 <label class="flex items-center gap-2 cursor-pointer">
                     <input type="radio" name="afterCreate" class="radio" 
                            checked="@(_afterCreate == AfterCreateAction.Continue)"
@@ -306,10 +385,30 @@
         </div>
 
         <div class="modal-action">
-            <button class="btn btn-ghost" @onclick="OnClose">Cancel</button>
-            <button class="btn btn-primary" @onclick="CreatePart">
-                <span class="material-icons mr-2">add</span>
-                Create Part
+            @if (_validationErrors.Any())
+            {
+                <div class="alert alert-error">
+                    <span class="material-icons">error</span>
+                    <ul class="list-disc ml-6">
+                        @foreach (var error in _validationErrors)
+                        {
+                            <li>@error</li>
+                        }
+                    </ul>
+                </div>
+            }
+            <button class="btn btn-ghost" @onclick="OnClose" disabled="@_isSaving">Cancel</button>
+            <button class="btn btn-primary" @onclick="CreatePart" disabled="@_isSaving">
+                @if (_isSaving)
+                {
+                    <span class="loading loading-spinner"></span>
+                    <span>Creating...</span>
+                }
+                else
+                {
+                    <span class="material-icons mr-2">add</span>
+                    <span>Create Part</span>
+                }
             </button>
         </div>
     </div>
@@ -329,6 +428,8 @@
     private Dictionary<string, Dictionary<string, string>> _selectedSpecs = new();
     private bool _isSearching;
     private OctopartSearchResult? _selectedResult;
+    private List<string> _validationErrors = new();
+    private bool _isSaving = false;
 
     private string GetTypeDescription(PartType type) => type switch
     {
@@ -444,20 +545,110 @@
 
     private async Task CreatePart()
     {
-        // TODO: Validate part data
-        await OnPartCreated.InvokeAsync(_afterCreate);
-        await OnClose.InvokeAsync();
+        // Clear existing validation errors
+        _validationErrors.Clear();
+        
+        // Validate part data
+        if (string.IsNullOrWhiteSpace(_part.Name))
+        {
+            // Show error message
+            _validationErrors.Add("A part name is required.");
+            return;
+        }
+        
+        // Set the part type
+        _part.Type = _selectedType;
+        
+        try
+        {
+            // Show saving indicator
+            _isSaving = true;
+            StateHasChanged();
+            
+            // Save part data to backend
+            var createdPart = await PartService.CreatePartAsync(_part);
+            
+            if (createdPart == null)
+            {
+                _validationErrors.Add("Failed to create part. Please try again.");
+                _isSaving = false;
+                StateHasChanged();
+                return;
+            }
+            
+            // Part was successfully created
+            Console.WriteLine($"Created part with ID: {createdPart.Id}");
+            
+            // Invoke the callback
+            await OnPartCreated.InvokeAsync(_afterCreate);
+            await OnClose.InvokeAsync();
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"Error creating part: {ex.Message}");
+            _validationErrors.Add($"Error: {ex.Message}");
+            _isSaving = false;
+            StateHasChanged();
+        }
+        finally
+        {
+            if (_isSaving)  // Only set to false if still true (to avoid overriding error states)
+            {
+                _isSaving = false;
+                StateHasChanged();
+            }
+        }
     }
 
     private async Task UseOctopartResult(OctopartSearchResult result)
     {
-        SelectSearchResult(result);
-        await CreatePart();
+        try
+        {
+            SelectSearchResult(result);
+            
+            // Make sure name is set
+            if (string.IsNullOrWhiteSpace(_part.Name))
+            {
+                _part.Name = result.Mpn;
+            }
+            
+            await CreatePart();
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"Error using Octopart result: {ex.Message}");
+            _validationErrors.Add($"Error: {ex.Message}");
+            _isSaving = false;
+            StateHasChanged();
+        }
     }
 
     private void SelectPartForDetails(OctopartSearchResult result)
     {
         _selectedResult = result;
+    }
+
+    private void OnPartTypeChanged(PartType newType)
+    {
+        _selectedType = newType;
+        
+        // Reset part data
+        _part = new Part { Type = newType };
+        
+        // Reset search data
+        _searchMpn = string.Empty;
+        _searchQuery = string.Empty;
+        _octopartResults = null;
+        _selectedResult = null;
+        
+        // Reset validation errors
+        _validationErrors.Clear();
+        
+        // Reset after create action if needed
+        if (newType == PartType.Meta && _afterCreate == AfterCreateAction.AddStock)
+        {
+            _afterCreate = AfterCreateAction.GoToCreated;
+        }
     }
 }
 

@@ -3,6 +3,8 @@
 @using EIMS.Client.Services
 @using EIMS.Shared.Services
 @inject IOctopartService OctopartService
+@inject IPartService PartService
+@inject NavigationManager NavigationManager
 
 <div class="flex flex-col gap-4">
     <div class="flex justify-between items-center">
@@ -50,15 +52,38 @@
             <span class="loading loading-spinner loading-lg"></span>
         </div>
     }
+    else if (!_parts.Any())
+    {
+        <div class="flex flex-col items-center justify-center py-16 bg-base-200 rounded-lg">
+            <span class="material-icons text-5xl mb-4 opacity-40">inventory_2</span>
+            <p class="text-xl mb-2">No parts found</p>
+            <p class="opacity-60 mb-6">Start by creating a new part or importing from Octopart</p>
+            <div class="flex gap-4">
+                <button class="btn btn-outline" @onclick="OpenSearchDialog">
+                    Search Octopart
+                </button>
+                <button class="btn btn-primary" @onclick="OpenCreateDialog">
+                    Create Part
+                </button>
+            </div>
+        </div>
+    }
     else if (_isGridView)
     {
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             @foreach (var part in _filteredParts)
             {
-                <div class="card bg-base-100 shadow-xl">
+                <div class="card bg-base-100 shadow-xl" @onclick="() => NavigateToPart(part)">
                     <div class="card-body">
-                        <h2 class="card-title">@part.Name</h2>
-                        <p>@part.Description</p>
+                        <div class="flex items-start gap-2">
+                            <div class="flex-1">
+                                <h2 class="card-title">@part.Name</h2>
+                                <p>@part.Description</p>
+                            </div>
+                            <span class="material-icons text-base p-1 rounded-full bg-base-200">
+                                @GetPartTypeIcon(part.Type)
+                            </span>
+                        </div>
                         <div class="flex justify-between items-center mt-2">
                             <div class="badge">@part.Type</div>
                             <div class="text-sm">Stock: @part.TotalStock</div>
@@ -74,11 +99,16 @@
             <table class="table table-zebra">
                 <thead>
                     <tr>
-                        <th>Type</th>
+                        <th class="w-10">
+                            <label>
+                                <input type="checkbox" class="checkbox" />
+                            </label>
+                        </th>
+                        <th class="w-12">Type</th>
                         <th>Part</th>
                         <th>Description</th>
                         <th>Footprint</th>
-                        <th>Stock</th>
+                        <th class="text-right">Stock</th>
                         <th>Last used</th>
                     </tr>
                 </thead>
@@ -87,14 +117,33 @@
                     {
                         <tr class="hover cursor-pointer" @onclick="() => NavigateToPart(part)">
                             <td>
+                                <label onclick="event.stopPropagation()">
+                                    <input type="checkbox" class="checkbox" />
+                                </label>
+                            </td>
+                            <td>
                                 <span class="material-icons text-base align-text-bottom">
                                     @GetPartTypeIcon(part.Type)
                                 </span>
                             </td>
-                            <td>@part.Name</td>
+                            <td class="font-medium">
+                                @if (!string.IsNullOrEmpty(part.LocalPartNumber))
+                                {
+                                    <div>@part.LocalPartNumber</div>
+                                    <div class="text-xs opacity-60">@part.ManufacturerPartNumber</div>
+                                }
+                                else if (!string.IsNullOrEmpty(part.ManufacturerPartNumber))
+                                {
+                                    @part.ManufacturerPartNumber
+                                }
+                                else
+                                {
+                                    @part.Name
+                                }
+                            </td>
                             <td>@part.Description</td>
                             <td>@part.Footprint</td>
-                            <td>@part.TotalStock</td>
+                            <td class="text-right">@part.TotalStock</td>
                             <td>@(part.LastUsed?.ToShortDateString() ?? "—")</td>
                         </tr>
                     }
@@ -119,13 +168,15 @@
 }
 
 @code {
-    private List<Part> _parts = new();
-    private IReadOnlyList<Part> _filteredParts => _parts
+    private List<Part>? _parts;
+    private IReadOnlyList<Part> _filteredParts => _parts?
         .Where(p => string.IsNullOrEmpty(_tableSearchQuery) || 
                     p.Name.Contains(_tableSearchQuery, StringComparison.OrdinalIgnoreCase) ||
                     p.Description?.Contains(_tableSearchQuery, StringComparison.OrdinalIgnoreCase) == true ||
-                    p.Manufacturer?.Contains(_tableSearchQuery, StringComparison.OrdinalIgnoreCase) == true)
-        .ToList();
+                    p.Manufacturer?.Contains(_tableSearchQuery, StringComparison.OrdinalIgnoreCase) == true ||
+                    p.ManufacturerPartNumber?.Contains(_tableSearchQuery, StringComparison.OrdinalIgnoreCase) == true ||
+                    p.LocalPartNumber?.Contains(_tableSearchQuery, StringComparison.OrdinalIgnoreCase) == true)
+        .ToList() ?? new List<Part>();
     
     private bool _showCreateDialog;
     private bool _showSearchDialog;
@@ -139,13 +190,7 @@
 
     private async Task LoadParts()
     {
-        // TODO: Load parts from API
-        // For now, just add some sample data
-        _parts = new List<Part>
-        {
-            new Part { Name = "Sample Part 1", Description = "A test part", Type = PartType.Local, TotalStock = 5 },
-            new Part { Name = "Sample Part 2", Description = "Another test part", Type = PartType.Linked, TotalStock = 10 }
-        };
+        _parts = await PartService.GetPartsAsync();
     }
 
     private void OpenCreateDialog()
@@ -174,36 +219,67 @@
 
         if (action == AfterCreateAction.GoToCreated)
         {
-            // TODO: Navigate to the newly created part
+            // Later we'll implement navigation to the created part
         }
         else if (action == AfterCreateAction.AddStock)
         {
-            // TODO: Open add stock dialog
+            // Later we'll implement the add stock dialog
         }
     }
     
-    private async Task HandlePartSelected(OctopartSearchResult part)
+    private async Task HandlePartSelected(OctopartSearchResult result)
     {
-        Console.WriteLine($"Adding part to inventory: {part.Mpn}");
-        
-        // TODO: Implement adding the selected part to inventory
-        // For now, just add a sample part
-        _parts.Add(new Part
+        // Convert Octopart result to a new Part
+        var part = new Part
         {
-            Name = part.Mpn,
-            Description = part.Description,
-            Manufacturer = part.Manufacturer,
+            Name = result.Name,
+            Description = result.Description,
+            Manufacturer = result.Manufacturer,
+            ManufacturerPartNumber = result.Mpn,
             Type = PartType.Linked,
             TotalStock = 0
-        });
+        };
+        
+        // Copy dimensions, technical and physical specs
+        if (result.Specs.TryGetValue("Dimensions", out var dimensions))
+        {
+            foreach (var (key, value) in dimensions)
+            {
+                part.Dimensions[key] = value;
+            }
+        }
+        
+        if (result.Specs.TryGetValue("Technical", out var technical))
+        {
+            foreach (var (key, value) in technical)
+            {
+                part.TechnicalSpecs[key] = value;
+            }
+        }
+        
+        if (result.Specs.TryGetValue("Physical", out var physical))
+        {
+            foreach (var (key, value) in physical)
+            {
+                part.PhysicalSpecs[key] = value;
+            }
+        }
+        
+        // Create the part
+        var createdPart = await PartService.CreatePartAsync(part);
+        
+        if (createdPart != null)
+        {
+            await LoadParts();
+        }
         
         _showSearchDialog = false;
-        StateHasChanged();
     }
 
     private void NavigateToPart(Part part)
     {
-        // TODO: Navigate to part details
+        // Navigate to the part details page
+        NavigationManager.NavigateTo($"/parts/{part.Id}");
     }
 
     private void ToggleView()
