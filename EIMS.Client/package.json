@@ -1,0 +1,17 @@
+{
+  "name": "eims-client",
+  "version": "1.0.0",
+  "description": "Electronic Inventory Management System Client",
+  "scripts": {
+    "css:build": "npx tailwindcss -i ./wwwroot/css/app.css -o ./wwwroot/css/styles.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "daisyui": "^4.7.2",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35"
+  },
+  "Octopart": {
+    "ApiKey": "your-api-key-here"
+  }
+} 

@@ -1,0 +1,117 @@
+@using EIMS.Shared.Models
+
+<div class="bg-base-200 p-6 rounded-lg max-w-4xl">
+    <div class="flex flex-col md:flex-row gap-6 mb-6">
+        <div class="md:w-1/3 flex justify-center">
+            <div style="width: 180px; height: 180px; background-color: #333; display: flex; justify-content: center; align-items: center; border-radius: 6px; overflow: hidden; position: relative;">
+                <img src="@Part.ImageUrl" alt="@Part.Mpn" style="position: absolute; max-width: 90%; max-height: 90%; object-fit: contain;" onerror="this.onerror=null; this.src='data:image/png;base64,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';" />
+            </div>
+        </div>
+        <div class="md:w-2/3">
+            <h2 class="text-2xl font-bold">@Part.Mpn</h2>
+            <p class="text-lg font-semibold text-primary">@Part.Manufacturer</p>
+            <p class="text-sm mt-2">@Part.Description</p>
+            <p class="text-sm mt-2">Category: <span class="font-semibold">@Part.Category</span></p>
+            
+            @if (!string.IsNullOrEmpty(Part.DatasheetUrl))
+            {
+                <div class="mt-4">
+                    <a href="@Part.DatasheetUrl" target="_blank" class="btn btn-sm btn-primary">
+                        <span class="material-icons mr-1">description</span>
+                        View Datasheet
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        @if (Part.Specs != null)
+        {
+            @if (Part.Specs.TryGetValue("Dimensions", out var dimensions))
+            {
+                <div class="card bg-base-100 shadow-md">
+                    <div class="card-body p-4">
+                        <h3 class="card-title text-lg">Dimensions</h3>
+                        <table class="w-full table-auto">
+                            <tbody>
+                                @foreach (var spec in dimensions)
+                                {
+                                    <tr class="border-b border-base-300">
+                                        <td class="py-2 text-left text-sm">@spec.Key</td>
+                                        <td class="py-2 text-right font-medium">@spec.Value</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            }
+
+            @if (Part.Specs.TryGetValue("Technical", out var technical))
+            {
+                <div class="card bg-base-100 shadow-md">
+                    <div class="card-body p-4">
+                        <h3 class="card-title text-lg">Technical</h3>
+                        <table class="w-full table-auto">
+                            <tbody>
+                                @foreach (var spec in technical)
+                                {
+                                    <tr class="border-b border-base-300">
+                                        <td class="py-2 text-left text-sm">@spec.Key</td>
+                                        <td class="py-2 text-right font-medium">@spec.Value</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            }
+
+            @if (Part.Specs.TryGetValue("Physical", out var physical))
+            {
+                <div class="card bg-base-100 shadow-md">
+                    <div class="card-body p-4">
+                        <h3 class="card-title text-lg">Physical</h3>
+                        <table class="w-full table-auto">
+                            <tbody>
+                                @foreach (var spec in physical)
+                                {
+                                    <tr class="border-b border-base-300">
+                                        <td class="py-2 text-left text-sm">@spec.Key</td>
+                                        <td class="py-2 text-right font-medium">@spec.Value</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            }
+
+            @if (Part.Specs.TryGetValue("Other", out var other))
+            {
+                <div class="card bg-base-100 shadow-md">
+                    <div class="card-body p-4">
+                        <h3 class="card-title text-lg">Other Specifications</h3>
+                        <table class="w-full table-auto">
+                            <tbody>
+                                @foreach (var spec in other)
+                                {
+                                    <tr class="border-b border-base-300">
+                                        <td class="py-2 text-left text-sm">@spec.Key</td>
+                                        <td class="py-2 text-right font-medium">@spec.Value</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public OctopartSearchResult Part { get; set; } = new();
+} 

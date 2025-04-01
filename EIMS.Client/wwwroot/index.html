@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval'; img-src 'self' data: blob: https://*.octopart.com https://*.sigma.octopart.com https://sigma.octopart.com https://api.nexar.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://api.nexar.com https://identity.nexar.com https://sigma.octopart.com; object-src 'none';">
+    <title>EIMS</title>
+    <base href="/" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link href="EIMS.Client.styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="app">
+        <svg>
+            <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#FF80AB;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#4183D7;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+
+    <script src="_framework/blazor.webassembly.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set up a MutationObserver to watch for new images being added to the DOM
+            const observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutation) {
+                    if (mutation.addedNodes) {
+                        mutation.addedNodes.forEach(function(node) {
+                            if (node.nodeType === 1) { // Only process Element nodes
+                                const images = node.querySelectorAll('img');
+                                images.forEach(setupImageErrorHandler);
+                            }
+                        });
+                    }
+                });
+            });
+            
+            // Start observing the entire document
+            observer.observe(document.body, {
+                childList: true,
+                subtree: true
+            });
+            
+            // Also set up handlers for existing images
+            document.querySelectorAll('img').forEach(setupImageErrorHandler);
+            
+            function setupImageErrorHandler(img) {
+                if (!img.hasAttribute('data-error-handler-setup')) {
+                    img.setAttribute('data-error-handler-setup', 'true');
+                    
+                    img.addEventListener('error', function() {
+                        console.log('Image failed to load: ' + img.src);
+                        // Set a placeholder image if the original image fails to load
+                        img.src = 'data:image/png;base64,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';
+                        img.onerror = null; // Remove the event handler to prevent loops
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

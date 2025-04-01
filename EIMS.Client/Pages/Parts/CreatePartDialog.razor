@@ -1,0 +1,469 @@
+@using EIMS.Shared.Models
+@using EIMS.Client.Services
+@using EIMS.Shared.Services
+@inject IOctopartService OctopartService
+
+<div class="modal modal-open">
+    <div class="modal-box" style="max-width: 95vw; width: 95vw; height: 95vh; overflow-y: auto; padding: 2rem;">
+        <button class="btn btn-sm btn-circle absolute right-2 top-2" @onclick="OnClose">✕</button>
+        <h3 class="font-bold text-2xl mb-6">Create Part</h3>
+        
+        <div class="form-control w-full">
+            <label class="label">
+                <span class="label-text text-lg font-medium">Part Type</span>
+                <span class="label-text-alt">
+                    <div class="tooltip" data-tip="Choose the type of part you want to create">
+                        <span class="material-icons text-base">help</span>
+                    </div>
+                </span>
+            </label>
+            <div class="flex flex-col gap-3 bg-base-200 p-4 rounded-lg">
+                @foreach (var type in Enum.GetValues<PartType>())
+                {
+                    <label class="flex items-start gap-4 cursor-pointer p-3 hover:bg-base-300 rounded-lg transition-colors duration-150">
+                        <input type="radio" name="partType" class="radio mt-1" 
+                               checked="@(_selectedType == type)"
+                               @onchange="@(() => _selectedType = type)" />
+                        <div class="flex flex-col">
+                            <span class="font-semibold text-lg">@type</span>
+                            <span class="text-sm opacity-80">
+                                @GetTypeDescription(type)
+                            </span>
+                        </div>
+                    </label>
+                }
+            </div>
+        </div>
+
+        @if (_selectedType == PartType.Linked)
+        {
+            <div class="form-control w-full mt-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="label">
+                            <span class="label-text text-lg font-medium">Match exact component name (MPN)</span>
+                        </label>
+                        <div class="join w-full">
+                            <input type="text" placeholder="Enter MPN..." 
+                                   class="input input-bordered join-item flex-1" 
+                                   @bind="_searchMpn" 
+                                   @onkeydown="@(async e => { if (e.Key == "Enter") await SearchExactMpn(); })" />
+                            <button class="btn btn-primary join-item" 
+                                    @onclick="SearchExactMpn"
+                                    type="button">
+                                @if (!_isSearching)
+                                {
+                                    <span class="material-icons mr-1">search</span>
+                                    <span>Match</span>
+                                }
+                                else
+                                {
+                                    <span class="loading loading-spinner"></span>
+                                }
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="label">
+                            <span class="label-text text-lg font-medium">Search Octopart</span>
+                            <span class="label-text-alt">Powered by Octopart</span>
+                        </label>
+                        <div class="join w-full">
+                            <input type="text" placeholder="What to search for" 
+                                   class="input input-bordered join-item flex-1" 
+                                   @bind="_searchQuery" 
+                                   @onkeydown="@(async e => { if (e.Key == "Enter") await SearchOctopart(); })" />
+                            <button class="btn btn-primary join-item" 
+                                    @onclick="SearchOctopart"
+                                    type="button">
+                                @if (!_isSearching)
+                                {
+                                    <span class="material-icons mr-1">search</span>
+                                    <span>Search</span>
+                                }
+                                else
+                                {
+                                    <span class="loading loading-spinner"></span>
+                                }
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                @if (_octopartResults != null && _octopartResults.Any())
+                {
+                    <div class="w-full max-h-[65vh] overflow-y-auto mb-4 mt-6">
+                        <table class="table table-zebra w-full">
+                            <thead>
+                                <tr>
+                                    <th class="w-[120px]">Image</th>
+                                    <th>Part Number</th>
+                                    <th>Manufacturer</th>
+                                    <th class="w-[40%]">Description</th>
+                                    <th class="w-[180px] text-right">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var result in _octopartResults)
+                                {
+                                    var isSelected = _selectedResult?.Mpn == result.Mpn;
+                                    <tr class="@(isSelected ? "bg-primary/10" : "")"
+                                        @onclick="() => SelectPartForDetails(result)" 
+                                        style="cursor: pointer;">
+                                        <td>
+                                            <div style="width: 100px; height: 100px; background-color: #333; display: flex; justify-content: center; align-items: center; border-radius: 6px; overflow: hidden; position: relative; margin: 5px 0;">
+                                                <img src="@result.ImageUrl" alt="@result.Mpn" style="position: absolute; max-width: 90%; max-height: 90%; object-fit: contain;" 
+                                                     onerror="this.onerror=null; this.src='data:image/png;base64,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';" />
+                                            </div>
+                                        </td>
+                                        <td class="font-medium">@result.Mpn</td>
+                                        <td>@result.Manufacturer</td>
+                                        <td class="text-sm">@(result.Description?.Length > 100 ? result.Description.Substring(0, 100) + "..." : result.Description)</td>
+                                        <td class="text-right">
+                                            <div class="flex justify-end gap-3">
+                                                <button class="btn btn-sm btn-outline" 
+                                                        @onclick="() => SelectPartForDetails(result)"
+                                                        @onclick:stopPropagation="true">
+                                                    <span class="material-icons text-sm">info</span>
+                                                </button>
+                                                @if (!string.IsNullOrEmpty(result.DatasheetUrl))
+                                                {
+                                                    <a href="@result.DatasheetUrl" target="_blank" 
+                                                       class="btn btn-sm btn-outline btn-primary"
+                                                       @onclick:stopPropagation="true">
+                                                        <span class="material-icons text-sm">description</span>
+                                                    </a>
+                                                }
+                                                <button class="btn btn-sm btn-primary" 
+                                                        @onclick="async () => await UseOctopartResult(result)"
+                                                        @onclick:stopPropagation="true">
+                                                    Use
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    @if (isSelected)
+                                    {
+                                        <tr>
+                                            <td colspan="5" class="p-0">
+                                                <div class="bg-base-200 p-4 rounded-lg m-2">
+                                                    <div class="flex justify-between items-start mb-4">
+                                                        <div>
+                                                            <h3 class="text-xl font-bold">@result.Mpn</h3>
+                                                            <div class="text-primary font-medium">@result.Manufacturer</div>
+                                                        </div>
+                                                        <button class="btn btn-sm btn-ghost" @onclick="() => _selectedResult = null">
+                                                            <span class="material-icons">close</span>
+                                                        </button>
+                                                    </div>
+                                                    
+                                                    <div class="mb-4">
+                                                        <div class="font-semibold">Description</div>
+                                                        <div>@result.Description</div>
+                                                    </div>
+                                                    
+                                                    @if (!string.IsNullOrEmpty(result.Category))
+                                                    {
+                                                        <div class="mb-4">
+                                                            <div class="font-semibold">Category</div>
+                                                            <div>@result.Category</div>
+                                                        </div>
+                                                    }
+                                                    
+                                                    @if (result.Specs.Any())
+                                                    {
+                                                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 bg-base-100 p-4 rounded-md">
+                                                            @if (result.Specs.TryGetValue("Dimensions", out var dimensions))
+                                                            {
+                                                                <div>
+                                                                    <div class="font-medium mb-2">Dimensions</div>
+                                                                    @foreach (var spec in dimensions)
+                                                                    {
+                                                                        <div class="flex justify-between py-1 border-b border-base-300">
+                                                                            <span>@spec.Key</span>
+                                                                            <span class="font-medium">@spec.Value</span>
+                                                                        </div>
+                                                                    }
+                                                                </div>
+                                                            }
+                                                            @if (result.Specs.TryGetValue("Technical", out var technical))
+                                                            {
+                                                                <div>
+                                                                    <div class="font-medium mb-2">Technical</div>
+                                                                    @foreach (var spec in technical)
+                                                                    {
+                                                                        <div class="flex justify-between py-1 border-b border-base-300">
+                                                                            <span>@spec.Key</span>
+                                                                            <span class="font-medium">@spec.Value</span>
+                                                                        </div>
+                                                                    }
+                                                                </div>
+                                                            }
+                                                            @if (result.Specs.TryGetValue("Physical", out var physical))
+                                                            {
+                                                                <div>
+                                                                    <div class="font-medium mb-2">Physical</div>
+                                                                    @foreach (var spec in physical)
+                                                                    {
+                                                                        <div class="flex justify-between py-1 border-b border-base-300">
+                                                                            <span>@spec.Key</span>
+                                                                            <span class="font-medium">@spec.Value</span>
+                                                                        </div>
+                                                                    }
+                                                                </div>
+                                                            }
+                                                        </div>
+                                                        
+                                                        <div class="flex justify-end mt-4">
+                                                            <button class="btn btn-primary" @onclick="async () => await UseOctopartResult(result)">
+                                                                Use This Part
+                                                            </button>
+                                                        </div>
+                                                    }
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                }
+                else if (_isSearching)
+                {
+                    <div class="mt-6 p-8 flex flex-col items-center justify-center bg-base-200 rounded-lg">
+                        <div class="loading loading-spinner loading-lg"></div>
+                        <p class="mt-4">Searching components...</p>
+                    </div>
+                }
+            </div>
+
+            <div class="form-control w-full mt-6">
+                <label class="label cursor-pointer">
+                    <span class="label-text text-lg font-medium">Use a separate internal (company) part number?</span>
+                    <input type="checkbox" class="checkbox" 
+                           @bind="_useInternalPartNumber" />
+                </label>
+                @if (_useInternalPartNumber)
+                {
+                    <input type="text" placeholder="Internal part number" 
+                           class="input input-bordered w-full mt-2" 
+                           @bind="_part.LocalPartNumber" />
+                }
+            </div>
+        }
+        else
+        {
+            <div class="form-control w-full mt-6">
+                <label class="label">
+                    <span class="label-text text-lg font-medium">Name</span>
+                    <span class="label-text-alt text-error">*</span>
+                </label>
+                <input type="text" placeholder="Your part name/number" 
+                       class="input input-bordered w-full" 
+                       @bind="_part.Name" />
+
+                <label class="label mt-4">
+                    <span class="label-text text-lg font-medium">Description</span>
+                </label>
+                <textarea class="textarea textarea-bordered h-24" 
+                          placeholder="One-line part description"
+                          @bind="_part.Description"></textarea>
+
+                <label class="label mt-4">
+                    <span class="label-text text-lg font-medium">Footprint</span>
+                </label>
+                <input type="text" placeholder="Footprint" 
+                       class="input input-bordered w-full" 
+                       @bind="_part.Footprint" />
+            </div>
+        }
+
+        <div class="form-control w-full mt-6 bg-base-200 p-4 rounded-lg">
+            <label class="label">
+                <span class="label-text text-lg font-medium">After creating:</span>
+            </label>
+            <div class="flex flex-col md:flex-row gap-4">
+                <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="radio" name="afterCreate" class="radio" 
+                           checked="@(_afterCreate == AfterCreateAction.GoToCreated)"
+                           @onchange="@(() => _afterCreate = AfterCreateAction.GoToCreated)" />
+                    <span>Go to created part</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="radio" name="afterCreate" class="radio" 
+                           checked="@(_afterCreate == AfterCreateAction.AddStock)"
+                           @onchange="@(() => _afterCreate = AfterCreateAction.AddStock)" />
+                    <span>Add stock for created part</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="radio" name="afterCreate" class="radio" 
+                           checked="@(_afterCreate == AfterCreateAction.Continue)"
+                           @onchange="@(() => _afterCreate = AfterCreateAction.Continue)" />
+                    <span>Stay and continue creating new parts</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="modal-action">
+            <button class="btn btn-ghost" @onclick="OnClose">Cancel</button>
+            <button class="btn btn-primary" @onclick="CreatePart">
+                <span class="material-icons mr-2">add</span>
+                Create Part
+            </button>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public EventCallback OnClose { get; set; }
+    [Parameter] public EventCallback<AfterCreateAction> OnPartCreated { get; set; }
+
+    private PartType _selectedType;
+    private Part _part = new();
+    private string _searchMpn = string.Empty;
+    private string _searchQuery = string.Empty;
+    private List<OctopartSearchResult>? _octopartResults;
+    private bool _useInternalPartNumber;
+    private AfterCreateAction _afterCreate = AfterCreateAction.GoToCreated;
+    private Dictionary<string, Dictionary<string, string>> _selectedSpecs = new();
+    private bool _isSearching;
+    private OctopartSearchResult? _selectedResult;
+
+    private string GetTypeDescription(PartType type) => type switch
+    {
+        PartType.Linked => "For components with specific manufacturer part numbers (MPNs). If it has a part number and it isn't a no-name generic part, choose this option. You will get access to datasheets, specs and you will be sharing data for this component with other users.",
+        PartType.Local => "Generic and no-name components, PCBs and anything else, not linked and shared.",
+        PartType.Meta => "A generic part that contains other parts that are exchangeable with one another (substitutes).",
+        _ => string.Empty
+    };
+
+    private async Task SearchExactMpn()
+    {
+        if (string.IsNullOrWhiteSpace(_searchMpn)) return;
+        
+        try
+        {
+            _isSearching = true;
+            StateHasChanged(); // Force UI update
+            
+            _octopartResults = await OctopartService.SearchByMpn(_searchMpn);
+            _selectedSpecs = new Dictionary<string, Dictionary<string, string>>();
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"Error searching by MPN: {ex.Message}");
+            // TODO: Add error handling UI
+        }
+        finally
+        {
+            _isSearching = false;
+            StateHasChanged(); // Force UI update
+        }
+    }
+
+    private async Task SearchOctopart()
+    {
+        if (string.IsNullOrWhiteSpace(_searchQuery)) return;
+        
+        try
+        {
+            _isSearching = true;
+            StateHasChanged(); // Force UI update
+            
+            _octopartResults = await OctopartService.Search(_searchQuery);
+            _selectedSpecs = new Dictionary<string, Dictionary<string, string>>();
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"Error searching Octopart: {ex.Message}");
+            // TODO: Add error handling UI
+        }
+        finally
+        {
+            _isSearching = false;
+            StateHasChanged(); // Force UI update
+        }
+    }
+
+    private void SelectSearchResult(OctopartSearchResult result)
+    {
+        _part = new Part
+        {
+            Type = PartType.Linked,
+            Name = result.Mpn,
+            Description = result.Description ?? string.Empty,
+            Manufacturer = result.Manufacturer ?? string.Empty,
+            ManufacturerPartNumber = result.Mpn
+        };
+
+        // Add datasheet to documents if available
+        if (!string.IsNullOrEmpty(result.DatasheetUrl))
+        {
+            _part.Documents.Add(new Document
+            {
+                Name = $"{result.Mpn} Datasheet",
+                Url = result.DatasheetUrl,
+                Type = "Datasheet"
+            });
+        }
+
+        // Map specifications
+        if (result.Specs != null)
+        {
+            // Map dimension specs
+            if (result.Specs.TryGetValue("Dimensions", out var dimensions))
+            {
+                foreach (var spec in dimensions)
+                {
+                    _part.Dimensions[spec.Key] = spec.Value;
+                }
+            }
+
+            // Map technical specs
+            if (result.Specs.TryGetValue("Technical", out var technicalSpecs))
+            {
+                foreach (var spec in technicalSpecs)
+                {
+                    _part.TechnicalSpecs[spec.Key] = spec.Value;
+                }
+            }
+
+            // Map physical specs
+            if (result.Specs.TryGetValue("Physical", out var physicalSpecs))
+            {
+                foreach (var spec in physicalSpecs)
+                {
+                    _part.PhysicalSpecs[spec.Key] = spec.Value;
+                }
+            }
+        }
+
+        _selectedSpecs = result.Specs ?? new Dictionary<string, Dictionary<string, string>>();
+    }
+
+    private async Task CreatePart()
+    {
+        // TODO: Validate part data
+        await OnPartCreated.InvokeAsync(_afterCreate);
+        await OnClose.InvokeAsync();
+    }
+
+    private async Task UseOctopartResult(OctopartSearchResult result)
+    {
+        SelectSearchResult(result);
+        await CreatePart();
+    }
+
+    private void SelectPartForDetails(OctopartSearchResult result)
+    {
+        _selectedResult = result;
+    }
+}
+
+public enum AfterCreateAction
+{
+    GoToCreated,
+    AddStock,
+    Continue
+} 

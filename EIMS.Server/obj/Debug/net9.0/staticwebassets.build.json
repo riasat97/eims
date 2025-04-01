@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "n6uNKd132PO2sL7rjymd1XCcYZJ7Q+YOoQgeem3ZeRY=",
+  "Source": "EIMS.Server",
+  "BasePath": "_content/EIMS.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

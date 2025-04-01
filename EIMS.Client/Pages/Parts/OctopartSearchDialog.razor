@@ -1,0 +1,324 @@
+@using EIMS.Shared.Models
+@using EIMS.Shared.Services
+@inject IOctopartService OctopartService
+
+<div class="modal modal-open">
+    <div class="modal-box max-w-5xl h-[90vh] flex flex-col">
+        <div class="flex justify-between items-center">
+            <h3 class="font-bold text-lg">Search Component</h3>
+            <button class="btn btn-sm" @onclick="OnClose">
+                <i class="material-icons">close</i>
+            </button>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <!-- MPN Search Box -->
+            <div class="card bg-base-100 shadow">
+                <div class="card-body p-4">
+                    <h2 class="card-title text-base">Match exact component name (MPN)</h2>
+                    <div class="flex gap-2">
+                        <input type="text" placeholder="Enter MPN..." 
+                            class="input input-bordered input-sm flex-1" 
+                            @bind="_mpnQuery"
+                            @onkeyup="HandleMpnKeyUp" />
+                        <button class="btn btn-sm" @onclick="SearchByMpn">Match</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- General Search Box -->
+            <div class="card bg-base-100 shadow">
+                <div class="card-body p-4">
+                    <h2 class="card-title text-base">Search Octopart</h2>
+                    <div class="flex gap-2">
+                        <input type="text" placeholder="What to search for" 
+                            class="input input-bordered input-sm flex-1" 
+                            @bind="_searchQuery"
+                            @onkeyup="HandleSearch" />
+                        <button class="btn btn-sm" @onclick="SearchParts">Search</button>
+                    </div>
+                    <p class="text-right text-xs">Powered by Octopart</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="flex-1 overflow-auto">
+            @if (_searchResults == null)
+            {
+                <div class="flex justify-center items-center h-full">
+                    <span class="loading loading-spinner loading-lg"></span>
+                </div>
+            }
+            else if (!_searchResults.Any())
+            {
+                <div class="text-center py-8">
+                    <p class="text-gray-500">No results found</p>
+                </div>
+            }
+            else if (_selectedPart != null)
+            {
+                <div class="bg-neutral rounded-lg p-4">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="font-bold text-lg">@_selectedPart.Mpn (@_selectedPart.Manufacturer)</h3>
+                        <div>
+                            @if (!string.IsNullOrEmpty(_selectedPart.DatasheetUrl))
+                            {
+                                <a href="@_selectedPart.DatasheetUrl" target="_blank" class="btn btn-sm btn-accent">
+                                    <span class="material-icons text-sm mr-1">description</span>
+                                    Datasheet
+                                </a>
+                            }
+                        </div>
+                    </div>
+
+                    <p class="text-sm mb-4">@_selectedPart.Description</p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <!-- Left column - Component Image -->
+                        <div class="md:col-span-1 flex justify-center items-start">
+                            @if (!string.IsNullOrEmpty(_selectedPart.ImageUrl))
+                            {
+                                @if (!_imageLoadError)
+                                {
+                                    <div class="w-full flex flex-col items-center">
+                                        <img src="@_selectedPart.ImageUrl" 
+                                             alt="@_selectedPart.Name"
+                                             @onerror="HandleImageError"
+                                             class="max-h-48 max-w-full object-contain rounded border border-base-300" />
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="w-full h-48 flex flex-col justify-center items-center bg-base-200 rounded">
+                                        <span class="material-icons text-5xl text-base-content opacity-30">broken_image</span>
+                                        <div class="text-xs mt-2 opacity-50">Failed to load image</div>
+                                    </div>
+                                }
+                            }
+                            else
+                            {
+                                <div class="w-full h-48 flex flex-col justify-center items-center bg-base-200 rounded">
+                                    <span class="material-icons text-5xl text-base-content opacity-30">image_not_supported</span>
+                                    <div class="text-xs mt-2 opacity-50">No image available</div>
+                                </div>
+                            }
+                        </div>
+
+                        <!-- Right columns - Specifications -->
+                        <div class="md:col-span-2 grid grid-cols-1 md:grid-cols-3 gap-4">
+                            @if (_selectedPart.Specs != null)
+                            {
+                                @if (_selectedPart.Specs.TryGetValue("Dimensions", out var dimensions))
+                                {
+                                    <div>
+                                        <h4 class="font-semibold text-base border-b pb-1 mb-2">Dimensions:</h4>
+                                        <table class="w-full text-sm">
+                                            <tbody>
+                                                @foreach (var spec in dimensions)
+                                                {
+                                                    <tr>
+                                                        <td class="text-left py-1">@spec.Key</td>
+                                                        <td class="text-right font-medium py-1">@spec.Value</td>
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                }
+
+                                @if (_selectedPart.Specs.TryGetValue("Technical", out var technical))
+                                {
+                                    <div>
+                                        <h4 class="font-semibold text-base border-b pb-1 mb-2">Technical:</h4>
+                                        <table class="w-full text-sm">
+                                            <tbody>
+                                                @foreach (var spec in technical)
+                                                {
+                                                    <tr>
+                                                        <td class="text-left py-1">@spec.Key</td>
+                                                        <td class="text-right font-medium py-1">@spec.Value</td>
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                }
+
+                                @if (_selectedPart.Specs.TryGetValue("Physical", out var physical))
+                                {
+                                    <div>
+                                        <h4 class="font-semibold text-base border-b pb-1 mb-2">Physical:</h4>
+                                        <table class="w-full text-sm">
+                                            <tbody>
+                                                @foreach (var spec in physical)
+                                                {
+                                                    <tr>
+                                                        <td class="text-left py-1">@spec.Key</td>
+                                                        <td class="text-right font-medium py-1">@spec.Value</td>
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex justify-end mt-4 gap-2">
+                    <button class="btn btn-sm" @onclick="BackToSearchResults">Back to Results</button>
+                    <button class="btn btn-sm btn-primary" @onclick="AddSelectedPart">Add Part</button>
+                </div>
+            }
+            else
+            {
+                <div class="overflow-x-auto rounded-lg">
+                    <table class="table table-zebra w-full bg-neutral text-neutral-content">
+                        <thead>
+                            <tr>
+                                <th class="w-10"></th>
+                                <th class="w-1/4">Part Number</th>
+                                <th class="w-1/3">Description</th>
+                                <th>Manufacturer</th>
+                                <th>Category</th>
+                                <th class="w-24">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var part in _searchResults)
+                            {
+                                <tr class="hover cursor-pointer" @onclick="() => SelectPart(part)">
+                                    <td class="px-2">
+                                        <input type="radio" checked="@(_selectedPart?.Id == part.Id)" class="radio radio-sm" />
+                                    </td>
+                                    <td>
+                                        <div class="font-medium">@part.Mpn</div>
+                                        <div class="text-xs opacity-70">@(part.Name != part.Mpn ? part.Name : "")</div>
+                                    </td>
+                                    <td class="text-sm">
+                                        <div class="line-clamp-2">@part.Description</div>
+                                    </td>
+                                    <td class="text-sm">@part.Manufacturer</td>
+                                    <td class="text-sm">@part.Category</td>
+                                    <td>
+                                        <div class="flex gap-1 justify-center">
+                                            @if (!string.IsNullOrEmpty(part.DatasheetUrl))
+                                            {
+                                                <a href="@part.DatasheetUrl" target="_blank" class="btn btn-xs" @onclick:stopPropagation>
+                                                    <span class="material-icons text-xs">description</span>
+                                                </a>
+                                            }
+                                            <button class="btn btn-xs" @onclick:stopPropagation="true" @onclick="() => SelectPart(part)">
+                                                <span class="material-icons text-xs">visibility</span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public EventCallback OnClose { get; set; }
+    
+    [Parameter]
+    public EventCallback<OctopartSearchResult> OnPartSelected { get; set; }
+    
+    private List<OctopartSearchResult>? _searchResults;
+    private OctopartSearchResult? _selectedPart;
+    private string _searchQuery = string.Empty;
+    private string _mpnQuery = string.Empty;
+    private bool _imageLoadError = false;
+
+    protected override void OnInitialized()
+    {
+        _searchResults = new List<OctopartSearchResult>();
+    }
+
+    private async Task SearchParts()
+    {
+        if (string.IsNullOrWhiteSpace(_searchQuery))
+        {
+            _searchResults = new List<OctopartSearchResult>();
+            return;
+        }
+
+        _selectedPart = null;
+        _searchResults = null;
+        StateHasChanged();
+
+        _searchResults = await OctopartService.Search(_searchQuery);
+    }
+
+    private async Task SearchByMpn()
+    {
+        if (string.IsNullOrWhiteSpace(_mpnQuery))
+        {
+            _searchResults = new List<OctopartSearchResult>();
+            return;
+        }
+
+        _selectedPart = null;
+        _searchResults = null;
+        StateHasChanged();
+
+        _searchResults = await OctopartService.SearchByMpn(_mpnQuery);
+        
+        // If we got exactly one result, select it automatically
+        if (_searchResults.Count == 1)
+        {
+            _selectedPart = _searchResults[0];
+        }
+    }
+
+    private void SelectPart(OctopartSearchResult part)
+    {
+        _selectedPart = part;
+        _imageLoadError = false; // Reset error state when selecting a new part
+    }
+    
+    private void BackToSearchResults()
+    {
+        _selectedPart = null;
+    }
+
+    private async Task AddSelectedPart()
+    {
+        if (_selectedPart != null)
+        {
+            await OnPartSelected.InvokeAsync(_selectedPart);
+        }
+    }
+
+    private async Task HandleSearch(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            await SearchParts();
+        }
+    }
+
+    private async Task HandleMpnKeyUp(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            await SearchByMpn();
+        }
+    }
+
+    private void HandleImageError()
+    {
+        Console.WriteLine($"Image failed to load: {_selectedPart?.ImageUrl}");
+        _imageLoadError = true;
+        StateHasChanged();
+    }
+} 

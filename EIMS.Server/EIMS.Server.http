@@ -1,0 +1,6 @@
+@EIMS.Server_HostAddress = http://localhost:5063
+
+GET {{EIMS.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
