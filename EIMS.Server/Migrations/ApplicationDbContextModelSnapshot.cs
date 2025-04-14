@@ -112,7 +112,7 @@ namespace EIMS.Server.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Parts");
+                    b.ToTable("Parts", (string)null);
                 });
 
             modelBuilder.Entity("PartPart", b =>
@@ -132,7 +132,7 @@ namespace EIMS.Server.Migrations
 
             modelBuilder.Entity("EIMS.Shared.Models.Part", b =>
                 {
-                    b.OwnsMany("EIMS.Shared.Models.Document", "Documents", b1 =>
+                    b.OwnsMany("EIMS.Shared.Models.Part.Documents#EIMS.Shared.Models.Document", "Documents", b1 =>
                         {
                             b1.Property<int>("Id")
                                 .ValueGeneratedOnAdd()
@@ -171,7 +171,7 @@ namespace EIMS.Server.Migrations
 
                             b1.HasIndex("PartId1");
 
-                            b1.ToTable("Document");
+                            b1.ToTable("Document", (string)null);
 
                             b1.WithOwner()
                                 .HasForeignKey("PartId");

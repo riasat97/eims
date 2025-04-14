@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using EIMS.Server.Data;
+using EIMS.Server.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,9 @@ builder.Services.AddControllers();
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+
+// Register application services
+builder.Services.AddScoped<ILocationGenerationService, LocationGenerationService>();
 
 // Configure CORS to allow requests from the client
 builder.Services.AddCors(options =>

@@ -1,0 +1,114 @@
+@page "/locations"
+@using EIMS.Client.Services
+@using EIMS.Shared.Models
+@inject StorageLocationService LocationService
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+
+<PageTitle>Storage Locations - EIMS</PageTitle>
+
+<div class="container-fluid p-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="text-2xl font-bold">Storage Locations</h1>
+        <div class="btn-group">
+            <button @onclick="OpenCreateLocationDialog" class="btn btn-primary me-2">
+                <span class="material-icons align-middle me-1">add</span> Create Location
+            </button>
+            <button @onclick="OpenGeneratorDialog" class="btn btn-success">
+                <span class="material-icons align-middle me-1">auto_awesome</span> Batch Generate
+            </button>
+        </div>
+    </div>
+
+    @if (isLoading)
+    {
+        <div class="d-flex justify-content-center my-5">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    }
+    else if (!locations.Any())
+    {
+        <div class="alert alert-info text-center p-5 my-4">
+            <span class="material-icons d-block mb-3" style="font-size: 48px;">inventory_2</span>
+            <h4>No storage locations found</h4>
+            <p>Create one to get started!</p>
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive bg-white rounded shadow">
+            <table class="table table-hover mb-0">
+                <thead class="bg-light">
+                    <tr>
+                        <th class="p-3">Name</th>
+                        <th class="p-3">Type</th>
+                        <th class="p-3">Created</th>
+                        <th class="p-3">Last Modified</th>
+                        <th class="p-3">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var location in locations)
+                    {
+                        <tr>
+                            <td class="p-3">@location.Name</td>
+                            <td class="p-3">
+                                <span class="badge @(location.IsSinglePartOnly ? "bg-warning" : "bg-success")">
+                                    @(location.IsSinglePartOnly ? "Single Part" : "Multi-Part")
+                                </span>
+                            </td>
+                            <td class="p-3">@location.Created.ToLocalTime().ToString("g")</td>
+                            <td class="p-3">@location.LastModified.ToLocalTime().ToString("g")</td>
+                            <td class="p-3">
+                                <button @onclick="() => ViewLocationDetails(location.Id)" class="btn btn-sm btn-outline-primary">
+                                    <span class="material-icons fs-6">visibility</span>
+                                </button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
+
+@code {
+    private List<StorageLocation> locations = new();
+    private bool isLoading = true;
+    private StorageLocation? selectedLocation;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadLocations();
+    }
+
+    private async Task LoadLocations()
+    {
+        isLoading = true;
+        StateHasChanged();
+        
+        locations = await LocationService.GetLocationsAsync();
+        
+        isLoading = false;
+        StateHasChanged();
+    }
+
+    private void OpenCreateLocationDialog()
+    {
+        // TODO: Implement this
+        JSRuntime.InvokeVoidAsync("alert", "Create Location functionality will be implemented soon");
+    }
+
+    private void OpenGeneratorDialog()
+    {
+        NavigationManager.NavigateTo("/location-generator");
+    }
+
+    private void ViewLocationDetails(int locationId)
+    {
+        // TODO: Implement this
+        JSRuntime.InvokeVoidAsync("alert", $"Viewing location {locationId} will be implemented soon");
+    }
+} 

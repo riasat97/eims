@@ -32,6 +32,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[R:/eims/EIMS.Client/Pages/LocationGenerator.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9jYXRpb25HZW5lcmF0b3IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [R:/eims/EIMS.Client/Pages/Parts/CreatePartDialog.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFydHNcQ3JlYXRlUGFydERpYWxvZy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -50,6 +54,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [R:/eims/EIMS.Client/Pages/Parts/Parts.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFydHNcUGFydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[R:/eims/EIMS.Client/Pages/StorageLocations.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RvcmFnZUxvY2F0aW9ucy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [R:/eims/EIMS.Client/Pages/TokenProxy.razor]

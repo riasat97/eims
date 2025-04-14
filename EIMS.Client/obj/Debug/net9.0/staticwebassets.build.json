@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mSZmxQleoMD7MAFwwisbY8KIAB51wRQghi8xQQzTdgc=",
+  "Hash": "9qQp5IMnyjG26o+36zvl/uIYFObZObqSStw9ax/7gG0=",
   "Source": "EIMS.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "yoxyrjy6gj",
-      "Integrity": "EqbIvenmkaNzmpxK4JO16z+KsEpjQytM5LUXjmcdc6I=",
+      "Fingerprint": "2y5l6j9061",
+      "Integrity": "WpP0QMrKHOoSJlaQjr4LQ+eBvWLGswYmU2YgWQpp6Og=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\blazor.boot.json"
@@ -73,11 +73,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "native",
-      "Fingerprint": "nseotsck93",
-      "Integrity": "GbKWK+esqeL1E24rCVsCvsQCzaJM65aknWOT1UhUYa4=",
+      "Fingerprint": "6330eklyj6",
+      "Integrity": "XoL4KXKUiNydxBQ0q7b/0gDsgsuq8oac0YMVUnGkfRc=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\riasa\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\9.0.0\\runtimes\\browser-wasm\\native\\dotnet.js"
+      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\9.0.3\\runtimes\\browser-wasm\\native\\dotnet.js"
     },
     {
       "Identity": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.js.map",
@@ -94,11 +94,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "qmhzxsh5gb",
-      "Integrity": "AkVknhqIUlYkhjyp1K3qcNV6kEbky2zVe2gBt0JL4rQ=",
+      "Fingerprint": "3eoc1dz96x",
+      "Integrity": "hZR53FKJSxjnxgvKrH7p+D7FLbv31p/Msx6rLNsW5Ps=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\riasa\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\9.0.0\\runtimes\\browser-wasm\\native\\dotnet.js.map"
+      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\9.0.3\\runtimes\\browser-wasm\\native\\dotnet.js.map"
     },
     {
       "Identity": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.native.js",
@@ -115,11 +115,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "native",
-      "Fingerprint": "hmanx9razn",
-      "Integrity": "d7UNSArplVrX3arY2Kmhxp1wN79ng8hLqIBrkiQ9Gbo=",
+      "Fingerprint": "1p93gcv9fh",
+      "Integrity": "1UPiprzN3JhPftx3be7XEMaYlUN+chRF41CuttiWVtQ=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\riasa\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\9.0.0\\runtimes\\browser-wasm\\native\\dotnet.native.js"
+      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\9.0.3\\runtimes\\browser-wasm\\native\\dotnet.native.js"
     },
     {
       "Identity": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.native.wasm",
@@ -136,11 +136,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "native",
-      "Fingerprint": "p4lwlf2bu1",
-      "Integrity": "+eNtxSEiakcWrx6VoLGcDvqDWS3/kWe0AtiYmQFwe7E=",
+      "Fingerprint": "9msu8ucn2h",
+      "Integrity": "Yaw09m1FVxsROJ5Sa9f6SmuJebQT0b3hrKQIbo6qm5A=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\riasa\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\9.0.0\\runtimes\\browser-wasm\\native\\dotnet.native.wasm"
+      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\9.0.3\\runtimes\\browser-wasm\\native\\dotnet.native.wasm"
     },
     {
       "Identity": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.runtime.js",
@@ -157,11 +157,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "native",
-      "Fingerprint": "o8gq1i8bk6",
-      "Integrity": "uD1t4tsPtmIHsx30SC4OztehGGaHVDksFD38rL2e3P4=",
+      "Fingerprint": "qrl1fuqt3c",
+      "Integrity": "ilTXrnUF4HKbIAFVIYlRmX3ryKNZpGUObkWMF0n2Kcg=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\riasa\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\9.0.0\\runtimes\\browser-wasm\\native\\dotnet.runtime.js"
+      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\9.0.3\\runtimes\\browser-wasm\\native\\dotnet.runtime.js"
     },
     {
       "Identity": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.runtime.js.map",
@@ -178,11 +178,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "e5oadoz1kk",
-      "Integrity": "wpV1LHIee94UpLGiRx0W3R9fFp7xR8bD3JsCXfnpw5c=",
+      "Fingerprint": "nib9cvonux",
+      "Integrity": "j0o3Jd43TEt7CL/kaSWnO8IALA8Zgoa3fcyaWDAVIyM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\riasa\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\9.0.0\\runtimes\\browser-wasm\\native\\dotnet.runtime.js.map"
+      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\9.0.3\\runtimes\\browser-wasm\\native\\dotnet.runtime.js.map"
     },
     {
       "Identity": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Client.pdb",
@@ -199,8 +199,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "y22o16m3kd",
-      "Integrity": "irkopO3gek1lDwQ36LsWDg+6Eeh8JXiAFrTf18i8/0k=",
+      "Fingerprint": "ovr97jksjp",
+      "Integrity": "ZMjXa0PBOYwNLeqQyb9uvjqsYOFHeg1rz9iauq/9Zyg=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\EIMS.Client.pdb"
@@ -220,8 +220,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "lfx97igmz2",
-      "Integrity": "gYBvxnp7CC5KLem3Rhubaj6AB/X4FLYlOiXAjUo04IY=",
+      "Fingerprint": "24ip6731pe",
+      "Integrity": "8tnSnqHPrXlYyk+AAcHJ7zkK4uUpd/qdqqQXbiIrqjo=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\webcil\\EIMS.Client.wasm"
@@ -241,8 +241,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "2hd3imxvwv",
-      "Integrity": "9qDQydYbEfEm6P5fVo3BkisJohBY7xU4Mj91FBJpbzk=",
+      "Fingerprint": "konkt9nol3",
+      "Integrity": "HNqI0iUOfNK3PjGffGQ8OC/zJdc8bKlTO7prcKGnssM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "R:\\eims\\EIMS.Shared\\bin\\Debug\\net8.0\\EIMS.Shared.pdb"
@@ -262,8 +262,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "3uhwkspvdg",
-      "Integrity": "S/ZwoczoAv8/oUCzM2qReW40TcFMt6K2Rcp5ZbL3q0c=",
+      "Fingerprint": "iibm76kfiz",
+      "Integrity": "Nt3boRPHJib2z34zhYQuHhTM5bl9gCUp9Dzq5Er2nsM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\webcil\\EIMS.Shared.wasm"
@@ -287,7 +287,7 @@
       "Integrity": "SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\riasa\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\9.0.0\\runtimes\\browser-wasm\\native\\icudt_CJK.dat"
+      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\9.0.3\\runtimes\\browser-wasm\\native\\icudt_CJK.dat"
     },
     {
       "Identity": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\icudt_EFIGS.dat",
@@ -308,7 +308,7 @@
       "Integrity": "8fItetYY8kQ0ww6oxwTLiT3oXlBwHKumbeP2pRF4yTc=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\riasa\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\9.0.0\\runtimes\\browser-wasm\\native\\icudt_EFIGS.dat"
+      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\9.0.3\\runtimes\\browser-wasm\\native\\icudt_EFIGS.dat"
     },
     {
       "Identity": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\icudt_no_CJK.dat",
@@ -329,7 +329,7 @@
       "Integrity": "L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\riasa\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\9.0.0\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
+      "OriginalItemSpec": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\\9.0.3\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
     },
     {
       "Identity": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\IdentityModel.wasm",
@@ -4679,12 +4679,12 @@
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\1jiygc4ffr-nseotsck93.gz",
+      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\1jiygc4ffr-6330eklyj6.gz",
       "SourceId": "EIMS.Client",
       "SourceType": "Computed",
       "ContentRoot": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/dotnet#[.{fingerprint=nseotsck93}]?.js.gz",
+      "RelativePath": "_framework/dotnet#[.{fingerprint=6330eklyj6}]?.js.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -4693,8 +4693,8 @@
       "RelatedAsset": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "7r20gdi1w8",
-      "Integrity": "89ExiOEhe/w5kr637D6SSD7RQ7QlqBFLAr2hGEF3CBg=",
+      "Fingerprint": "eoxci8sl82",
+      "Integrity": "glhTwX/JHqWt0fuT2Iz6M3EVOvtPyB9hGczAc+axfC4=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.js"
@@ -5372,12 +5372,12 @@
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Runtime.InteropServices.wasm"
     },
     {
-      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\5h71sqk0h9-hmanx9razn.gz",
+      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\5h71sqk0h9-1p93gcv9fh.gz",
       "SourceId": "EIMS.Client",
       "SourceType": "Computed",
       "ContentRoot": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/dotnet.native#[.{fingerprint=hmanx9razn}]!.js.gz",
+      "RelativePath": "_framework/dotnet.native#[.{fingerprint=1p93gcv9fh}]!.js.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5386,8 +5386,8 @@
       "RelatedAsset": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.native.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "j68hqj15ha",
-      "Integrity": "qxkQ/DpThqMOQj86jm6LP9o34uFnddsEvE8uGAdmLQg=",
+      "Fingerprint": "wulfvk4p7r",
+      "Integrity": "aOvd3b7hiZsvfME6FPDHkfZUDNWneW2JMAgpg1XUGss=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.native.js"
@@ -5498,12 +5498,12 @@
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Resources.Reader.wasm"
     },
     {
-      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\661czh662j-2hd3imxvwv.gz",
+      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\661czh662j-konkt9nol3.gz",
       "SourceId": "EIMS.Client",
       "SourceType": "Computed",
       "ContentRoot": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/EIMS.Shared#[.{fingerprint=2hd3imxvwv}]!.pdb.gz",
+      "RelativePath": "_framework/EIMS.Shared#[.{fingerprint=konkt9nol3}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5512,8 +5512,8 @@
       "RelatedAsset": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Shared.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "z9eaa9ayr4",
-      "Integrity": "x5T94M3vbil6MJOsPp7ukIsQ2+/uPN8Vh3BeEovTKu0=",
+      "Fingerprint": "3id0zu8zk4",
+      "Integrity": "W79frTQdA4EyF7T2DSWc3Ub5UKAQefxiZXrWkBiwM58=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Shared.pdb"
@@ -5729,12 +5729,12 @@
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Diagnostics.Contracts.wasm"
     },
     {
-      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\7m8e22702s-y22o16m3kd.gz",
+      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\7m8e22702s-ovr97jksjp.gz",
       "SourceId": "EIMS.Client",
       "SourceType": "Computed",
       "ContentRoot": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/EIMS.Client#[.{fingerprint=y22o16m3kd}]!.pdb.gz",
+      "RelativePath": "_framework/EIMS.Client#[.{fingerprint=ovr97jksjp}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5743,8 +5743,8 @@
       "RelatedAsset": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Client.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "gonfws0zxv",
-      "Integrity": "YApHjxldzCjpexsBsQvfq5l3Wntp6NbJuHGUsYWggKs=",
+      "Fingerprint": "lfw26hpxui",
+      "Integrity": "sYrFgq7rjkIrgmz3BhpaeyMVFOc8OVPaQUpPyfbdZSE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Client.pdb"
@@ -6233,12 +6233,12 @@
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Security.Principal.Windows.wasm"
     },
     {
-      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\apbe6qjwns-p4lwlf2bu1.gz",
+      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\apbe6qjwns-9msu8ucn2h.gz",
       "SourceId": "EIMS.Client",
       "SourceType": "Computed",
       "ContentRoot": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/dotnet.native#[.{fingerprint=p4lwlf2bu1}]!.wasm.gz",
+      "RelativePath": "_framework/dotnet.native#[.{fingerprint=9msu8ucn2h}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -6247,8 +6247,8 @@
       "RelatedAsset": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.native.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "sfhf7dhq9z",
-      "Integrity": "CFGAOXWJJz5NxfiNQpPiQ9U58lv1hMdRZyaBRtBQVWY=",
+      "Fingerprint": "nad860te52",
+      "Integrity": "sfSWUy0SAKKkvmvweEDkZo/MK7XWvW7QMQQS4SG+Hpc=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.native.wasm"
@@ -6926,12 +6926,12 @@
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Private.Uri.wasm"
     },
     {
-      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\g73dg0ij4v-lfx97igmz2.gz",
+      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\g73dg0ij4v-24ip6731pe.gz",
       "SourceId": "EIMS.Client",
       "SourceType": "Computed",
       "ContentRoot": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/EIMS.Client#[.{fingerprint=lfx97igmz2}]!.wasm.gz",
+      "RelativePath": "_framework/EIMS.Client#[.{fingerprint=24ip6731pe}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -6940,8 +6940,8 @@
       "RelatedAsset": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Client.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "cdn46tc09n",
-      "Integrity": "sJYkMXtAa+edO2DyLsZ65uTxqkXnHa+zOCUMMP8uScs=",
+      "Fingerprint": "ztrgyzpk7r",
+      "Integrity": "GbEfXiO8Pu2qPEcV+skcdXXRpTtZOpCdtJclAGy6WKY=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Client.wasm"
@@ -7409,7 +7409,7 @@
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.IO.Compression.Brotli.wasm"
     },
     {
-      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\impx7v5ola-yoxyrjy6gj.gz",
+      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\impx7v5ola-2y5l6j9061.gz",
       "SourceId": "EIMS.Client",
       "SourceType": "Computed",
       "ContentRoot": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\",
@@ -7423,8 +7423,8 @@
       "RelatedAsset": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "bjok9dw7ci",
-      "Integrity": "N3Y5u8rjvFonI6T+jDH1Fy2hxQxOXBZU4kXyj7mdtHw=",
+      "Fingerprint": "1iabbtdrma",
+      "Integrity": "6Ri5RiptBL5BfFxCvzw4ZzDOiB5j7p0PosdRJ56rm/4=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -7682,12 +7682,12 @@
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Private.CoreLib.wasm"
     },
     {
-      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\l4co6lvy9s-3uhwkspvdg.gz",
+      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\l4co6lvy9s-iibm76kfiz.gz",
       "SourceId": "EIMS.Client",
       "SourceType": "Computed",
       "ContentRoot": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/EIMS.Shared#[.{fingerprint=3uhwkspvdg}]!.wasm.gz",
+      "RelativePath": "_framework/EIMS.Shared#[.{fingerprint=iibm76kfiz}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -7696,8 +7696,8 @@
       "RelatedAsset": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Shared.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "f0tuvvt9fh",
-      "Integrity": "oabNOykJvxb+bcuaKfrdHl7ubKPf4o0NUq6uUrguFu8=",
+      "Fingerprint": "h9r82c1xcv",
+      "Integrity": "+4EpcsiO4sfR8BtkupwmrF9XGiC9Tz4PZncFrrpEnLM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Shared.wasm"
@@ -9173,12 +9173,12 @@
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Security.Cryptography.Cng.wasm"
     },
     {
-      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\up9qwah2jq-o8gq1i8bk6.gz",
+      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\up9qwah2jq-qrl1fuqt3c.gz",
       "SourceId": "EIMS.Client",
       "SourceType": "Computed",
       "ContentRoot": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/dotnet.runtime#[.{fingerprint=o8gq1i8bk6}]!.js.gz",
+      "RelativePath": "_framework/dotnet.runtime#[.{fingerprint=qrl1fuqt3c}]!.js.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -9187,8 +9187,8 @@
       "RelatedAsset": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.runtime.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "8ih16red8v",
-      "Integrity": "4EBaOHuR+tsTS6QtuWI1fkl7SWkIBWaz4pJPaZNgqEs=",
+      "Fingerprint": "rllr14mizv",
+      "Integrity": "H7fCXhtV1AtmiPAZnStFaIOKbZks/dFQbP+vzxXIi7A=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.runtime.js"
@@ -9362,12 +9362,12 @@
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Private.Xml.Linq.wasm"
     },
     {
-      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\w2t52or8fq-qmhzxsh5gb.gz",
+      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\w2t52or8fq-3eoc1dz96x.gz",
       "SourceId": "EIMS.Client",
       "SourceType": "Computed",
       "ContentRoot": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/dotnet.js#[.{fingerprint=qmhzxsh5gb}]?.map.gz",
+      "RelativePath": "_framework/dotnet.js#[.{fingerprint=3eoc1dz96x}]?.map.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -9376,8 +9376,8 @@
       "RelatedAsset": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.js.map",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "skryihg2vq",
-      "Integrity": "HHYfg1XIkBNns5Y6ufAdInIR38MtWE/dcOgxZXkxxqg=",
+      "Fingerprint": "2n9dh4ytjz",
+      "Integrity": "DhOEmYmuVeZyNd2RMPm8f2ovHF0BVSYPw5oWSM9Ealg=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.js.map"
@@ -9614,12 +9614,12 @@
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\mscorlib.wasm"
     },
     {
-      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\xteapqt7pr-e5oadoz1kk.gz",
+      "Identity": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\xteapqt7pr-nib9cvonux.gz",
       "SourceId": "EIMS.Client",
       "SourceType": "Computed",
       "ContentRoot": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/dotnet.runtime.js#[.{fingerprint=e5oadoz1kk}]?.map.gz",
+      "RelativePath": "_framework/dotnet.runtime.js#[.{fingerprint=nib9cvonux}]?.map.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -9628,8 +9628,8 @@
       "RelatedAsset": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.runtime.js.map",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "7bmtrdyri8",
-      "Integrity": "M0X2p24WnSNTB9zm2SejFkC3N9NCV1UJTRJpoNy4+Zg=",
+      "Fingerprint": "84ddl8grz3",
+      "Integrity": "WGeGMyO5DkzPSYOnFpLcgO16X1VIeM0E0OW7C9NybWs=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.runtime.js.map"
@@ -11083,11 +11083,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EqbIvenmkaNzmpxK4JO16z+KsEpjQytM5LUXjmcdc6I=\""
+          "Value": "\"WpP0QMrKHOoSJlaQjr4LQ+eBvWLGswYmU2YgWQpp6Og=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 11:49:19 GMT"
+          "Value": "Fri, 11 Apr 2025 11:57:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11097,18 +11097,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-EqbIvenmkaNzmpxK4JO16z+KsEpjQytM5LUXjmcdc6I="
+          "Value": "sha256-WpP0QMrKHOoSJlaQjr4LQ+eBvWLGswYmU2YgWQpp6Og="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\impx7v5ola-yoxyrjy6gj.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\impx7v5ola-2y5l6j9061.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000078982703"
+          "Quality": "0.000078963992"
         }
       ],
       "ResponseHeaders": [
@@ -11118,15 +11118,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12660"
+          "Value": "12663"
         },
         {
           "Name": "ETag",
-          "Value": "\"N3Y5u8rjvFonI6T+jDH1Fy2hxQxOXBZU4kXyj7mdtHw=\""
+          "Value": "\"6Ri5RiptBL5BfFxCvzw4ZzDOiB5j7p0PosdRJ56rm/4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 11:46:38 GMT"
+          "Value": "Fri, 11 Apr 2025 09:25:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11146,19 +11146,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"EqbIvenmkaNzmpxK4JO16z+KsEpjQytM5LUXjmcdc6I=\""
+          "Value": "W/\"WpP0QMrKHOoSJlaQjr4LQ+eBvWLGswYmU2YgWQpp6Og=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-EqbIvenmkaNzmpxK4JO16z+KsEpjQytM5LUXjmcdc6I="
+          "Value": "sha256-WpP0QMrKHOoSJlaQjr4LQ+eBvWLGswYmU2YgWQpp6Og="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\impx7v5ola-yoxyrjy6gj.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\impx7v5ola-2y5l6j9061.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11167,7 +11167,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12660"
+          "Value": "12663"
         },
         {
           "Name": "Content-Type",
@@ -11175,11 +11175,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"N3Y5u8rjvFonI6T+jDH1Fy2hxQxOXBZU4kXyj7mdtHw=\""
+          "Value": "\"6Ri5RiptBL5BfFxCvzw4ZzDOiB5j7p0PosdRJ56rm/4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 11:46:38 GMT"
+          "Value": "Fri, 11 Apr 2025 09:25:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11197,7 +11197,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-N3Y5u8rjvFonI6T+jDH1Fy2hxQxOXBZU4kXyj7mdtHw="
+          "Value": "sha256-6Ri5RiptBL5BfFxCvzw4ZzDOiB5j7p0PosdRJ56rm/4="
         }
       ]
     },
@@ -11339,7 +11339,7 @@
       ]
     },
     {
-      "Route": "_framework/dotnet.js",
+      "Route": "_framework/dotnet.6330eklyj6.js",
       "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -11357,285 +11357,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"GbKWK+esqeL1E24rCVsCvsQCzaJM65aknWOT1UhUYa4=\""
+          "Value": "\"XoL4KXKUiNydxBQ0q7b/0gDsgsuq8oac0YMVUnGkfRc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 02:44:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-GbKWK+esqeL1E24rCVsCvsQCzaJM65aknWOT1UhUYa4="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dotnet.js",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\1jiygc4ffr-nseotsck93.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000078247261"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "12779"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"89ExiOEhe/w5kr637D6SSD7RQ7QlqBFLAr2hGEF3CBg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 02:44:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"GbKWK+esqeL1E24rCVsCvsQCzaJM65aknWOT1UhUYa4=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-GbKWK+esqeL1E24rCVsCvsQCzaJM65aknWOT1UhUYa4="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dotnet.js.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\1jiygc4ffr-nseotsck93.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "12779"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"89ExiOEhe/w5kr637D6SSD7RQ7QlqBFLAr2hGEF3CBg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 02:44:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-89ExiOEhe/w5kr637D6SSD7RQ7QlqBFLAr2hGEF3CBg="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dotnet.js.map",
-      "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.js.map",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "56573"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/plain"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"AkVknhqIUlYkhjyp1K3qcNV6kEbky2zVe2gBt0JL4rQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 02:44:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-AkVknhqIUlYkhjyp1K3qcNV6kEbky2zVe2gBt0JL4rQ="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dotnet.js.map",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\w2t52or8fq-qmhzxsh5gb.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000046943949"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "21301"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"HHYfg1XIkBNns5Y6ufAdInIR38MtWE/dcOgxZXkxxqg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 02:44:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/plain"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"AkVknhqIUlYkhjyp1K3qcNV6kEbky2zVe2gBt0JL4rQ=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-AkVknhqIUlYkhjyp1K3qcNV6kEbky2zVe2gBt0JL4rQ="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dotnet.js.map.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\w2t52or8fq-qmhzxsh5gb.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "21301"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/plain"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"HHYfg1XIkBNns5Y6ufAdInIR38MtWE/dcOgxZXkxxqg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 02:44:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-HHYfg1XIkBNns5Y6ufAdInIR38MtWE/dcOgxZXkxxqg="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dotnet.js.qmhzxsh5gb.map",
-      "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.js.map",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "56573"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/plain"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"AkVknhqIUlYkhjyp1K3qcNV6kEbky2zVe2gBt0JL4rQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 02:44:42 GMT"
+          "Value": "Wed, 12 Feb 2025 05:25:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11645,764 +11371,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qmhzxsh5gb"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/dotnet.js.map"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-AkVknhqIUlYkhjyp1K3qcNV6kEbky2zVe2gBt0JL4rQ="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dotnet.js.qmhzxsh5gb.map",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\w2t52or8fq-qmhzxsh5gb.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000046943949"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "21301"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"HHYfg1XIkBNns5Y6ufAdInIR38MtWE/dcOgxZXkxxqg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 02:44:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/plain"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"AkVknhqIUlYkhjyp1K3qcNV6kEbky2zVe2gBt0JL4rQ=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "qmhzxsh5gb"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/dotnet.js.map"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-AkVknhqIUlYkhjyp1K3qcNV6kEbky2zVe2gBt0JL4rQ="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dotnet.js.qmhzxsh5gb.map.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\w2t52or8fq-qmhzxsh5gb.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "21301"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/plain"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"HHYfg1XIkBNns5Y6ufAdInIR38MtWE/dcOgxZXkxxqg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 02:44:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "qmhzxsh5gb"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/dotnet.js.map.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-HHYfg1XIkBNns5Y6ufAdInIR38MtWE/dcOgxZXkxxqg="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dotnet.native.hmanx9razn.js",
-      "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.native.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "145424"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"d7UNSArplVrX3arY2Kmhxp1wN79ng8hLqIBrkiQ9Gbo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 02:45:16 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "hmanx9razn"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/dotnet.native.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-d7UNSArplVrX3arY2Kmhxp1wN79ng8hLqIBrkiQ9Gbo="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dotnet.native.hmanx9razn.js",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\5h71sqk0h9-hmanx9razn.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000028554296"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "35020"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qxkQ/DpThqMOQj86jm6LP9o34uFnddsEvE8uGAdmLQg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 11:27:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"d7UNSArplVrX3arY2Kmhxp1wN79ng8hLqIBrkiQ9Gbo=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "hmanx9razn"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/dotnet.native.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-d7UNSArplVrX3arY2Kmhxp1wN79ng8hLqIBrkiQ9Gbo="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dotnet.native.hmanx9razn.js.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\5h71sqk0h9-hmanx9razn.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "35020"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qxkQ/DpThqMOQj86jm6LP9o34uFnddsEvE8uGAdmLQg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 11:27:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "hmanx9razn"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/dotnet.native.js.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-qxkQ/DpThqMOQj86jm6LP9o34uFnddsEvE8uGAdmLQg="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dotnet.native.js",
-      "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.native.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "145424"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"d7UNSArplVrX3arY2Kmhxp1wN79ng8hLqIBrkiQ9Gbo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 02:45:16 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-d7UNSArplVrX3arY2Kmhxp1wN79ng8hLqIBrkiQ9Gbo="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dotnet.native.js",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\5h71sqk0h9-hmanx9razn.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000028554296"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "35020"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qxkQ/DpThqMOQj86jm6LP9o34uFnddsEvE8uGAdmLQg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 11:27:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"d7UNSArplVrX3arY2Kmhxp1wN79ng8hLqIBrkiQ9Gbo=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-d7UNSArplVrX3arY2Kmhxp1wN79ng8hLqIBrkiQ9Gbo="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dotnet.native.js.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\5h71sqk0h9-hmanx9razn.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "35020"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qxkQ/DpThqMOQj86jm6LP9o34uFnddsEvE8uGAdmLQg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 11:27:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-qxkQ/DpThqMOQj86jm6LP9o34uFnddsEvE8uGAdmLQg="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dotnet.native.p4lwlf2bu1.wasm",
-      "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.native.wasm",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2975558"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"+eNtxSEiakcWrx6VoLGcDvqDWS3/kWe0AtiYmQFwe7E=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 02:45:16 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "p4lwlf2bu1"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/dotnet.native.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-+eNtxSEiakcWrx6VoLGcDvqDWS3/kWe0AtiYmQFwe7E="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dotnet.native.p4lwlf2bu1.wasm",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\apbe6qjwns-p4lwlf2bu1.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000000834697"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1198038"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"CFGAOXWJJz5NxfiNQpPiQ9U58lv1hMdRZyaBRtBQVWY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 11:27:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"+eNtxSEiakcWrx6VoLGcDvqDWS3/kWe0AtiYmQFwe7E=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "p4lwlf2bu1"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/dotnet.native.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-+eNtxSEiakcWrx6VoLGcDvqDWS3/kWe0AtiYmQFwe7E="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dotnet.native.p4lwlf2bu1.wasm.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\apbe6qjwns-p4lwlf2bu1.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1198038"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"CFGAOXWJJz5NxfiNQpPiQ9U58lv1hMdRZyaBRtBQVWY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 11:27:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "p4lwlf2bu1"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/dotnet.native.wasm.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-CFGAOXWJJz5NxfiNQpPiQ9U58lv1hMdRZyaBRtBQVWY="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dotnet.native.wasm",
-      "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.native.wasm",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2975558"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"+eNtxSEiakcWrx6VoLGcDvqDWS3/kWe0AtiYmQFwe7E=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 02:45:16 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-+eNtxSEiakcWrx6VoLGcDvqDWS3/kWe0AtiYmQFwe7E="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dotnet.native.wasm",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\apbe6qjwns-p4lwlf2bu1.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000000834697"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1198038"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"CFGAOXWJJz5NxfiNQpPiQ9U58lv1hMdRZyaBRtBQVWY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 11:27:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"+eNtxSEiakcWrx6VoLGcDvqDWS3/kWe0AtiYmQFwe7E=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-+eNtxSEiakcWrx6VoLGcDvqDWS3/kWe0AtiYmQFwe7E="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dotnet.native.wasm.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\apbe6qjwns-p4lwlf2bu1.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1198038"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"CFGAOXWJJz5NxfiNQpPiQ9U58lv1hMdRZyaBRtBQVWY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 11:27:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-CFGAOXWJJz5NxfiNQpPiQ9U58lv1hMdRZyaBRtBQVWY="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dotnet.nseotsck93.js",
-      "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "40677"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"GbKWK+esqeL1E24rCVsCvsQCzaJM65aknWOT1UhUYa4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 02:44:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "nseotsck93"
+          "Value": "6330eklyj6"
         },
         {
           "Name": "label",
@@ -12410,18 +11379,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-GbKWK+esqeL1E24rCVsCvsQCzaJM65aknWOT1UhUYa4="
+          "Value": "sha256-XoL4KXKUiNydxBQ0q7b/0gDsgsuq8oac0YMVUnGkfRc="
         }
       ]
     },
     {
-      "Route": "_framework/dotnet.nseotsck93.js",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\1jiygc4ffr-nseotsck93.gz",
+      "Route": "_framework/dotnet.6330eklyj6.js",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\1jiygc4ffr-6330eklyj6.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000078247261"
+          "Quality": "0.000078228898"
         }
       ],
       "ResponseHeaders": [
@@ -12431,15 +11400,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12779"
+          "Value": "12782"
         },
         {
           "Name": "ETag",
-          "Value": "\"89ExiOEhe/w5kr637D6SSD7RQ7QlqBFLAr2hGEF3CBg=\""
+          "Value": "\"glhTwX/JHqWt0fuT2Iz6M3EVOvtPyB9hGczAc+axfC4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 02:44:42 GMT"
+          "Value": "Wed, 12 Feb 2025 05:25:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12459,13 +11428,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"GbKWK+esqeL1E24rCVsCvsQCzaJM65aknWOT1UhUYa4=\""
+          "Value": "W/\"XoL4KXKUiNydxBQ0q7b/0gDsgsuq8oac0YMVUnGkfRc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "nseotsck93"
+          "Value": "6330eklyj6"
         },
         {
           "Name": "label",
@@ -12473,13 +11442,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-GbKWK+esqeL1E24rCVsCvsQCzaJM65aknWOT1UhUYa4="
+          "Value": "sha256-XoL4KXKUiNydxBQ0q7b/0gDsgsuq8oac0YMVUnGkfRc="
         }
       ]
     },
     {
-      "Route": "_framework/dotnet.nseotsck93.js.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\1jiygc4ffr-nseotsck93.gz",
+      "Route": "_framework/dotnet.6330eklyj6.js.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\1jiygc4ffr-6330eklyj6.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12488,7 +11457,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12779"
+          "Value": "12782"
         },
         {
           "Name": "Content-Type",
@@ -12496,11 +11465,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"89ExiOEhe/w5kr637D6SSD7RQ7QlqBFLAr2hGEF3CBg=\""
+          "Value": "\"glhTwX/JHqWt0fuT2Iz6M3EVOvtPyB9hGczAc+axfC4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 02:44:42 GMT"
+          "Value": "Wed, 12 Feb 2025 05:25:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12518,7 +11487,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "nseotsck93"
+          "Value": "6330eklyj6"
         },
         {
           "Name": "label",
@@ -12526,7 +11495,1038 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-89ExiOEhe/w5kr637D6SSD7RQ7QlqBFLAr2hGEF3CBg="
+          "Value": "sha256-glhTwX/JHqWt0fuT2Iz6M3EVOvtPyB9hGczAc+axfC4="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dotnet.js",
+      "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40677"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XoL4KXKUiNydxBQ0q7b/0gDsgsuq8oac0YMVUnGkfRc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 05:25:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XoL4KXKUiNydxBQ0q7b/0gDsgsuq8oac0YMVUnGkfRc="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dotnet.js",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\1jiygc4ffr-6330eklyj6.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000078228898"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12782"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"glhTwX/JHqWt0fuT2Iz6M3EVOvtPyB9hGczAc+axfC4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 05:25:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"XoL4KXKUiNydxBQ0q7b/0gDsgsuq8oac0YMVUnGkfRc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XoL4KXKUiNydxBQ0q7b/0gDsgsuq8oac0YMVUnGkfRc="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dotnet.js.3eoc1dz96x.map",
+      "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56573"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hZR53FKJSxjnxgvKrH7p+D7FLbv31p/Msx6rLNsW5Ps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 05:25:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3eoc1dz96x"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/dotnet.js.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hZR53FKJSxjnxgvKrH7p+D7FLbv31p/Msx6rLNsW5Ps="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dotnet.js.3eoc1dz96x.map",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\w2t52or8fq-3eoc1dz96x.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000046939542"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21303"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DhOEmYmuVeZyNd2RMPm8f2ovHF0BVSYPw5oWSM9Ealg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 05:25:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"hZR53FKJSxjnxgvKrH7p+D7FLbv31p/Msx6rLNsW5Ps=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3eoc1dz96x"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/dotnet.js.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hZR53FKJSxjnxgvKrH7p+D7FLbv31p/Msx6rLNsW5Ps="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dotnet.js.3eoc1dz96x.map.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\w2t52or8fq-3eoc1dz96x.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DhOEmYmuVeZyNd2RMPm8f2ovHF0BVSYPw5oWSM9Ealg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 05:25:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3eoc1dz96x"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/dotnet.js.map.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DhOEmYmuVeZyNd2RMPm8f2ovHF0BVSYPw5oWSM9Ealg="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dotnet.js.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\1jiygc4ffr-6330eklyj6.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12782"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"glhTwX/JHqWt0fuT2Iz6M3EVOvtPyB9hGczAc+axfC4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 05:25:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-glhTwX/JHqWt0fuT2Iz6M3EVOvtPyB9hGczAc+axfC4="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dotnet.js.map",
+      "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56573"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hZR53FKJSxjnxgvKrH7p+D7FLbv31p/Msx6rLNsW5Ps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 05:25:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hZR53FKJSxjnxgvKrH7p+D7FLbv31p/Msx6rLNsW5Ps="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dotnet.js.map",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\w2t52or8fq-3eoc1dz96x.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000046939542"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21303"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DhOEmYmuVeZyNd2RMPm8f2ovHF0BVSYPw5oWSM9Ealg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 05:25:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"hZR53FKJSxjnxgvKrH7p+D7FLbv31p/Msx6rLNsW5Ps=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hZR53FKJSxjnxgvKrH7p+D7FLbv31p/Msx6rLNsW5Ps="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dotnet.js.map.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\w2t52or8fq-3eoc1dz96x.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DhOEmYmuVeZyNd2RMPm8f2ovHF0BVSYPw5oWSM9Ealg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 05:25:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DhOEmYmuVeZyNd2RMPm8f2ovHF0BVSYPw5oWSM9Ealg="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dotnet.native.1p93gcv9fh.js",
+      "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.native.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "145424"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1UPiprzN3JhPftx3be7XEMaYlUN+chRF41CuttiWVtQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 05:25:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1p93gcv9fh"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/dotnet.native.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1UPiprzN3JhPftx3be7XEMaYlUN+chRF41CuttiWVtQ="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dotnet.native.1p93gcv9fh.js",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\5h71sqk0h9-1p93gcv9fh.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000028551850"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35023"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aOvd3b7hiZsvfME6FPDHkfZUDNWneW2JMAgpg1XUGss=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 07:45:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"1UPiprzN3JhPftx3be7XEMaYlUN+chRF41CuttiWVtQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1p93gcv9fh"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/dotnet.native.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1UPiprzN3JhPftx3be7XEMaYlUN+chRF41CuttiWVtQ="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dotnet.native.1p93gcv9fh.js.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\5h71sqk0h9-1p93gcv9fh.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35023"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aOvd3b7hiZsvfME6FPDHkfZUDNWneW2JMAgpg1XUGss=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 07:45:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1p93gcv9fh"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/dotnet.native.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aOvd3b7hiZsvfME6FPDHkfZUDNWneW2JMAgpg1XUGss="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dotnet.native.9msu8ucn2h.wasm",
+      "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.native.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2975279"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yaw09m1FVxsROJ5Sa9f6SmuJebQT0b3hrKQIbo6qm5A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 05:25:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9msu8ucn2h"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/dotnet.native.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yaw09m1FVxsROJ5Sa9f6SmuJebQT0b3hrKQIbo6qm5A="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dotnet.native.9msu8ucn2h.wasm",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\apbe6qjwns-9msu8ucn2h.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000834706"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1198026"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sfSWUy0SAKKkvmvweEDkZo/MK7XWvW7QMQQS4SG+Hpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 07:46:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Yaw09m1FVxsROJ5Sa9f6SmuJebQT0b3hrKQIbo6qm5A=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9msu8ucn2h"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/dotnet.native.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yaw09m1FVxsROJ5Sa9f6SmuJebQT0b3hrKQIbo6qm5A="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dotnet.native.9msu8ucn2h.wasm.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\apbe6qjwns-9msu8ucn2h.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1198026"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sfSWUy0SAKKkvmvweEDkZo/MK7XWvW7QMQQS4SG+Hpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 07:46:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9msu8ucn2h"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/dotnet.native.wasm.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sfSWUy0SAKKkvmvweEDkZo/MK7XWvW7QMQQS4SG+Hpc="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dotnet.native.js",
+      "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.native.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "145424"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1UPiprzN3JhPftx3be7XEMaYlUN+chRF41CuttiWVtQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 05:25:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1UPiprzN3JhPftx3be7XEMaYlUN+chRF41CuttiWVtQ="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dotnet.native.js",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\5h71sqk0h9-1p93gcv9fh.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000028551850"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35023"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aOvd3b7hiZsvfME6FPDHkfZUDNWneW2JMAgpg1XUGss=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 07:45:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"1UPiprzN3JhPftx3be7XEMaYlUN+chRF41CuttiWVtQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1UPiprzN3JhPftx3be7XEMaYlUN+chRF41CuttiWVtQ="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dotnet.native.js.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\5h71sqk0h9-1p93gcv9fh.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35023"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aOvd3b7hiZsvfME6FPDHkfZUDNWneW2JMAgpg1XUGss=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 07:45:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aOvd3b7hiZsvfME6FPDHkfZUDNWneW2JMAgpg1XUGss="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dotnet.native.wasm",
+      "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.native.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2975279"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yaw09m1FVxsROJ5Sa9f6SmuJebQT0b3hrKQIbo6qm5A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 05:25:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yaw09m1FVxsROJ5Sa9f6SmuJebQT0b3hrKQIbo6qm5A="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dotnet.native.wasm",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\apbe6qjwns-9msu8ucn2h.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000834706"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1198026"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sfSWUy0SAKKkvmvweEDkZo/MK7XWvW7QMQQS4SG+Hpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 07:46:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Yaw09m1FVxsROJ5Sa9f6SmuJebQT0b3hrKQIbo6qm5A=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yaw09m1FVxsROJ5Sa9f6SmuJebQT0b3hrKQIbo6qm5A="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dotnet.native.wasm.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\apbe6qjwns-9msu8ucn2h.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1198026"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sfSWUy0SAKKkvmvweEDkZo/MK7XWvW7QMQQS4SG+Hpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 07:46:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sfSWUy0SAKKkvmvweEDkZo/MK7XWvW7QMQQS4SG+Hpc="
         }
       ]
     },
@@ -12549,11 +12549,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"uD1t4tsPtmIHsx30SC4OztehGGaHVDksFD38rL2e3P4=\""
+          "Value": "\"ilTXrnUF4HKbIAFVIYlRmX3ryKNZpGUObkWMF0n2Kcg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 02:44:48 GMT"
+          "Value": "Wed, 12 Feb 2025 05:25:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12563,18 +12563,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-uD1t4tsPtmIHsx30SC4OztehGGaHVDksFD38rL2e3P4="
+          "Value": "sha256-ilTXrnUF4HKbIAFVIYlRmX3ryKNZpGUObkWMF0n2Kcg="
         }
       ]
     },
     {
       "Route": "_framework/dotnet.runtime.js",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\up9qwah2jq-o8gq1i8bk6.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\up9qwah2jq-qrl1fuqt3c.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000017799612"
+          "Quality": "0.000017795494"
         }
       ],
       "ResponseHeaders": [
@@ -12584,15 +12584,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "56180"
+          "Value": "56193"
         },
         {
           "Name": "ETag",
-          "Value": "\"4EBaOHuR+tsTS6QtuWI1fkl7SWkIBWaz4pJPaZNgqEs=\""
+          "Value": "\"H7fCXhtV1AtmiPAZnStFaIOKbZks/dFQbP+vzxXIi7A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 11:27:59 GMT"
+          "Value": "Thu, 10 Apr 2025 07:45:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12612,18 +12612,63 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"uD1t4tsPtmIHsx30SC4OztehGGaHVDksFD38rL2e3P4=\""
+          "Value": "W/\"ilTXrnUF4HKbIAFVIYlRmX3ryKNZpGUObkWMF0n2Kcg=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-uD1t4tsPtmIHsx30SC4OztehGGaHVDksFD38rL2e3P4="
+          "Value": "sha256-ilTXrnUF4HKbIAFVIYlRmX3ryKNZpGUObkWMF0n2Kcg="
         }
       ]
     },
     {
-      "Route": "_framework/dotnet.runtime.js.e5oadoz1kk.map",
+      "Route": "_framework/dotnet.runtime.js.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\up9qwah2jq-qrl1fuqt3c.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56193"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H7fCXhtV1AtmiPAZnStFaIOKbZks/dFQbP+vzxXIi7A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 07:45:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-H7fCXhtV1AtmiPAZnStFaIOKbZks/dFQbP+vzxXIi7A="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dotnet.runtime.js.map",
       "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.runtime.js.map",
       "Selectors": [],
       "ResponseHeaders": [
@@ -12641,40 +12686,32 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wpV1LHIee94UpLGiRx0W3R9fFp7xR8bD3JsCXfnpw5c=\""
+          "Value": "\"j0o3Jd43TEt7CL/kaSWnO8IALA8Zgoa3fcyaWDAVIyM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 02:44:48 GMT"
+          "Value": "Wed, 12 Feb 2025 05:25:06 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "e5oadoz1kk"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/dotnet.runtime.js.map"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-wpV1LHIee94UpLGiRx0W3R9fFp7xR8bD3JsCXfnpw5c="
+          "Value": "sha256-j0o3Jd43TEt7CL/kaSWnO8IALA8Zgoa3fcyaWDAVIyM="
         }
       ]
     },
     {
-      "Route": "_framework/dotnet.runtime.js.e5oadoz1kk.map",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\xteapqt7pr-e5oadoz1kk.gz",
+      "Route": "_framework/dotnet.runtime.js.map",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\xteapqt7pr-nib9cvonux.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000011296116"
+          "Quality": "0.000011296499"
         }
       ],
       "ResponseHeaders": [
@@ -12684,19 +12721,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "88525"
+          "Value": "88522"
         },
         {
           "Name": "ETag",
-          "Value": "\"M0X2p24WnSNTB9zm2SejFkC3N9NCV1UJTRJpoNy4+Zg=\""
+          "Value": "\"WGeGMyO5DkzPSYOnFpLcgO16X1VIeM0E0OW7C9NybWs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 02:44:48 GMT"
+          "Value": "Wed, 12 Feb 2025 05:25:06 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -12712,27 +12749,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"wpV1LHIee94UpLGiRx0W3R9fFp7xR8bD3JsCXfnpw5c=\""
+          "Value": "W/\"j0o3Jd43TEt7CL/kaSWnO8IALA8Zgoa3fcyaWDAVIyM=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "e5oadoz1kk"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/dotnet.runtime.js.map"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-wpV1LHIee94UpLGiRx0W3R9fFp7xR8bD3JsCXfnpw5c="
+          "Value": "sha256-j0o3Jd43TEt7CL/kaSWnO8IALA8Zgoa3fcyaWDAVIyM="
         }
       ]
     },
     {
-      "Route": "_framework/dotnet.runtime.js.e5oadoz1kk.map.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\xteapqt7pr-e5oadoz1kk.gz",
+      "Route": "_framework/dotnet.runtime.js.map.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\xteapqt7pr-nib9cvonux.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12741,7 +12770,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "88525"
+          "Value": "88522"
         },
         {
           "Name": "Content-Type",
@@ -12749,11 +12778,164 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"M0X2p24WnSNTB9zm2SejFkC3N9NCV1UJTRJpoNy4+Zg=\""
+          "Value": "\"WGeGMyO5DkzPSYOnFpLcgO16X1VIeM0E0OW7C9NybWs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 02:44:48 GMT"
+          "Value": "Wed, 12 Feb 2025 05:25:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WGeGMyO5DkzPSYOnFpLcgO16X1VIeM0E0OW7C9NybWs="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dotnet.runtime.js.nib9cvonux.map",
+      "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.runtime.js.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "275753"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j0o3Jd43TEt7CL/kaSWnO8IALA8Zgoa3fcyaWDAVIyM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 05:25:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nib9cvonux"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/dotnet.runtime.js.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j0o3Jd43TEt7CL/kaSWnO8IALA8Zgoa3fcyaWDAVIyM="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dotnet.runtime.js.nib9cvonux.map",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\xteapqt7pr-nib9cvonux.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000011296499"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "88522"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WGeGMyO5DkzPSYOnFpLcgO16X1VIeM0E0OW7C9NybWs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 05:25:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"j0o3Jd43TEt7CL/kaSWnO8IALA8Zgoa3fcyaWDAVIyM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nib9cvonux"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/dotnet.runtime.js.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j0o3Jd43TEt7CL/kaSWnO8IALA8Zgoa3fcyaWDAVIyM="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/dotnet.runtime.js.nib9cvonux.map.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\xteapqt7pr-nib9cvonux.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "88522"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WGeGMyO5DkzPSYOnFpLcgO16X1VIeM0E0OW7C9NybWs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 05:25:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12771,7 +12953,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "e5oadoz1kk"
+          "Value": "nib9cvonux"
         },
         {
           "Name": "label",
@@ -12779,194 +12961,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-M0X2p24WnSNTB9zm2SejFkC3N9NCV1UJTRJpoNy4+Zg="
+          "Value": "sha256-WGeGMyO5DkzPSYOnFpLcgO16X1VIeM0E0OW7C9NybWs="
         }
       ]
     },
     {
-      "Route": "_framework/dotnet.runtime.js.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\up9qwah2jq-o8gq1i8bk6.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "56180"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"4EBaOHuR+tsTS6QtuWI1fkl7SWkIBWaz4pJPaZNgqEs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 11:27:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-4EBaOHuR+tsTS6QtuWI1fkl7SWkIBWaz4pJPaZNgqEs="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dotnet.runtime.js.map",
-      "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.runtime.js.map",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "275753"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/plain"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wpV1LHIee94UpLGiRx0W3R9fFp7xR8bD3JsCXfnpw5c=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 02:44:48 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-wpV1LHIee94UpLGiRx0W3R9fFp7xR8bD3JsCXfnpw5c="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dotnet.runtime.js.map",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\xteapqt7pr-e5oadoz1kk.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000011296116"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "88525"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"M0X2p24WnSNTB9zm2SejFkC3N9NCV1UJTRJpoNy4+Zg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 02:44:48 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/plain"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"wpV1LHIee94UpLGiRx0W3R9fFp7xR8bD3JsCXfnpw5c=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-wpV1LHIee94UpLGiRx0W3R9fFp7xR8bD3JsCXfnpw5c="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dotnet.runtime.js.map.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\xteapqt7pr-e5oadoz1kk.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "88525"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/plain"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"M0X2p24WnSNTB9zm2SejFkC3N9NCV1UJTRJpoNy4+Zg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 02:44:48 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-M0X2p24WnSNTB9zm2SejFkC3N9NCV1UJTRJpoNy4+Zg="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/dotnet.runtime.o8gq1i8bk6.js",
+      "Route": "_framework/dotnet.runtime.qrl1fuqt3c.js",
       "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.runtime.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -12984,11 +12984,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"uD1t4tsPtmIHsx30SC4OztehGGaHVDksFD38rL2e3P4=\""
+          "Value": "\"ilTXrnUF4HKbIAFVIYlRmX3ryKNZpGUObkWMF0n2Kcg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 02:44:48 GMT"
+          "Value": "Wed, 12 Feb 2025 05:25:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12998,7 +12998,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "o8gq1i8bk6"
+          "Value": "qrl1fuqt3c"
         },
         {
           "Name": "label",
@@ -13006,18 +13006,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-uD1t4tsPtmIHsx30SC4OztehGGaHVDksFD38rL2e3P4="
+          "Value": "sha256-ilTXrnUF4HKbIAFVIYlRmX3ryKNZpGUObkWMF0n2Kcg="
         }
       ]
     },
     {
-      "Route": "_framework/dotnet.runtime.o8gq1i8bk6.js",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\up9qwah2jq-o8gq1i8bk6.gz",
+      "Route": "_framework/dotnet.runtime.qrl1fuqt3c.js",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\up9qwah2jq-qrl1fuqt3c.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000017799612"
+          "Quality": "0.000017795494"
         }
       ],
       "ResponseHeaders": [
@@ -13027,15 +13027,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "56180"
+          "Value": "56193"
         },
         {
           "Name": "ETag",
-          "Value": "\"4EBaOHuR+tsTS6QtuWI1fkl7SWkIBWaz4pJPaZNgqEs=\""
+          "Value": "\"H7fCXhtV1AtmiPAZnStFaIOKbZks/dFQbP+vzxXIi7A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 11:27:59 GMT"
+          "Value": "Thu, 10 Apr 2025 07:45:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13055,13 +13055,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"uD1t4tsPtmIHsx30SC4OztehGGaHVDksFD38rL2e3P4=\""
+          "Value": "W/\"ilTXrnUF4HKbIAFVIYlRmX3ryKNZpGUObkWMF0n2Kcg=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "o8gq1i8bk6"
+          "Value": "qrl1fuqt3c"
         },
         {
           "Name": "label",
@@ -13069,13 +13069,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-uD1t4tsPtmIHsx30SC4OztehGGaHVDksFD38rL2e3P4="
+          "Value": "sha256-ilTXrnUF4HKbIAFVIYlRmX3ryKNZpGUObkWMF0n2Kcg="
         }
       ]
     },
     {
-      "Route": "_framework/dotnet.runtime.o8gq1i8bk6.js.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\up9qwah2jq-o8gq1i8bk6.gz",
+      "Route": "_framework/dotnet.runtime.qrl1fuqt3c.js.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\up9qwah2jq-qrl1fuqt3c.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13084,7 +13084,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "56180"
+          "Value": "56193"
         },
         {
           "Name": "Content-Type",
@@ -13092,11 +13092,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4EBaOHuR+tsTS6QtuWI1fkl7SWkIBWaz4pJPaZNgqEs=\""
+          "Value": "\"H7fCXhtV1AtmiPAZnStFaIOKbZks/dFQbP+vzxXIi7A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 11:27:59 GMT"
+          "Value": "Thu, 10 Apr 2025 07:45:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13114,7 +13114,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "o8gq1i8bk6"
+          "Value": "qrl1fuqt3c"
         },
         {
           "Name": "label",
@@ -13122,12 +13122,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-4EBaOHuR+tsTS6QtuWI1fkl7SWkIBWaz4pJPaZNgqEs="
+          "Value": "sha256-H7fCXhtV1AtmiPAZnStFaIOKbZks/dFQbP+vzxXIi7A="
         }
       ]
     },
     {
-      "Route": "_framework/EIMS.Client.lfx97igmz2.wasm",
+      "Route": "_framework/EIMS.Client.24ip6731pe.wasm",
       "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Client.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -13137,7 +13137,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "164629"
+          "Value": "236309"
         },
         {
           "Name": "Content-Type",
@@ -13145,11 +13145,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"gYBvxnp7CC5KLem3Rhubaj6AB/X4FLYlOiXAjUo04IY=\""
+          "Value": "\"8tnSnqHPrXlYyk+AAcHJ7zkK4uUpd/qdqqQXbiIrqjo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 11:46:37 GMT"
+          "Value": "Fri, 11 Apr 2025 11:57:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13159,7 +13159,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lfx97igmz2"
+          "Value": "24ip6731pe"
         },
         {
           "Name": "label",
@@ -13167,18 +13167,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-gYBvxnp7CC5KLem3Rhubaj6AB/X4FLYlOiXAjUo04IY="
+          "Value": "sha256-8tnSnqHPrXlYyk+AAcHJ7zkK4uUpd/qdqqQXbiIrqjo="
         }
       ]
     },
     {
-      "Route": "_framework/EIMS.Client.lfx97igmz2.wasm",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\g73dg0ij4v-lfx97igmz2.gz",
+      "Route": "_framework/EIMS.Client.24ip6731pe.wasm",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\g73dg0ij4v-24ip6731pe.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000018675531"
+          "Quality": "0.000013986601"
         }
       ],
       "ResponseHeaders": [
@@ -13188,15 +13188,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "53545"
+          "Value": "71496"
         },
         {
           "Name": "ETag",
-          "Value": "\"sJYkMXtAa+edO2DyLsZ65uTxqkXnHa+zOCUMMP8uScs=\""
+          "Value": "\"GbEfXiO8Pu2qPEcV+skcdXXRpTtZOpCdtJclAGy6WKY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 11:46:38 GMT"
+          "Value": "Fri, 11 Apr 2025 11:57:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13216,13 +13216,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"gYBvxnp7CC5KLem3Rhubaj6AB/X4FLYlOiXAjUo04IY=\""
+          "Value": "W/\"8tnSnqHPrXlYyk+AAcHJ7zkK4uUpd/qdqqQXbiIrqjo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lfx97igmz2"
+          "Value": "24ip6731pe"
         },
         {
           "Name": "label",
@@ -13230,13 +13230,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-gYBvxnp7CC5KLem3Rhubaj6AB/X4FLYlOiXAjUo04IY="
+          "Value": "sha256-8tnSnqHPrXlYyk+AAcHJ7zkK4uUpd/qdqqQXbiIrqjo="
         }
       ]
     },
     {
-      "Route": "_framework/EIMS.Client.lfx97igmz2.wasm.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\g73dg0ij4v-lfx97igmz2.gz",
+      "Route": "_framework/EIMS.Client.24ip6731pe.wasm.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\g73dg0ij4v-24ip6731pe.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13245,7 +13245,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "53545"
+          "Value": "71496"
         },
         {
           "Name": "Content-Type",
@@ -13253,11 +13253,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"sJYkMXtAa+edO2DyLsZ65uTxqkXnHa+zOCUMMP8uScs=\""
+          "Value": "\"GbEfXiO8Pu2qPEcV+skcdXXRpTtZOpCdtJclAGy6WKY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 11:46:38 GMT"
+          "Value": "Fri, 11 Apr 2025 11:57:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13275,7 +13275,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lfx97igmz2"
+          "Value": "24ip6731pe"
         },
         {
           "Name": "label",
@@ -13283,7 +13283,168 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-sJYkMXtAa+edO2DyLsZ65uTxqkXnHa+zOCUMMP8uScs="
+          "Value": "sha256-GbEfXiO8Pu2qPEcV+skcdXXRpTtZOpCdtJclAGy6WKY="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/EIMS.Client.ovr97jksjp.pdb",
+      "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Client.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "105044"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZMjXa0PBOYwNLeqQyb9uvjqsYOFHeg1rz9iauq/9Zyg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 11:57:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ovr97jksjp"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/EIMS.Client.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZMjXa0PBOYwNLeqQyb9uvjqsYOFHeg1rz9iauq/9Zyg="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/EIMS.Client.ovr97jksjp.pdb",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\7m8e22702s-ovr97jksjp.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000013110284"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "76275"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sYrFgq7rjkIrgmz3BhpaeyMVFOc8OVPaQUpPyfbdZSE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 11:57:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ZMjXa0PBOYwNLeqQyb9uvjqsYOFHeg1rz9iauq/9Zyg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ovr97jksjp"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/EIMS.Client.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZMjXa0PBOYwNLeqQyb9uvjqsYOFHeg1rz9iauq/9Zyg="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/EIMS.Client.ovr97jksjp.pdb.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\7m8e22702s-ovr97jksjp.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "76275"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sYrFgq7rjkIrgmz3BhpaeyMVFOc8OVPaQUpPyfbdZSE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 11:57:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ovr97jksjp"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/EIMS.Client.pdb.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sYrFgq7rjkIrgmz3BhpaeyMVFOc8OVPaQUpPyfbdZSE="
         }
       ]
     },
@@ -13298,7 +13459,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "78092"
+          "Value": "105044"
         },
         {
           "Name": "Content-Type",
@@ -13306,11 +13467,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"irkopO3gek1lDwQ36LsWDg+6Eeh8JXiAFrTf18i8/0k=\""
+          "Value": "\"ZMjXa0PBOYwNLeqQyb9uvjqsYOFHeg1rz9iauq/9Zyg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 11:46:36 GMT"
+          "Value": "Fri, 11 Apr 2025 11:57:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13320,18 +13481,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-irkopO3gek1lDwQ36LsWDg+6Eeh8JXiAFrTf18i8/0k="
+          "Value": "sha256-ZMjXa0PBOYwNLeqQyb9uvjqsYOFHeg1rz9iauq/9Zyg="
         }
       ]
     },
     {
       "Route": "_framework/EIMS.Client.pdb",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\7m8e22702s-y22o16m3kd.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\7m8e22702s-ovr97jksjp.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000017319016"
+          "Quality": "0.000013110284"
         }
       ],
       "ResponseHeaders": [
@@ -13341,15 +13502,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "57739"
+          "Value": "76275"
         },
         {
           "Name": "ETag",
-          "Value": "\"YApHjxldzCjpexsBsQvfq5l3Wntp6NbJuHGUsYWggKs=\""
+          "Value": "\"sYrFgq7rjkIrgmz3BhpaeyMVFOc8OVPaQUpPyfbdZSE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 11:46:38 GMT"
+          "Value": "Fri, 11 Apr 2025 11:57:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13369,19 +13530,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"irkopO3gek1lDwQ36LsWDg+6Eeh8JXiAFrTf18i8/0k=\""
+          "Value": "W/\"ZMjXa0PBOYwNLeqQyb9uvjqsYOFHeg1rz9iauq/9Zyg=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-irkopO3gek1lDwQ36LsWDg+6Eeh8JXiAFrTf18i8/0k="
+          "Value": "sha256-ZMjXa0PBOYwNLeqQyb9uvjqsYOFHeg1rz9iauq/9Zyg="
         }
       ]
     },
     {
       "Route": "_framework/EIMS.Client.pdb.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\7m8e22702s-y22o16m3kd.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\7m8e22702s-ovr97jksjp.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13390,7 +13551,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "57739"
+          "Value": "76275"
         },
         {
           "Name": "Content-Type",
@@ -13398,11 +13559,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"YApHjxldzCjpexsBsQvfq5l3Wntp6NbJuHGUsYWggKs=\""
+          "Value": "\"sYrFgq7rjkIrgmz3BhpaeyMVFOc8OVPaQUpPyfbdZSE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 11:46:38 GMT"
+          "Value": "Fri, 11 Apr 2025 11:57:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13420,7 +13581,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-YApHjxldzCjpexsBsQvfq5l3Wntp6NbJuHGUsYWggKs="
+          "Value": "sha256-sYrFgq7rjkIrgmz3BhpaeyMVFOc8OVPaQUpPyfbdZSE="
         }
       ]
     },
@@ -13435,7 +13596,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "164629"
+          "Value": "236309"
         },
         {
           "Name": "Content-Type",
@@ -13443,11 +13604,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"gYBvxnp7CC5KLem3Rhubaj6AB/X4FLYlOiXAjUo04IY=\""
+          "Value": "\"8tnSnqHPrXlYyk+AAcHJ7zkK4uUpd/qdqqQXbiIrqjo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 11:46:37 GMT"
+          "Value": "Fri, 11 Apr 2025 11:57:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13457,18 +13618,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-gYBvxnp7CC5KLem3Rhubaj6AB/X4FLYlOiXAjUo04IY="
+          "Value": "sha256-8tnSnqHPrXlYyk+AAcHJ7zkK4uUpd/qdqqQXbiIrqjo="
         }
       ]
     },
     {
       "Route": "_framework/EIMS.Client.wasm",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\g73dg0ij4v-lfx97igmz2.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\g73dg0ij4v-24ip6731pe.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000018675531"
+          "Quality": "0.000013986601"
         }
       ],
       "ResponseHeaders": [
@@ -13478,15 +13639,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "53545"
+          "Value": "71496"
         },
         {
           "Name": "ETag",
-          "Value": "\"sJYkMXtAa+edO2DyLsZ65uTxqkXnHa+zOCUMMP8uScs=\""
+          "Value": "\"GbEfXiO8Pu2qPEcV+skcdXXRpTtZOpCdtJclAGy6WKY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 11:46:38 GMT"
+          "Value": "Fri, 11 Apr 2025 11:57:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13506,19 +13667,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"gYBvxnp7CC5KLem3Rhubaj6AB/X4FLYlOiXAjUo04IY=\""
+          "Value": "W/\"8tnSnqHPrXlYyk+AAcHJ7zkK4uUpd/qdqqQXbiIrqjo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-gYBvxnp7CC5KLem3Rhubaj6AB/X4FLYlOiXAjUo04IY="
+          "Value": "sha256-8tnSnqHPrXlYyk+AAcHJ7zkK4uUpd/qdqqQXbiIrqjo="
         }
       ]
     },
     {
       "Route": "_framework/EIMS.Client.wasm.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\g73dg0ij4v-lfx97igmz2.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\g73dg0ij4v-24ip6731pe.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13527,7 +13688,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "53545"
+          "Value": "71496"
         },
         {
           "Name": "Content-Type",
@@ -13535,11 +13696,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"sJYkMXtAa+edO2DyLsZ65uTxqkXnHa+zOCUMMP8uScs=\""
+          "Value": "\"GbEfXiO8Pu2qPEcV+skcdXXRpTtZOpCdtJclAGy6WKY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 11:46:38 GMT"
+          "Value": "Fri, 11 Apr 2025 11:57:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13557,334 +13718,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-sJYkMXtAa+edO2DyLsZ65uTxqkXnHa+zOCUMMP8uScs="
+          "Value": "sha256-GbEfXiO8Pu2qPEcV+skcdXXRpTtZOpCdtJclAGy6WKY="
         }
       ]
     },
     {
-      "Route": "_framework/EIMS.Client.y22o16m3kd.pdb",
-      "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Client.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "78092"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"irkopO3gek1lDwQ36LsWDg+6Eeh8JXiAFrTf18i8/0k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 11:46:36 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "y22o16m3kd"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/EIMS.Client.pdb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-irkopO3gek1lDwQ36LsWDg+6Eeh8JXiAFrTf18i8/0k="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/EIMS.Client.y22o16m3kd.pdb",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\7m8e22702s-y22o16m3kd.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000017319016"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "57739"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YApHjxldzCjpexsBsQvfq5l3Wntp6NbJuHGUsYWggKs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 11:46:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"irkopO3gek1lDwQ36LsWDg+6Eeh8JXiAFrTf18i8/0k=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "y22o16m3kd"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/EIMS.Client.pdb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-irkopO3gek1lDwQ36LsWDg+6Eeh8JXiAFrTf18i8/0k="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/EIMS.Client.y22o16m3kd.pdb.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\7m8e22702s-y22o16m3kd.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "57739"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YApHjxldzCjpexsBsQvfq5l3Wntp6NbJuHGUsYWggKs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 11:46:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "y22o16m3kd"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/EIMS.Client.pdb.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-YApHjxldzCjpexsBsQvfq5l3Wntp6NbJuHGUsYWggKs="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/EIMS.Shared.2hd3imxvwv.pdb",
-      "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Shared.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "16516"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"9qDQydYbEfEm6P5fVo3BkisJohBY7xU4Mj91FBJpbzk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 08:42:05 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "2hd3imxvwv"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/EIMS.Shared.pdb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-9qDQydYbEfEm6P5fVo3BkisJohBY7xU4Mj91FBJpbzk="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/EIMS.Shared.2hd3imxvwv.pdb",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\661czh662j-2hd3imxvwv.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000115901715"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "8627"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"x5T94M3vbil6MJOsPp7ukIsQ2+/uPN8Vh3BeEovTKu0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 10:44:17 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"9qDQydYbEfEm6P5fVo3BkisJohBY7xU4Mj91FBJpbzk=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "2hd3imxvwv"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/EIMS.Shared.pdb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-9qDQydYbEfEm6P5fVo3BkisJohBY7xU4Mj91FBJpbzk="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/EIMS.Shared.2hd3imxvwv.pdb.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\661czh662j-2hd3imxvwv.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "8627"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"x5T94M3vbil6MJOsPp7ukIsQ2+/uPN8Vh3BeEovTKu0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 10:44:17 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "2hd3imxvwv"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/EIMS.Shared.pdb.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-x5T94M3vbil6MJOsPp7ukIsQ2+/uPN8Vh3BeEovTKu0="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/EIMS.Shared.3uhwkspvdg.wasm",
+      "Route": "_framework/EIMS.Shared.iibm76kfiz.wasm",
       "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Shared.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -13894,7 +13733,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19733"
+          "Value": "27925"
         },
         {
           "Name": "Content-Type",
@@ -13902,11 +13741,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"S/ZwoczoAv8/oUCzM2qReW40TcFMt6K2Rcp5ZbL3q0c=\""
+          "Value": "\"Nt3boRPHJib2z34zhYQuHhTM5bl9gCUp9Dzq5Er2nsM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 10:44:13 GMT"
+          "Value": "Fri, 11 Apr 2025 06:52:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13916,7 +13755,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "3uhwkspvdg"
+          "Value": "iibm76kfiz"
         },
         {
           "Name": "label",
@@ -13924,18 +13763,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-S/ZwoczoAv8/oUCzM2qReW40TcFMt6K2Rcp5ZbL3q0c="
+          "Value": "sha256-Nt3boRPHJib2z34zhYQuHhTM5bl9gCUp9Dzq5Er2nsM="
         }
       ]
     },
     {
-      "Route": "_framework/EIMS.Shared.3uhwkspvdg.wasm",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\l4co6lvy9s-3uhwkspvdg.gz",
+      "Route": "_framework/EIMS.Shared.iibm76kfiz.wasm",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\l4co6lvy9s-iibm76kfiz.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000125928724"
+          "Quality": "0.000091802075"
         }
       ],
       "ResponseHeaders": [
@@ -13945,15 +13784,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7940"
+          "Value": "10892"
         },
         {
           "Name": "ETag",
-          "Value": "\"oabNOykJvxb+bcuaKfrdHl7ubKPf4o0NUq6uUrguFu8=\""
+          "Value": "\"+4EpcsiO4sfR8BtkupwmrF9XGiC9Tz4PZncFrrpEnLM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 10:44:17 GMT"
+          "Value": "Fri, 11 Apr 2025 06:52:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13973,13 +13812,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"S/ZwoczoAv8/oUCzM2qReW40TcFMt6K2Rcp5ZbL3q0c=\""
+          "Value": "W/\"Nt3boRPHJib2z34zhYQuHhTM5bl9gCUp9Dzq5Er2nsM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "3uhwkspvdg"
+          "Value": "iibm76kfiz"
         },
         {
           "Name": "label",
@@ -13987,13 +13826,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-S/ZwoczoAv8/oUCzM2qReW40TcFMt6K2Rcp5ZbL3q0c="
+          "Value": "sha256-Nt3boRPHJib2z34zhYQuHhTM5bl9gCUp9Dzq5Er2nsM="
         }
       ]
     },
     {
-      "Route": "_framework/EIMS.Shared.3uhwkspvdg.wasm.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\l4co6lvy9s-3uhwkspvdg.gz",
+      "Route": "_framework/EIMS.Shared.iibm76kfiz.wasm.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\l4co6lvy9s-iibm76kfiz.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14002,7 +13841,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7940"
+          "Value": "10892"
         },
         {
           "Name": "Content-Type",
@@ -14010,11 +13849,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"oabNOykJvxb+bcuaKfrdHl7ubKPf4o0NUq6uUrguFu8=\""
+          "Value": "\"+4EpcsiO4sfR8BtkupwmrF9XGiC9Tz4PZncFrrpEnLM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 10:44:17 GMT"
+          "Value": "Fri, 11 Apr 2025 06:52:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14032,7 +13871,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "3uhwkspvdg"
+          "Value": "iibm76kfiz"
         },
         {
           "Name": "label",
@@ -14040,7 +13879,168 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-oabNOykJvxb+bcuaKfrdHl7ubKPf4o0NUq6uUrguFu8="
+          "Value": "sha256-+4EpcsiO4sfR8BtkupwmrF9XGiC9Tz4PZncFrrpEnLM="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/EIMS.Shared.konkt9nol3.pdb",
+      "AssetFile": "R:\\eims\\EIMS.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\EIMS.Shared.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19376"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HNqI0iUOfNK3PjGffGQ8OC/zJdc8bKlTO7prcKGnssM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 06:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "konkt9nol3"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/EIMS.Shared.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HNqI0iUOfNK3PjGffGQ8OC/zJdc8bKlTO7prcKGnssM="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/EIMS.Shared.konkt9nol3.pdb",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\661czh662j-konkt9nol3.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000102679947"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9738"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W79frTQdA4EyF7T2DSWc3Ub5UKAQefxiZXrWkBiwM58=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 06:52:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"HNqI0iUOfNK3PjGffGQ8OC/zJdc8bKlTO7prcKGnssM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "konkt9nol3"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/EIMS.Shared.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HNqI0iUOfNK3PjGffGQ8OC/zJdc8bKlTO7prcKGnssM="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/EIMS.Shared.konkt9nol3.pdb.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\661czh662j-konkt9nol3.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9738"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W79frTQdA4EyF7T2DSWc3Ub5UKAQefxiZXrWkBiwM58=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 06:52:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "konkt9nol3"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/EIMS.Shared.pdb.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-W79frTQdA4EyF7T2DSWc3Ub5UKAQefxiZXrWkBiwM58="
         }
       ]
     },
@@ -14055,7 +14055,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "16516"
+          "Value": "19376"
         },
         {
           "Name": "Content-Type",
@@ -14063,11 +14063,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9qDQydYbEfEm6P5fVo3BkisJohBY7xU4Mj91FBJpbzk=\""
+          "Value": "\"HNqI0iUOfNK3PjGffGQ8OC/zJdc8bKlTO7prcKGnssM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 08:42:05 GMT"
+          "Value": "Fri, 11 Apr 2025 06:51:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14077,18 +14077,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-9qDQydYbEfEm6P5fVo3BkisJohBY7xU4Mj91FBJpbzk="
+          "Value": "sha256-HNqI0iUOfNK3PjGffGQ8OC/zJdc8bKlTO7prcKGnssM="
         }
       ]
     },
     {
       "Route": "_framework/EIMS.Shared.pdb",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\661czh662j-2hd3imxvwv.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\661czh662j-konkt9nol3.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000115901715"
+          "Quality": "0.000102679947"
         }
       ],
       "ResponseHeaders": [
@@ -14098,15 +14098,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8627"
+          "Value": "9738"
         },
         {
           "Name": "ETag",
-          "Value": "\"x5T94M3vbil6MJOsPp7ukIsQ2+/uPN8Vh3BeEovTKu0=\""
+          "Value": "\"W79frTQdA4EyF7T2DSWc3Ub5UKAQefxiZXrWkBiwM58=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 10:44:17 GMT"
+          "Value": "Fri, 11 Apr 2025 06:52:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14126,19 +14126,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"9qDQydYbEfEm6P5fVo3BkisJohBY7xU4Mj91FBJpbzk=\""
+          "Value": "W/\"HNqI0iUOfNK3PjGffGQ8OC/zJdc8bKlTO7prcKGnssM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-9qDQydYbEfEm6P5fVo3BkisJohBY7xU4Mj91FBJpbzk="
+          "Value": "sha256-HNqI0iUOfNK3PjGffGQ8OC/zJdc8bKlTO7prcKGnssM="
         }
       ]
     },
     {
       "Route": "_framework/EIMS.Shared.pdb.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\661czh662j-2hd3imxvwv.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\661czh662j-konkt9nol3.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14147,7 +14147,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8627"
+          "Value": "9738"
         },
         {
           "Name": "Content-Type",
@@ -14155,11 +14155,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"x5T94M3vbil6MJOsPp7ukIsQ2+/uPN8Vh3BeEovTKu0=\""
+          "Value": "\"W79frTQdA4EyF7T2DSWc3Ub5UKAQefxiZXrWkBiwM58=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 10:44:17 GMT"
+          "Value": "Fri, 11 Apr 2025 06:52:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14177,7 +14177,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-x5T94M3vbil6MJOsPp7ukIsQ2+/uPN8Vh3BeEovTKu0="
+          "Value": "sha256-W79frTQdA4EyF7T2DSWc3Ub5UKAQefxiZXrWkBiwM58="
         }
       ]
     },
@@ -14192,7 +14192,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19733"
+          "Value": "27925"
         },
         {
           "Name": "Content-Type",
@@ -14200,11 +14200,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"S/ZwoczoAv8/oUCzM2qReW40TcFMt6K2Rcp5ZbL3q0c=\""
+          "Value": "\"Nt3boRPHJib2z34zhYQuHhTM5bl9gCUp9Dzq5Er2nsM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 10:44:13 GMT"
+          "Value": "Fri, 11 Apr 2025 06:52:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14214,18 +14214,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-S/ZwoczoAv8/oUCzM2qReW40TcFMt6K2Rcp5ZbL3q0c="
+          "Value": "sha256-Nt3boRPHJib2z34zhYQuHhTM5bl9gCUp9Dzq5Er2nsM="
         }
       ]
     },
     {
       "Route": "_framework/EIMS.Shared.wasm",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\l4co6lvy9s-3uhwkspvdg.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\l4co6lvy9s-iibm76kfiz.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000125928724"
+          "Quality": "0.000091802075"
         }
       ],
       "ResponseHeaders": [
@@ -14235,15 +14235,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7940"
+          "Value": "10892"
         },
         {
           "Name": "ETag",
-          "Value": "\"oabNOykJvxb+bcuaKfrdHl7ubKPf4o0NUq6uUrguFu8=\""
+          "Value": "\"+4EpcsiO4sfR8BtkupwmrF9XGiC9Tz4PZncFrrpEnLM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 10:44:17 GMT"
+          "Value": "Fri, 11 Apr 2025 06:52:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14263,19 +14263,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"S/ZwoczoAv8/oUCzM2qReW40TcFMt6K2Rcp5ZbL3q0c=\""
+          "Value": "W/\"Nt3boRPHJib2z34zhYQuHhTM5bl9gCUp9Dzq5Er2nsM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-S/ZwoczoAv8/oUCzM2qReW40TcFMt6K2Rcp5ZbL3q0c="
+          "Value": "sha256-Nt3boRPHJib2z34zhYQuHhTM5bl9gCUp9Dzq5Er2nsM="
         }
       ]
     },
     {
       "Route": "_framework/EIMS.Shared.wasm.gz",
-      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\l4co6lvy9s-3uhwkspvdg.gz",
+      "AssetFile": "R:\\eims\\EIMS.Client\\obj\\Debug\\net9.0\\compressed\\l4co6lvy9s-iibm76kfiz.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14284,7 +14284,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7940"
+          "Value": "10892"
         },
         {
           "Name": "Content-Type",
@@ -14292,11 +14292,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"oabNOykJvxb+bcuaKfrdHl7ubKPf4o0NUq6uUrguFu8=\""
+          "Value": "\"+4EpcsiO4sfR8BtkupwmrF9XGiC9Tz4PZncFrrpEnLM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 10:44:17 GMT"
+          "Value": "Fri, 11 Apr 2025 06:52:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14314,7 +14314,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-oabNOykJvxb+bcuaKfrdHl7ubKPf4o0NUq6uUrguFu8="
+          "Value": "sha256-+4EpcsiO4sfR8BtkupwmrF9XGiC9Tz4PZncFrrpEnLM="
         }
       ]
     },
@@ -14341,7 +14341,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 16 Sep 2024 14:45:12 GMT"
+          "Value": "Mon, 16 Sep 2024 20:45:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14478,7 +14478,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 16 Sep 2024 14:45:12 GMT"
+          "Value": "Mon, 16 Sep 2024 20:45:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14639,7 +14639,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 16 Sep 2024 14:45:12 GMT"
+          "Value": "Mon, 16 Sep 2024 20:45:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14776,7 +14776,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 16 Sep 2024 14:45:12 GMT"
+          "Value": "Mon, 16 Sep 2024 20:45:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14937,7 +14937,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 16 Sep 2024 14:45:12 GMT"
+          "Value": "Mon, 16 Sep 2024 20:45:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15074,7 +15074,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 16 Sep 2024 14:45:12 GMT"
+          "Value": "Mon, 16 Sep 2024 20:45:12 GMT"
         },
         {
           "Name": "Cache-Control",

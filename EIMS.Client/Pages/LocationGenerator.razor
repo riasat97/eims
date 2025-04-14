@@ -1,0 +1,1000 @@
+@page "/location-generator"
+@using EIMS.Client.Services
+@using EIMS.Shared.Models
+@inject StorageLocationService LocationService
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+
+<style>
+    .horizontal-form {
+        width: 100%;
+    }
+    .horizontal-form-group {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-bottom: 0.75rem;
+        gap: 1rem;
+        width: 100%;
+        align-items: flex-start;
+    }
+    .form-field {
+        flex: 1 1 0px;
+        min-width: 120px;
+    }
+    .form-field-fixed {
+        flex: 0 0 auto;
+        margin-top: 1.6rem;
+    }
+    .option-group {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0.5rem;
+    }
+    .tab-buttons {
+        display: flex;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .tab-button {
+        flex: 1;
+        padding: 0.5rem;
+        text-align: center;
+        border: 1px solid #6c757d;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        transition: all 0.2s ease;
+    }
+    .tab-button:hover:not(.active) {
+        background-color: rgba(13, 110, 253, 0.1);
+    }
+    .tab-button.active {
+        background-color: #0d6efd;
+        color: white;
+        border-color: #0d6efd;
+    }
+    .tab-icon {
+        font-size: 1.25rem;
+    }
+    .separator-field {
+        max-width: 200px;
+        margin-bottom: 0.75rem;
+    }
+    .section-title {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+    .preview-container {
+        max-height: 300px;
+        overflow-y: auto;
+        border-radius: 4px;
+        border: 1px solid rgba(108, 117, 125, 0.5);
+    }
+    .preview-empty {
+        padding: 1.5rem 1rem;
+        text-align: center;
+    }
+    .preview-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .preview-list li {
+        padding: 0.25rem 0.5rem;
+        border-bottom: 1px solid rgba(108, 117, 125, 0.2);
+        font-size: 0.875rem;
+    }
+    .preview-list li:last-child {
+        border-bottom: none;
+    }
+    .preview-table {
+        width: 100%;
+        margin: 0;
+    }
+    .preview-table td {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.75rem;
+    }
+    .warning-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .single-form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    .form-field label {
+        margin-bottom: 0.25rem;
+        font-size: 0.875rem;
+    }
+    .form-check-label {
+        font-size: 0.875rem;
+    }
+    .form-field small {
+        font-size: 0.75rem;
+    }
+    .input-group .btn {
+        padding: 0.25rem 0.5rem;
+    }
+    .alert {
+        padding: 0.5rem 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+    .card-body {
+        padding: 1rem;
+    }
+    .card-footer {
+        padding: 0.75rem 1rem;
+    }
+    .material-icons {
+        font-size: 1.1rem;
+    }
+    .container-fluid {
+        padding: 1rem;
+    }
+    .mb-4 {
+        margin-bottom: 1rem;
+    }
+    .back-button {
+        font-size: 1.25rem;
+        padding: 0; 
+        line-height: 1;
+    }
+    .btn {
+        font-size: 0.875rem;
+        padding: 0.375rem 0.75rem;
+    }
+    .btn-sm {
+        padding: 0.25rem 0.5rem;
+    }
+    .form-check {
+        margin-bottom: 0;
+        min-height: auto;
+    }
+    .form-field label.text-light {
+        margin-bottom: 0.25rem;
+    }
+</style>
+
+<PageTitle>Location Generator - EIMS</PageTitle>
+
+<div class="container-fluid p-3 bg-dark text-light">
+    <div class="mb-3">
+        <div class="d-flex align-items-center mb-1">
+            <button @onclick="NavigateBack" class="btn btn-link text-decoration-none p-0 me-2 text-primary back-button">
+                <span class="material-icons">arrow_back</span>
+            </button>
+            <h1 class="h4 m-0">Batch Generate Locations</h1>
+        </div>
+        <p class="text-secondary small mb-2">
+            Create multiple storage locations at once using patterns like rows, grids, or 3D grids.
+        </p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card mb-4 bg-dark border-secondary">
+                <div class="card-header bg-dark text-light border-secondary">
+                    <h5 class="card-title mb-0 fs-6">Generation Settings</h5>
+                </div>
+                <div class="card-body bg-dark text-light">
+                    <div class="tab-buttons">
+                        <a href="javascript:void(0)" class="tab-button @(request.Type == LocationType.Single ? "active" : "text-light")" 
+                            @onclick="() => { request.Type = LocationType.Single; GeneratePreviewDebounced(); }">
+                            <span class="material-icons tab-icon">pin_drop</span>
+                            <span>Single</span>
+                        </a>
+                        <a href="javascript:void(0)" class="tab-button @(request.Type == LocationType.Row ? "active" : "text-light")" 
+                            @onclick="() => { request.Type = LocationType.Row; GeneratePreviewDebounced(); }">
+                            <span class="material-icons tab-icon">view_week</span>
+                            <span>Row</span>
+                        </a>
+                        <a href="javascript:void(0)" class="tab-button @(request.Type == LocationType.Grid ? "active" : "text-light")" 
+                            @onclick="() => { request.Type = LocationType.Grid; GeneratePreviewDebounced(); }">
+                            <span class="material-icons tab-icon">grid_view</span>
+                            <span>Grid</span>
+                        </a>
+                        <a href="javascript:void(0)" class="tab-button @(request.Type == LocationType.ThreeDGrid ? "active" : "text-light")" 
+                            @onclick="() => { request.Type = LocationType.ThreeDGrid; GeneratePreviewDebounced(); }">
+                            <span class="material-icons tab-icon">view_in_ar</span>
+                            <span>3D Grid</span>
+                        </a>
+                    </div>
+                    
+                    <div class="horizontal-form">
+                        @if (request.Type == LocationType.Single)
+                        {
+                            <div class="single-form">
+                                <div class="horizontal-form-group">
+                                    <div class="form-field">
+                                        <label class="text-light">Location name:</label>
+                                        <input type="text" @bind-value="request.Prefix" @bind-value:event="oninput" @onchange="(e) => PrefixChanged(e)" class="form-control form-control-sm bg-dark text-light border-secondary" 
+                                            placeholder="Enter location name" />
+                                        <small class="form-text text-secondary">Use letters, numbers, and simple punctuation only</small>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-check mt-1">
+                                    <input type="checkbox" @bind="request.IsSinglePartOnly" @oninput="(e) => { request.IsSinglePartOnly = (bool)e.Value; GeneratePreviewDebounced(); }" class="form-check-input bg-dark border-secondary" id="singlePartOnly" />
+                                    <label class="form-check-label text-light" for="singlePartOnly">Mark as single-part only location</label>
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="horizontal-form-group">
+                                <div class="form-field">
+                                    <label class="text-light mb-2">Prefix:</label>
+                                    <input type="text" @bind-value="request.Prefix" @bind-value:event="oninput" @onchange="(e) => PrefixChanged(e)" class="form-control form-control-sm bg-dark text-light border-secondary" 
+                                        placeholder="e.g., 'box-'" />
+                                    <small class="form-text text-secondary">Use letters, numbers, and simple punctuation only</small>
+                                </div>
+                                <div class="form-field-fixed">
+                                    <div class="form-check mt-1">
+                                        <input type="checkbox" @bind="request.IsSinglePartOnly" @oninput="(e) => { request.IsSinglePartOnly = (bool)e.Value; GeneratePreviewDebounced(); }" class="form-check-input bg-dark border-secondary" id="singlePartOnly" />
+                                        <label class="form-check-label text-light" for="singlePartOnly">Mark created location(s) as single-part only</label>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    
+                    @if (request.Type != LocationType.Single)
+                    {
+                        <div>
+                            <label class="text-light mt-3 mb-2">Range 1 (rows):</label>
+                            
+                            <div class="horizontal-form-group">
+                                <div class="form-field-fixed" style="margin-top: 0">
+                                    <div class="option-group mb-1">
+                                        <div class="form-check">
+                                            <input type="radio" name="range1Type" checked="@request.Range1UsesLetters" 
+                                                   @onchange="@(e => { request.Range1UsesLetters = true; GeneratePreviewDebounced(); })" class="form-check-input bg-dark border-secondary" id="range1Letters" />
+                                            <label class="form-check-label text-light" for="range1Letters">Letters</label>
+                                        </div>
+                                        
+                                        <div class="form-check">
+                                            <input type="radio" name="range1Type" checked="@(!request.Range1UsesLetters)" 
+                                                   @onchange="@(e => { request.Range1UsesLetters = false; GeneratePreviewDebounced(); })" class="form-check-input bg-dark border-secondary" id="range1Numbers" />
+                                            <label class="form-check-label text-light" for="range1Numbers">Numbers</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            @if (request.Range1UsesLetters)
+                            {
+                                <div class="horizontal-form-group">
+                                    <div class="form-field">
+                                        <label class="text-light">Starting with:</label>
+                                        <input type="text" @bind-value="range1StartLetter" @bind-value:event="oninput" @onchange="(e) => Range1StartLetterChanged(e)"
+                                               maxlength="1" class="form-control form-control-sm bg-dark text-light border-secondary" />
+                                    </div>
+                                    
+                                    <div class="form-field">
+                                        <label class="text-light">Going up to:</label>
+                                        <input type="text" @bind-value="range1EndLetter" @bind-value:event="oninput" @onchange="(e) => Range1EndLetterChanged(e)"
+                                               maxlength="1" class="form-control form-control-sm bg-dark text-light border-secondary" />
+                                    </div>
+                                    
+                                    <div class="form-field-fixed">
+                                        <div class="form-check mt-1">
+                                            <input type="checkbox" @bind="request.Range1Capitalize" @oninput="(e) => { request.Range1Capitalize = (bool)e.Value; GeneratePreviewDebounced(); }" class="form-check-input bg-dark border-secondary" id="range1Cap" />
+                                            <label class="form-check-label text-light" for="range1Cap">Capitalize?</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="horizontal-form-group">
+                                    <div class="form-field">
+                                        <label class="text-light">Starting at:</label>
+                                        <div class="input-group input-group-sm">
+                                            <input type="number" @bind-value="request.Range1StartNumber" @bind-value:event="oninput"
+                                                min="0" class="form-control bg-dark text-light border-secondary" />
+                                            <button class="btn btn-outline-secondary text-light" type="button" @onclick="() => { request.Range1StartNumber--; GeneratePreviewDebounced(); }">-</button>
+                                            <button class="btn btn-outline-secondary text-light" type="button" @onclick="() => { request.Range1StartNumber++; GeneratePreviewDebounced(); }">+</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-field">
+                                        <label class="text-light">Going up to:</label>
+                                        <div class="input-group input-group-sm">
+                                            <input type="number" @bind-value="request.Range1EndNumber" @bind-value:event="oninput"
+                                                min="0" class="form-control bg-dark text-light border-secondary" />
+                                            <button class="btn btn-outline-secondary text-light" type="button" @onclick="() => { request.Range1EndNumber--; GeneratePreviewDebounced(); }">-</button>
+                                            <button class="btn btn-outline-secondary text-light" type="button" @onclick="() => { request.Range1EndNumber++; GeneratePreviewDebounced(); }">+</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-field-fixed">
+                                        <div class="form-check mt-1">
+                                            <input type="checkbox" @bind="request.Range1PadWithZeros" @oninput="(e) => { request.Range1PadWithZeros = (bool)e.Value; GeneratePreviewDebounced(); }" class="form-check-input bg-dark border-secondary" id="range1Pad" />
+                                            <label class="form-check-label text-light" for="range1Pad">Pad with zeros?</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    }
+                    
+                    @if (request.Type == LocationType.Grid || request.Type == LocationType.ThreeDGrid)
+                    {
+                        <div class="separator-field">
+                            <label class="text-light mb-2">Separator between range 1 and 2:</label>
+                            <input type="text" @bind-value="request.Separator1" @bind-value:event="oninput" 
+                                class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="e.g., '-'" />
+                        </div>
+                        
+                        <div>
+                            <label class="text-light section-title">Range 2 (columns):</label>
+                            
+                            <div class="horizontal-form-group">
+                                <div class="form-field-fixed" style="margin-top: 0">
+                                    <div class="option-group">
+                                        <div class="form-check">
+                                            <input type="radio" name="range2Type" checked="@request.Range2UsesLetters" 
+                                                   @onchange="@(e => { request.Range2UsesLetters = true; GeneratePreviewDebounced(); })" class="form-check-input bg-dark border-secondary" id="range2Letters" />
+                                            <label class="form-check-label text-light" for="range2Letters">Letters</label>
+                                        </div>
+                                        
+                                        <div class="form-check">
+                                            <input type="radio" name="range2Type" checked="@(!request.Range2UsesLetters)" 
+                                                   @onchange="@(e => { request.Range2UsesLetters = false; GeneratePreviewDebounced(); })" class="form-check-input bg-dark border-secondary" id="range2Numbers" />
+                                            <label class="form-check-label text-light" for="range2Numbers">Numbers</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            @if (request.Range2UsesLetters)
+                            {
+                                <div class="horizontal-form-group">
+                                    <div class="form-field">
+                                        <label class="text-light">Starting with:</label>
+                                        <input type="text" @bind-value="range2StartLetter" @bind-value:event="oninput" @onchange="(e) => Range2StartLetterChanged(e)"
+                                               maxlength="1" class="form-control form-control-sm bg-dark text-light border-secondary" />
+                                    </div>
+                                    
+                                    <div class="form-field">
+                                        <label class="text-light">Going up to:</label>
+                                        <input type="text" @bind-value="range2EndLetter" @bind-value:event="oninput" @onchange="(e) => Range2EndLetterChanged(e)"
+                                               maxlength="1" class="form-control form-control-sm bg-dark text-light border-secondary" />
+                                    </div>
+                                    
+                                    <div class="form-field-fixed">
+                                        <div class="form-check mt-1">
+                                            <input type="checkbox" @bind="request.Range2Capitalize" @oninput="(e) => { request.Range2Capitalize = (bool)e.Value; GeneratePreviewDebounced(); }" class="form-check-input bg-dark border-secondary" id="range2Cap" />
+                                            <label class="form-check-label text-light" for="range2Cap">Capitalize?</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="horizontal-form-group">
+                                    <div class="form-field">
+                                        <label class="text-light">Starting at:</label>
+                                        <div class="input-group input-group-sm">
+                                            <input type="number" @bind-value="request.Range2StartNumber" @bind-value:event="oninput"
+                                                min="0" class="form-control bg-dark text-light border-secondary" />
+                                            <button class="btn btn-outline-secondary text-light" type="button" @onclick="() => { request.Range2StartNumber--; GeneratePreviewDebounced(); }">-</button>
+                                            <button class="btn btn-outline-secondary text-light" type="button" @onclick="() => { request.Range2StartNumber++; GeneratePreviewDebounced(); }">+</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-field">
+                                        <label class="text-light">Going up to:</label>
+                                        <div class="input-group input-group-sm">
+                                            <input type="number" @bind-value="request.Range2EndNumber" @bind-value:event="oninput"
+                                                min="0" class="form-control bg-dark text-light border-secondary" />
+                                            <button class="btn btn-outline-secondary text-light" type="button" @onclick="() => { request.Range2EndNumber--; GeneratePreviewDebounced(); }">-</button>
+                                            <button class="btn btn-outline-secondary text-light" type="button" @onclick="() => { request.Range2EndNumber++; GeneratePreviewDebounced(); }">+</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-field-fixed">
+                                        <div class="form-check mt-1">
+                                            <input type="checkbox" @bind="request.Range2PadWithZeros" @oninput="(e) => { request.Range2PadWithZeros = (bool)e.Value; GeneratePreviewDebounced(); }" class="form-check-input bg-dark border-secondary" id="range2Pad" />
+                                            <label class="form-check-label text-light" for="range2Pad">Pad with zeros?</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    }
+                    
+                    @if (request.Type == LocationType.ThreeDGrid)
+                    {
+                        <div class="separator-field">
+                            <label class="text-light mb-2">Separator between range 2 and 3:</label>
+                            <input type="text" @bind-value="request.Separator2" @bind-value:event="oninput" 
+                                class="form-control form-control-sm bg-dark text-light border-secondary" placeholder="e.g., '-'" />
+                        </div>
+                        
+                        <div>
+                            <label class="text-light section-title">Range 3:</label>
+                            
+                            <div class="horizontal-form-group">
+                                <div class="form-field-fixed" style="margin-top: 0">
+                                    <div class="option-group">
+                                        <div class="form-check">
+                                            <input type="radio" name="range3Type" checked="@request.Range3UsesLetters" 
+                                                   @onchange="@(e => { request.Range3UsesLetters = true; GeneratePreviewDebounced(); })" class="form-check-input bg-dark border-secondary" id="range3Letters" />
+                                            <label class="form-check-label text-light" for="range3Letters">Letters</label>
+                                        </div>
+                                        
+                                        <div class="form-check">
+                                            <input type="radio" name="range3Type" checked="@(!request.Range3UsesLetters)" 
+                                                   @onchange="@(e => { request.Range3UsesLetters = false; GeneratePreviewDebounced(); })" class="form-check-input bg-dark border-secondary" id="range3Numbers" />
+                                            <label class="form-check-label text-light" for="range3Numbers">Numbers</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            @if (request.Range3UsesLetters)
+                            {
+                                <div class="horizontal-form-group">
+                                    <div class="form-field">
+                                        <label class="text-light">Starting with:</label>
+                                        <input type="text" @bind-value="range3StartLetter" @bind-value:event="oninput" @onchange="(e) => Range3StartLetterChanged(e)"
+                                               maxlength="1" class="form-control form-control-sm bg-dark text-light border-secondary" />
+                                    </div>
+                                    
+                                    <div class="form-field">
+                                        <label class="text-light">Going up to:</label>
+                                        <input type="text" @bind-value="range3EndLetter" @bind-value:event="oninput" @onchange="(e) => Range3EndLetterChanged(e)"
+                                               maxlength="1" class="form-control form-control-sm bg-dark text-light border-secondary" />
+                                    </div>
+                                    
+                                    <div class="form-field-fixed">
+                                        <div class="form-check mt-1">
+                                            <input type="checkbox" @bind="request.Range3Capitalize" @oninput="(e) => { request.Range3Capitalize = (bool)e.Value; GeneratePreviewDebounced(); }" class="form-check-input bg-dark border-secondary" id="range3Cap" />
+                                            <label class="form-check-label text-light" for="range3Cap">Capitalize?</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="horizontal-form-group">
+                                    <div class="form-field">
+                                        <label class="text-light">Starting at:</label>
+                                        <div class="input-group input-group-sm">
+                                            <input type="number" @bind-value="request.Range3StartNumber" @bind-value:event="oninput"
+                                                 min="0" class="form-control bg-dark text-light border-secondary" />
+                                            <button class="btn btn-outline-secondary text-light" type="button" @onclick="() => { request.Range3StartNumber--; GeneratePreviewDebounced(); }">-</button>
+                                            <button class="btn btn-outline-secondary text-light" type="button" @onclick="() => { request.Range3StartNumber++; GeneratePreviewDebounced(); }">+</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-field">
+                                        <label class="text-light">Going up to:</label>
+                                        <div class="input-group input-group-sm">
+                                            <input type="number" @bind-value="request.Range3EndNumber" @bind-value:event="oninput"
+                                                 min="0" class="form-control bg-dark text-light border-secondary" />
+                                            <button class="btn btn-outline-secondary text-light" type="button" @onclick="() => { request.Range3EndNumber--; GeneratePreviewDebounced(); }">-</button>
+                                            <button class="btn btn-outline-secondary text-light" type="button" @onclick="() => { request.Range3EndNumber++; GeneratePreviewDebounced(); }">+</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-field-fixed">
+                                        <div class="form-check mt-1">
+                                            <input type="checkbox" @bind="request.Range3PadWithZeros" @oninput="(e) => { request.Range3PadWithZeros = (bool)e.Value; GeneratePreviewDebounced(); }" class="form-check-input bg-dark border-secondary" id="range3Pad" />
+                                            <label class="form-check-label text-light" for="range3Pad">Pad with zeros?</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card bg-dark border-secondary h-100">
+                <div class="card-header bg-dark text-light border-secondary d-flex justify-content-between align-items-center">
+                    <h5 class="card-title mb-0 fs-6">Generated locations:</h5>
+                    @if (isLoading)
+                    {
+                        <div class="spinner-border spinner-border-sm text-primary" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    }
+                </div>
+                <div class="card-body bg-dark text-light">
+                    @if (!hasPreview && !isLoading)
+                    {
+                        <div class="preview-empty text-secondary">
+                            <span class="material-icons d-block mb-2" style="font-size: 2rem;">preview</span>
+                            <p class="small mb-0">Configure parameters to see a preview</p>
+                        </div>
+                    }
+                    else if (hasPreview && previewData != null)
+                    {
+                        @if (previewData.TotalLocations > 0)
+                        {
+                            <div class="alert bg-warning bg-opacity-25 text-warning border border-warning mb-2 small">
+                                <div class="d-flex align-items-start gap-2">
+                                    <span class="material-icons fs-6 mt-1">warning</span>
+                                    <div>
+                                        <div class="fw-bold warning-badge">
+                                            <span>Creating @previewData.TotalLocations location@(previewData.TotalLocations > 1 ? "s" : "")</span>
+                                            @if (previewData.TotalLocations > 100)
+                                            {
+                                                <span class="badge bg-warning text-dark small">Large Batch</span>
+                                            }
+                                        </div>
+                                        <div class="small">Please check carefully. Once created, locations cannot be deleted.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        
+                        @if (request.Type == LocationType.Single || request.Type == LocationType.Row)
+                        {
+                            <div class="preview-container">
+                                <ul class="preview-list">
+                                    @foreach (var name in previewData.LocationNames.Take(20))
+                                    {
+                                        <li class="text-light">@name</li>
+                                    }
+                                    
+                                    @if (previewData.LocationNames.Count > 20)
+                                    {
+                                        <li class="text-secondary fst-italic text-center py-2">
+                                            ...and @(previewData.LocationNames.Count - 20) more
+                                        </li>
+                                    }
+                                </ul>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="preview-container">
+                                <div class="table-responsive">
+                                    <table class="preview-table table-dark">
+                                        @for (int i = 0; i < Math.Min(previewData.GridView.Count, 10); i++)
+                                        {
+                                            <tr>
+                                                @foreach (var name in previewData.GridView[i])
+                                                {
+                                                    @if (name.StartsWith("---"))
+                                                    {
+                                                        <td colspan="@previewData.GridView[i-1].Count" class="text-center bg-secondary text-white small">@name</td>
+                                                    }
+                                                    else
+                                                    {
+                                                        <td>@name</td>
+                                                    }
+                                                }
+                                            </tr>
+                                        }
+                                        
+                                        @if (previewData.GridView.Count > 10)
+                                        {
+                                            <tr>
+                                                <td colspan="@previewData.GridView[0].Count" class="text-center text-secondary fst-italic">
+                                                    ...and @(previewData.GridView.Count - 10) more rows
+                                                </td>
+                                            </tr>
+                                        }
+                                    </table>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+                <div class="card-footer bg-dark text-light border-secondary d-flex justify-content-between">
+                    <button @onclick="NavigateBack" class="btn btn-sm btn-outline-secondary text-light">
+                        Cancel
+                    </button>
+                    <button @onclick="GenerateLocations" class="btn btn-sm btn-primary" disabled="@(!hasPreview || isLoading || (previewData?.TotalLocations == 0))">
+                        @if (previewData?.TotalLocations > 0)
+                        {
+                            <span>Create @previewData.TotalLocations Location@(previewData.TotalLocations > 1 ? "s" : "")</span>
+                        }
+                        else
+                        {
+                            <span>Create</span>
+                        }
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private LocationGenerationRequest request = new() 
+    { 
+        Type = LocationType.Row,
+        Range1UsesLetters = true,
+        Range2UsesLetters = false,
+        Range3UsesLetters = false
+    };
+    
+    private string range1StartLetter = "a";
+    private string range1EndLetter = "f";
+    private string range2StartLetter = "a";
+    private string range2EndLetter = "f";
+    private string range3StartLetter = "a";
+    private string range3EndLetter = "f";
+    
+    private bool isLoading = false;
+    private bool hasPreview = false;
+    private LocationGenerationPreview? previewData;
+    private System.Threading.Timer? debounceTimer;
+    
+    protected override void OnInitialized()
+    {
+        // Set default values with smaller ranges
+        request.Range1StartNumber = 1;
+        request.Range1EndNumber = 5;
+        request.Range2StartNumber = 1;
+        request.Range2EndNumber = 5;
+        request.Range3StartNumber = 1;
+        request.Range3EndNumber = 3;
+        request.Separator1 = "-";
+        request.Separator2 = "-";
+        
+        // Use lowercase letters with smaller ranges
+        range1StartLetter = "a";
+        range1EndLetter = "f";
+        range2StartLetter = "a";
+        range2EndLetter = "f";
+        range3StartLetter = "a";
+        range3EndLetter = "f";
+    }
+    
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await Task.Delay(100); // Short delay to ensure UI is ready
+            await GeneratePreview();
+        }
+    }
+    
+    private void NavigateBack()
+    {
+        NavigationManager.NavigateTo("/locations");
+    }
+    
+    private void GeneratePreviewDebounced()
+    {
+        // Cancel any existing timer
+        debounceTimer?.Dispose();
+        
+        // Create a new timer with shorter delay (100ms instead of 300ms)
+        debounceTimer = new System.Threading.Timer(async _ =>
+        {
+            await InvokeAsync(async () =>
+            {
+                await GeneratePreview();
+                StateHasChanged();
+            });
+        }, null, 100, System.Threading.Timeout.Infinite);
+    }
+    
+    private async Task GeneratePreview()
+    {
+        UpdateRequestFromInputs();
+        
+        isLoading = true;
+        StateHasChanged();
+        
+        try 
+        {
+            var result = await LocationService.GeneratePreviewAsync(request);
+            
+            if (result.Success && result.Preview != null)
+            {
+                hasPreview = true;
+                previewData = result.Preview;
+            }
+            else
+            {
+                hasPreview = false;
+                previewData = null;
+                await JSRuntime.InvokeVoidAsync("console.error", result.ErrorMessage ?? "Failed to generate preview");
+            }
+        }
+        catch (Exception ex)
+        {
+            hasPreview = false;
+            previewData = null;
+            await JSRuntime.InvokeVoidAsync("console.error", "Error: " + ex.Message);
+        }
+        finally
+        {
+            isLoading = false;
+            StateHasChanged();
+        }
+    }
+    
+    private async Task GenerateLocations()
+    {
+        if (!hasPreview)
+        {
+            await JSRuntime.InvokeVoidAsync("alert", "Please generate a preview first");
+            return;
+        }
+        
+        if (previewData?.TotalLocations > 500)
+        {
+            bool confirm = await JSRuntime.InvokeAsync<bool>("confirm", 
+                $"Are you sure you want to create {previewData.TotalLocations} locations? This operation cannot be undone.");
+            if (!confirm) return;
+        }
+        
+        isLoading = true;
+        StateHasChanged();
+        
+        try
+        {
+            var result = await LocationService.GenerateLocationsAsync(request);
+            
+            if (result.Success)
+            {
+                await JSRuntime.InvokeVoidAsync("alert", "Locations generated successfully!");
+                NavigationManager.NavigateTo("/locations");
+            }
+            else
+            {
+                await JSRuntime.InvokeVoidAsync("alert", result.ErrorMessage ?? "Failed to generate locations");
+            }
+        }
+        catch (Exception ex)
+        {
+            await JSRuntime.InvokeVoidAsync("alert", "Error: " + ex.Message);
+        }
+        finally
+        {
+            isLoading = false;
+            StateHasChanged();
+        }
+    }
+    
+    private void UpdateRequestFromInputs()
+    {
+        // Convert string letters to char values
+        if (!string.IsNullOrEmpty(range1StartLetter))
+            request.Range1StartLetter = range1StartLetter[0];
+        
+        if (!string.IsNullOrEmpty(range1EndLetter))
+            request.Range1EndLetter = range1EndLetter[0];
+            
+        if (!string.IsNullOrEmpty(range2StartLetter))
+            request.Range2StartLetter = range2StartLetter[0];
+        
+        if (!string.IsNullOrEmpty(range2EndLetter))
+            request.Range2EndLetter = range2EndLetter[0];
+            
+        if (!string.IsNullOrEmpty(range3StartLetter))
+            request.Range3StartLetter = range3StartLetter[0];
+        
+        if (!string.IsNullOrEmpty(range3EndLetter))
+            request.Range3EndLetter = range3EndLetter[0];
+    }
+
+    private void FilterLetterInput(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            ValidateLetterAndGeneratePreview();
+        }
+    }
+
+    private void ValidateLetterAndGeneratePreview()
+    {
+        ValidateLetterRange(ref range1StartLetter, ref range1EndLetter);
+        GeneratePreviewDebounced();
+    }
+
+    private void ValidateRange2LetterAndGeneratePreview()
+    {
+        ValidateLetterRange(ref range2StartLetter, ref range2EndLetter);
+        GeneratePreviewDebounced();
+    }
+
+    private void ValidateRange3LetterAndGeneratePreview()
+    {
+        ValidateLetterRange(ref range3StartLetter, ref range3EndLetter);
+        GeneratePreviewDebounced();
+    }
+    
+    private void ValidateLetterRange(ref string startLetter, ref string endLetter)
+    {
+        // Make sure we have non-empty values
+        if (string.IsNullOrEmpty(startLetter) || startLetter.Length == 0)
+        {
+            startLetter = "a";
+        }
+        
+        if (string.IsNullOrEmpty(endLetter) || endLetter.Length == 0)
+        {
+            endLetter = "f";
+        }
+        
+        // Ensure we're using letters
+        if (!char.IsLetter(startLetter[0]) || !char.IsLetter(endLetter[0]))
+        {
+            startLetter = "a";
+            endLetter = "f";
+        }
+        
+        // Force same case for both start and end letters
+        bool isStartUpper = char.IsUpper(startLetter[0]);
+        
+        // Convert both to the same case as the start letter
+        startLetter = isStartUpper ? startLetter.ToUpper() : startLetter.ToLower();
+        endLetter = isStartUpper ? endLetter.ToUpper() : endLetter.ToLower();
+        
+        StateHasChanged();
+    }
+
+    private void PrefixChanged(ChangeEventArgs e)
+    {
+        if (e.Value != null)
+        {
+            request.Prefix = e.Value.ToString();
+            ValidatePrefixAndGeneratePreview();
+        }
+    }
+    
+    private void ValidatePrefixAndGeneratePreview()
+    {
+        if (string.IsNullOrEmpty(request.Prefix))
+        {
+            // Empty prefix is fine
+            GeneratePreviewDebounced();
+            return;
+        }
+        
+        // Replace invalid characters with empty string
+        string validPrefix = new string(request.Prefix
+            .Where(c => char.IsLetterOrDigit(c) || c == '-' || c == '_' || c == '.')
+            .ToArray());
+        
+        if (validPrefix != request.Prefix)
+        {
+            request.Prefix = validPrefix;
+            StateHasChanged();
+        }
+        
+        GeneratePreviewDebounced();
+    }
+
+    private void Range1StartLetterChanged(ChangeEventArgs e)
+    {
+        if (e.Value != null)
+        {
+            string value = e.Value.ToString() ?? "";
+            if (!string.IsNullOrEmpty(value))
+            {
+                range1StartLetter = value;
+                GeneratePreviewDebounced();
+            }
+        }
+    }
+
+    private void Range1EndLetterChanged(ChangeEventArgs e)
+    {
+        if (e.Value != null)
+        {
+            string value = e.Value.ToString() ?? "";
+            if (!string.IsNullOrEmpty(value))
+            {
+                range1EndLetter = value;
+                GeneratePreviewDebounced();
+            }
+        }
+    }
+
+    private void Range2StartLetterChanged(ChangeEventArgs e)
+    {
+        if (e.Value != null)
+        {
+            string value = e.Value.ToString() ?? "";
+            if (!string.IsNullOrEmpty(value))
+            {
+                range2StartLetter = value;
+                GeneratePreviewDebounced();
+            }
+        }
+    }
+
+    private void Range2EndLetterChanged(ChangeEventArgs e)
+    {
+        if (e.Value != null)
+        {
+            string value = e.Value.ToString() ?? "";
+            if (!string.IsNullOrEmpty(value))
+            {
+                range2EndLetter = value;
+                GeneratePreviewDebounced();
+            }
+        }
+    }
+
+    private void Range3StartLetterChanged(ChangeEventArgs e)
+    {
+        if (e.Value != null)
+        {
+            string value = e.Value.ToString() ?? "";
+            if (!string.IsNullOrEmpty(value))
+            {
+                range3StartLetter = value;
+                GeneratePreviewDebounced();
+            }
+        }
+    }
+
+    private void Range3EndLetterChanged(ChangeEventArgs e)
+    {
+        if (e.Value != null)
+        {
+            string value = e.Value.ToString() ?? "";
+            if (!string.IsNullOrEmpty(value))
+            {
+                range3EndLetter = value;
+                GeneratePreviewDebounced();
+            }
+        }
+    }
+
+    // Add a special method to handle number value changes
+    private async Task HandleNumberValueChanged()
+    {
+        await GeneratePreview();
+    }
+
+    // Value change handlers for number inputs
+    protected async Task OnRange1StartNumberChanged(int value)
+    {
+        request.Range1StartNumber = value;
+        await HandleNumberValueChanged();
+    }
+    
+    protected async Task OnRange1EndNumberChanged(int value)
+    {
+        request.Range1EndNumber = value;
+        await HandleNumberValueChanged();
+    }
+    
+    protected async Task OnRange2StartNumberChanged(int value)
+    {
+        request.Range2StartNumber = value;
+        await HandleNumberValueChanged();
+    }
+    
+    protected async Task OnRange2EndNumberChanged(int value)
+    {
+        request.Range2EndNumber = value;
+        await HandleNumberValueChanged();
+    }
+    
+    protected async Task OnRange3StartNumberChanged(int value)
+    {
+        request.Range3StartNumber = value;
+        await HandleNumberValueChanged();
+    }
+    
+    protected async Task OnRange3EndNumberChanged(int value)
+    {
+        request.Range3EndNumber = value;
+        await HandleNumberValueChanged();
+    }
+} 

@@ -33,6 +33,7 @@ builder.Services.AddScoped(sp =>
 
 // Register services
 builder.Services.AddScoped<IPartService, PartService>();
+builder.Services.AddScoped<StorageLocationService>();
 
 // Create a separate HttpClient instance for Octopart that won't be used for other services
 builder.Services.AddScoped<IOctopartService>(sp => {

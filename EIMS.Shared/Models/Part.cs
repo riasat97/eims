@@ -56,8 +56,12 @@ public class Part
     // Tags
     public List<string> Tags { get; set; } = new();
 
-    // Location Information
+    // Legacy Location Information (for backward compatibility)
     public string? Location { get; set; }
+    
+    // New Location Information
+    public int? StorageLocationId { get; set; }
+    public StorageLocation? StorageLocation { get; set; }
 
     public string? Notes { get; set; }
 } 

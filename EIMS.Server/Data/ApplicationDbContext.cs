@@ -12,6 +12,7 @@ public class ApplicationDbContext : DbContext
     }
 
     public DbSet<Part> Parts { get; set; } = null!;
+    public DbSet<StorageLocation> StorageLocations { get; set; } = null!;
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -70,6 +71,33 @@ public class ApplicationDbContext : DbContext
             entity.HasMany(e => e.Substitutes)
                 .WithMany()
                 .UsingEntity(j => j.ToTable("PartSubstitutes"));
+
+            // Configure relationship with StorageLocation
+            entity.HasOne(e => e.StorageLocation)
+                .WithMany(e => e.StoredParts)
+                .HasForeignKey(e => e.StorageLocationId)
+                .IsRequired(false);
+        });
+
+        modelBuilder.Entity<StorageLocation>(entity =>
+        {
+            entity.HasKey(e => e.Id);
+            
+            // Configure unique constraint on Name
+            entity.HasIndex(e => e.Name).IsUnique();
+            
+            // Configure self-referencing relationship for parent-child hierarchy
+            entity.HasOne(e => e.ParentLocation)
+                .WithMany(e => e.ChildLocations)
+                .HasForeignKey(e => e.ParentLocationId)
+                .IsRequired(false)
+                .OnDelete(DeleteBehavior.Restrict); // Don't cascade delete to avoid orphaning locations
+            
+            // Configure metadata dictionary with JSON conversion
+            entity.Property(e => e.Metadata)
+                .HasConversion(
+                    v => JsonSerializer.Serialize(v, (JsonSerializerOptions)null),
+                    v => JsonSerializer.Deserialize<Dictionary<string, string>>(v, (JsonSerializerOptions)null));
         });
     }
 } 
